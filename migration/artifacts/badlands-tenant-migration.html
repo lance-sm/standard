@@ -1,0 +1,440 @@
+<!--
+  Exported 2026-08-31 from the old Claude account (lance@tuckersfarm.com).
+  Original artifact: https://claude.ai/code/artifact/796998a7-43f0-458e-95dd-cca92fb4c011 ("Badlands Tenant Migration", favicon 🗂)
+  Republish from the new account with the Artifact tool; it will get a NEW url.
+-->
+<title>Badlands Tenant Migration</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wght@500;600;700&family=Source+Serif+4:opsz,wght@8..60,400;8..60,600&family=JetBrains+Mono:wght@400;500&display=swap">
+
+<style>
+:root{
+  --ground:#F6F8F7;
+  --surface:#FFFFFF;
+  --surface-2:#EFF3F1;
+  --ink:#18211F;
+  --ink-2:#3D4A46;
+  --muted:#66746F;
+  --rule:#DCE3E0;
+  --rule-strong:#C3CECA;
+  --accent:#2F6F62;
+  --accent-soft:#E3EEEA;
+  --warn:#9C5C16;
+  --warn-soft:#F6EBDC;
+  --danger:#95372F;
+  --danger-soft:#F7E5E2;
+  --ok:#2F6F62;
+  --ok-soft:#E3EEEA;
+
+  --f-display:"Archivo","Helvetica Neue",Arial,sans-serif;
+  --f-body:"Source Serif 4",Georgia,"Times New Roman",serif;
+  --f-mono:"JetBrains Mono",ui-monospace,"SFMono-Regular",Menlo,monospace;
+}
+@media (prefers-color-scheme:dark){
+  :root:not([data-theme="light"]){
+    --ground:#111816;
+    --surface:#19211F;
+    --surface-2:#212B28;
+    --ink:#E9EEEC;
+    --ink-2:#C2CDC9;
+    --muted:#93A19C;
+    --rule:#2C3936;
+    --rule-strong:#3D4C48;
+    --accent:#74C2AD;
+    --accent-soft:#1D2E2A;
+    --warn:#D79B54;
+    --warn-soft:#2E2519;
+    --danger:#D97D71;
+    --danger-soft:#301E1B;
+    --ok:#74C2AD;
+    --ok-soft:#1D2E2A;
+  }
+}
+:root[data-theme="dark"]{
+  --ground:#111816;
+  --surface:#19211F;
+  --surface-2:#212B28;
+  --ink:#E9EEEC;
+  --ink-2:#C2CDC9;
+  --muted:#93A19C;
+  --rule:#2C3936;
+  --rule-strong:#3D4C48;
+  --accent:#74C2AD;
+  --accent-soft:#1D2E2A;
+  --warn:#D79B54;
+  --warn-soft:#2E2519;
+  --danger:#D97D71;
+  --danger-soft:#301E1B;
+  --ok:#74C2AD;
+  --ok-soft:#1D2E2A;
+}
+
+*{box-sizing:border-box}
+body{
+  margin:0;
+  background:var(--ground);
+  color:var(--ink);
+  font-family:var(--f-body);
+  font-size:17px;
+  line-height:1.62;
+  -webkit-font-smoothing:antialiased;
+}
+.wrap{max-width:820px;margin:0 auto;padding:0 24px 96px}
+
+/* ---------- masthead ---------- */
+.mast{padding:56px 0 30px;border-bottom:2px solid var(--ink);margin-bottom:38px}
+.eyebrow{
+  font-family:var(--f-mono);font-size:11.5px;letter-spacing:.16em;text-transform:uppercase;
+  color:var(--accent);margin:0 0 16px;font-weight:500;
+}
+h1{
+  font-family:var(--f-display);font-weight:700;font-size:clamp(34px,6vw,50px);
+  line-height:1.04;letter-spacing:-.022em;margin:0 0 16px;text-wrap:balance;
+}
+.standfirst{font-size:19px;color:var(--ink-2);margin:0;max-width:62ch}
+.mast-meta{
+  display:flex;flex-wrap:wrap;gap:8px 22px;margin-top:24px;
+  font-family:var(--f-mono);font-size:11.5px;color:var(--muted);letter-spacing:.04em;
+}
+
+/* ---------- structure ---------- */
+section{margin:0 0 52px}
+h2{
+  font-family:var(--f-display);font-weight:600;font-size:25px;letter-spacing:-.014em;
+  margin:0 0 6px;text-wrap:balance;
+}
+h3{
+  font-family:var(--f-display);font-weight:600;font-size:17.5px;letter-spacing:-.006em;
+  margin:30px 0 6px;
+}
+.dek{color:var(--muted);margin:0 0 22px;font-size:16px;max-width:62ch}
+p{margin:0 0 15px;max-width:68ch}
+a{color:var(--accent)}
+strong{font-weight:600}
+code{
+  font-family:var(--f-mono);font-size:.82em;background:var(--surface-2);
+  padding:1.5px 5px;border-radius:3px;color:var(--ink-2);
+  overflow-wrap:anywhere;
+}
+hr.sec{border:0;border-top:1px solid var(--rule);margin:0 0 34px}
+
+/* ---------- tables ---------- */
+.tw{overflow-x:auto;border:1px solid var(--rule);border-radius:5px;background:var(--surface)}
+table{border-collapse:collapse;width:100%;min-width:540px;font-size:15px}
+th,td{text-align:left;padding:11px 14px;border-bottom:1px solid var(--rule);vertical-align:top}
+th{
+  font-family:var(--f-mono);font-size:10.5px;letter-spacing:.11em;text-transform:uppercase;
+  color:var(--muted);font-weight:500;background:var(--surface-2);white-space:nowrap;
+}
+tr:last-child td{border-bottom:0}
+td.num{font-family:var(--f-mono);font-variant-numeric:tabular-nums;white-space:nowrap;font-size:13.5px}
+td.path{font-family:var(--f-mono);font-size:12.5px;line-height:1.5;color:var(--ink-2)}
+
+/* ---------- chips ---------- */
+.chip{
+  display:inline-block;font-family:var(--f-mono);font-size:10.5px;letter-spacing:.07em;
+  text-transform:uppercase;padding:3px 8px;border-radius:3px;white-space:nowrap;font-weight:500;
+}
+.chip.ok{background:var(--ok-soft);color:var(--ok)}
+.chip.warn{background:var(--warn-soft);color:var(--warn)}
+.chip.bad{background:var(--danger-soft);color:var(--danger)}
+.chip.neutral{background:var(--surface-2);color:var(--muted)}
+
+/* ---------- risk blocks ---------- */
+.risk{
+  background:var(--surface);border:1px solid var(--rule);border-left:3px solid var(--rule-strong);
+  border-radius:0 5px 5px 0;padding:16px 18px;margin:0 0 14px;
+}
+.risk.high{border-left-color:var(--danger)}
+.risk.med{border-left-color:var(--warn)}
+.risk-head{
+  display:flex;align-items:baseline;gap:10px;flex-wrap:wrap;margin-bottom:7px;
+}
+.risk-head h4{
+  font-family:var(--f-display);font-weight:600;font-size:16px;margin:0;letter-spacing:-.004em;
+}
+.risk p{margin:0 0 8px;font-size:15.5px;color:var(--ink-2)}
+.risk p:last-child{margin-bottom:0}
+.fix{font-size:14.5px;color:var(--ink)}
+.fix b{
+  font-family:var(--f-mono);font-size:10.5px;letter-spacing:.09em;text-transform:uppercase;
+  color:var(--muted);font-weight:500;margin-right:7px;
+}
+
+/* ---------- phases ---------- */
+.phase{
+  display:grid;grid-template-columns:46px 1fr;gap:0 20px;
+  padding:22px 0;border-top:1px solid var(--rule);
+}
+.phase:last-of-type{border-bottom:1px solid var(--rule)}
+.pnum{
+  font-family:var(--f-mono);font-size:12px;font-weight:500;color:var(--accent);
+  letter-spacing:.06em;padding-top:4px;
+}
+.phase h3{margin:0 0 4px}
+.phase .when{
+  font-family:var(--f-mono);font-size:11px;letter-spacing:.08em;text-transform:uppercase;
+  color:var(--muted);margin:0 0 11px;
+}
+.phase ul{margin:0;padding-left:19px}
+.phase li{margin-bottom:6px;font-size:15.5px;color:var(--ink-2)}
+.phase li::marker{color:var(--rule-strong)}
+.phase li b{color:var(--ink);font-weight:600}
+
+/* ---------- decisions ---------- */
+.ask{
+  background:var(--accent-soft);border:1px solid color-mix(in srgb,var(--accent) 22%,transparent);
+  border-radius:5px;padding:18px 20px;margin:0 0 12px;
+}
+.ask h4{
+  font-family:var(--f-display);font-size:16px;font-weight:600;margin:0 0 5px;color:var(--ink);
+}
+.ask p{margin:0;font-size:15.5px;color:var(--ink-2)}
+.ask p + p{margin-top:8px}
+
+ul.plain{padding-left:19px;margin:0 0 15px}
+ul.plain li{margin-bottom:7px;color:var(--ink-2);max-width:66ch}
+ul.plain li::marker{color:var(--rule-strong)}
+ul.plain li b{color:var(--ink);font-weight:600}
+
+footer{
+  margin-top:56px;padding-top:20px;border-top:1px solid var(--rule);
+  font-family:var(--f-mono);font-size:11.5px;color:var(--muted);line-height:1.7;
+}
+@media (max-width:560px){
+  body{font-size:16px}
+  .wrap{padding:0 18px 72px}
+  .phase{grid-template-columns:1fr;gap:0}
+  .pnum{padding-top:0;margin-bottom:5px}
+}
+</style>
+
+<div class="wrap">
+
+<header class="mast">
+  <p class="eyebrow">Tucker's Farm → The Badlands Security Company</p>
+  <h1>Getting Badlands off the Farm tenant, cleanly</h1>
+  <p class="standfirst">A migration is already underway — three copies of the deal folder now exist across two tenants, and one of them can't be trusted yet. Here's the state of play and the order I'd do the rest in.</p>
+  <div class="mast-meta">
+    <span>25 AUG 2026</span>
+    <span>11,036 FILES IN SCOPE</span>
+    <span>4 SHAREPOINT SITES</span>
+    <span>7 LIVE AUTOMATIONS</span>
+  </div>
+</header>
+
+<section>
+  <h2>Where things stand</h2>
+  <p class="dek">The deal folder exists in three places right now. They are not the same.</p>
+  <div class="tw">
+    <table>
+      <thead>
+        <tr><th>Copy</th><th>Location</th><th>Files</th><th>State</th></tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><b>Live source</b><br><span style="color:var(--muted);font-size:13.5px">Authoritative</span></td>
+          <td class="path">OneDrive - Tucker's Farm\Badlands Deal Folder</td>
+          <td class="num">187<br>57 MB</td>
+          <td><span class="chip ok">Current</span></td>
+        </tr>
+        <tr>
+          <td><b>Yesterday's bulk dump</b></td>
+          <td class="path">The Badlands Drive - Documents\OneDrive - Tucker's Farm\…</td>
+          <td class="num">11,036<br>whole OneDrive</td>
+          <td><span class="chip bad">Unverified</span></td>
+        </tr>
+        <tr>
+          <td><b>Today's copy</b></td>
+          <td class="path">Acquisitions - Documents\Badlands Deal Folder</td>
+          <td class="num">187<br>58,952,759 B</td>
+          <td><span class="chip ok">MD5 verified</span></td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  <p style="margin-top:18px">The 8/24 dump is a full copy of your entire personal OneDrive — not just business files. It breaks down as Documents 9,894 · Pictures 577 · Deal Folder 187 · Desktop 148 · Attachments 10 · Alpha Sense 5 · Quarterly Reflections 2.</p>
+</section>
+
+<hr class="sec">
+
+<section>
+  <h2>Five things to settle before moving anything else</h2>
+  <p class="dek">Ranked by how much damage each does if it goes unnoticed.</p>
+
+  <div class="risk high">
+    <div class="risk-head"><h4>Every Office file in the dump is a different size</h4><span class="chip bad">Blocker</span></div>
+    <p>All 108 <code>.docx</code>/<code>.xlsx</code> files in the dumped deal folder are larger than the live originals — by a near-uniform <b>+6,195 bytes</b>. PDFs, images and zips match exactly. A uniform delta on Office formats only is not what a plain file copy produces; it looks like something was applied server-side on upload — most likely a Badlands-tenant sensitivity label.</p>
+    <p>I can't confirm it from here: the library is synced online-only, so the files aren't readable without hydrating them.</p>
+    <p class="fix"><b>Do this</b> Open <code>Admin &amp; Ops\IOI Sample.docx</code> from the dump and the same file from Tucker's Farm side by side. If the dump copy opens clean and just carries a sensitivity label, it's harmless. If it prompts for permission, opens read-only, or looks wrong, the dump is unusable and everything gets re-copied from the live source.</p>
+  </div>
+
+  <div class="risk med">
+    <div class="risk-head"><h4>Modified dates were flattened</h4><span class="chip warn">Not reversible</span></div>
+    <p>Every file in the dump is stamped <b>2026-08-24</b>, the upload date. The real history is gone in that copy — the deal folder's true latest edit was 8/19, Hubspot Partner's 8/12, LinkedIn Posts' 7/16. Sorting by "Modified" in the new tenant will be meaningless.</p>
+    <p class="fix"><b>Do this</b> Copy from the live source instead, the way today's Acquisitions copy was done. It preserves timestamps. Anything already only in the dump keeps the flattened date permanently.</p>
+  </div>
+
+  <div class="risk med">
+    <div class="risk-head"><h4>The dump collided with itself</h4><span class="chip warn">2 folders</span></div>
+    <p>The upload produced <code>NDA's (1)</code> and <code>Master Deal Tracker (1)</code> alongside the real folders — each holding a single orphaned file. That's the signature of a merge conflict during upload, which means other silent overwrites are possible in the same batch.</p>
+    <p class="fix"><b>Do this</b> Don't reconcile these by hand. Re-copy both folders from source and delete the dump versions.</p>
+  </div>
+
+  <div class="risk med">
+    <div class="risk-head"><h4>The NDA folder is already a day stale</h4><span class="chip warn">3 files</span></div>
+    <p>The dump was taken mid-work on the Firehouse NDA. It's missing <code>Project Firehouse NDA-Executed.pdf</code> and carries an older differently-named version instead. Live has 39 files; the dump has 37.</p>
+    <p class="fix"><b>Do this</b> Treat live as the source of truth for NDA's. Also worth clearing: a <code>_to_delete\</code> folder is sitting in the live NDA's folder with two superseded Firehouse redlines from a previous session.</p>
+  </div>
+
+  <div class="risk high">
+    <div class="risk-head"><h4>Personal files landed in a shared team site</h4><span class="chip bad">Governance</span></div>
+    <p><b>Pictures</b> (577 files) and <b>Desktop</b> (148 files) from your personal OneDrive are now inside The Badlands Drive document library. Whoever gets access to that site gets access to those. I haven't looked inside either folder.</p>
+    <p class="fix"><b>Do this</b> Decide before you grant anyone else access to the site. Anything genuinely personal belongs in your Badlands <em>personal</em> OneDrive, not a site library.</p>
+  </div>
+</section>
+
+<hr class="sec">
+
+<section>
+  <h2>Where things should end up</h2>
+  <p class="dek">One rule: a file's home is decided by who needs to see it, not by where it happened to sit on the Farm tenant.</p>
+  <div class="tw">
+    <table>
+      <thead>
+        <tr><th>Site</th><th>Holds</th><th>Status</th></tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><b>Acquisitions</b></td>
+          <td>Deal execution — the Badlands Deal Folder as-is: live deals, Hold, Killed, Farm Deals, Admin &amp; Ops, templates, scorecard</td>
+          <td><span class="chip ok">Done</span></td>
+        </tr>
+        <tr>
+          <td><b>Corporate</b></td>
+          <td>Entity-level and reusable: NDA templates and signature files, W9, teaser and overview decks, investment criteria, banker agreements</td>
+          <td><span class="chip neutral">Proposed</span></td>
+        </tr>
+        <tr>
+          <td><b>The Badlands Drive</b></td>
+          <td>Working files: the Claude project folders, research, import staging, trip logs, quarterly reflections</td>
+          <td><span class="chip warn">Holds the dump</span></td>
+        </tr>
+        <tr>
+          <td><b>Cosmic</b></td>
+          <td>Unknown — tell me what this site is for and I'll place things accordingly</td>
+          <td><span class="chip neutral">Your call</span></td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  <p style="margin-top:18px">There are <b>19 project folders</b> under <code>Documents\Claude\Projects</code>, of which only four are wired into Cowork today — Hubspot Partner, NDA's, Technician Pipeline, LinkedIn Posts. The other fifteen (Target Research at 189 files, Master Deal Tracker at 50, Post Meetings at 48, Broker Research at 16, M365 at 19, and smaller) need a keep-or-archive call.</p>
+</section>
+
+<hr class="sec">
+
+<section>
+  <h2>The move, in five phases</h2>
+  <p class="dek">Phases are sequential — each one depends on the last being verified.</p>
+
+  <div class="phase">
+    <div class="pnum">01</div>
+    <div>
+      <h3>Verify the dump, then decide its fate</h3>
+      <p class="when">You · 10 minutes</p>
+      <ul>
+        <li>Open the two copies of <code>IOI Sample.docx</code> side by side and tell me what you see.</li>
+        <li><b>If the files are fine</b> — I still re-copy the four active project folders from live (for the timestamps and the NDA gap), and keep the dump as the archive of everything else.</li>
+        <li><b>If they're altered or locked</b> — the whole dump gets deleted and rebuilt from source. Nothing is lost; the Farm originals are all still there.</li>
+        <li>Confirm the site map above, and tell me what Cosmic is for.</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="phase">
+    <div class="pnum">02</div>
+    <div>
+      <h3>Clean copies, by destination</h3>
+      <p class="when">Me · same session</p>
+      <ul>
+        <li>Copy the four active project folders from the live source to their mapped sites, timestamps preserved, <code>desktop.ini</code> excluded.</li>
+        <li>Copy Quarterly Reflections across.</li>
+        <li>Verify each one file-count, byte-count and MD5, the same way the Acquisitions copy was verified. I'll report any file that doesn't match.</li>
+        <li>Remove the <code>(1)</code> collision folders and the stale <code>_to_delete\</code> folder.</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="phase">
+    <div class="pnum">03</div>
+    <div>
+      <h3>Repoint everything that reads these paths</h3>
+      <p class="when">Both of us · before any deletion</p>
+      <ul>
+        <li><b>Cowork folder connections</b> — you re-add the six folders from their new SharePoint locations in the desktop app. Until you do, I lose access to all of them.</li>
+        <li><b>Scheduled tasks</b> — seven are live. At least one Monthly Reflection task hardcodes the Tucker's Farm path and will start failing silently. I'll rewrite the prompts.</li>
+        <li><b>Duplicate task, unrelated but worth fixing</b> — "Monthly Reflection Kickoff" and "Monthly Reflection — First Monday Kickoff" are both enabled and both fire Monday mornings, an hour apart. One should go.</li>
+        <li><b>Project memory</b> — several notes cite Farm paths for the HubSpot snapshot CSV, the NDA signature files, and the weekly agenda folder. I'll update them as the moves land.</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="phase">
+    <div class="pnum">04</div>
+    <div>
+      <h3>Triage the 9,894-file backlog</h3>
+      <p class="when">Me, with your rulings · the long pole</p>
+      <ul>
+        <li>This is the real work. <code>Documents\</code> is a flat pile — executed NDAs sitting next to CIMs, forty-odd HubSpot import spreadsheets, resumes, W9s, tradeshow lists, and a decade of one-off <code>.docx</code> meeting notes.</li>
+        <li>I'll produce a classified inventory first — every file bucketed by type and proposed destination, with duplicates and superseded versions flagged — so you're approving a plan, not sorting files.</li>
+        <li>Expect a large "archive, don't organize" bucket. Not everything deserves a home.</li>
+        <li>Nothing here blocks phases 1–3. The active workflows can be fully migrated while this backlog waits.</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="phase">
+    <div class="pnum">05</div>
+    <div>
+      <h3>Cut over and delete</h3>
+      <p class="when">You · after a week of running clean</p>
+      <ul>
+        <li>Run a normal week entirely out of the Badlands tenant — cold call list, weekly agenda, NDA work — and confirm nothing reaches for a Farm path.</li>
+        <li>Only then delete the Tucker's Farm originals. Keep the Farm OneDrive itself intact for the recycle-bin window.</li>
+        <li>Final verification sweep from me before you delete anything.</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<hr class="sec">
+
+<section>
+  <h2>What I need from you</h2>
+  <p class="dek">Phase 1 doesn't start without these four.</p>
+
+  <div class="ask">
+    <h4>1. Open those two files</h4>
+    <p>The dump copy and the live copy of <code>Admin &amp; Ops\IOI Sample.docx</code>. Does the dump version open normally? Any banner, prompt, or read-only warning?</p>
+  </div>
+  <div class="ask">
+    <h4>2. What is Cosmic?</h4>
+    <p>It's the one site I can't place. Also confirm whether Corporate is the right home for NDA templates and entity documents.</p>
+  </div>
+  <div class="ask">
+    <h4>3. Pictures and Desktop — keep or pull?</h4>
+    <p>577 and 148 files respectively, currently in a shared team library. I'd move both to your personal Badlands OneDrive unless you tell me they're business content.</p>
+  </div>
+  <div class="ask">
+    <h4>4. The fifteen dormant project folders</h4>
+    <p>Target Research, Master Deal Tracker, Post Meetings, Broker Research, M365, Meeting Prep and the rest. Migrate them all, or archive the ones you haven't touched this year?</p>
+  </div>
+</section>
+
+<footer>
+  Compiled 25 Aug 2026 from the connected Tucker's Farm folders and the synced Badlands libraries.<br>
+  File counts exclude <code>desktop.ini</code>. Dump contents were enumerated but not read — that library is synced online-only.
+</footer>
+
+</div>

@@ -1,0 +1,599 @@
+{
+  "state": "Connecticut",
+  "state_abbrev": "CT",
+  "as_of": "July 2026",
+  "audience": "external",
+  "brand": "Badlands",
+  "tagline": "Security Company",
+  "hq": "New York, NY",
+  "footer_note": "Compiled July 2026 from ZoomInfo, state records, industry press and company materials. Founding years shown where verified. Corrections and additions welcome.",
+  "acquisitions": [
+    {
+      "company": "K&M Fire Protection Services",
+      "city": "Plantsville",
+      "year": 2015,
+      "acquirer": "Davis-Ulmer / APi Group",
+      "source": "PR Newswire / Generational Equity, Nov 2015"
+    },
+    {
+      "company": "P&J Sprinkler",
+      "city": "Willimantic",
+      "year": 2020,
+      "acquirer": "Impact Fire",
+      "sponsor": "Audax Group",
+      "source": "Impact Fire press release, Apr 2020"
+    },
+    {
+      "company": "TEC Control Systems",
+      "city": "Windham",
+      "year": 2021,
+      "acquirer": "Impact Fire",
+      "sponsor": "Audax Group",
+      "source": "company announcement"
+    },
+    {
+      "company": "CustomVault",
+      "city": "Bethel",
+      "year": 2021,
+      "acquirer": "Convergint",
+      "note": "HQ moved to North Carolina",
+      "source": "BusinessWire, Apr 2021"
+    },
+    {
+      "company": "Monitor Controls",
+      "city": "Wallingford",
+      "year": 2022,
+      "acquirer": "American Alarm & Communications",
+      "source": "acquirer newsroom"
+    },
+    {
+      "company": "Integrated Security Group",
+      "city": "Middletown",
+      "year": 2022,
+      "acquirer": "Pye-Barker Fire & Safety",
+      "sponsor": "Altas Partners",
+      "source": "trade press"
+    },
+    {
+      "company": "Environmental Systems Co. (ESC)",
+      "city": "West Hartford",
+      "year": 2023,
+      "acquirer": "Fidelity Building Services Group",
+      "source": "acquirer newsroom"
+    },
+    {
+      "company": "Security Solutions Inc.",
+      "city": "Norwalk",
+      "year": 2024,
+      "acquirer": "Pye-Barker Fire & Safety",
+      "sponsor": "Altas Partners",
+      "source": "trade press"
+    },
+    {
+      "company": "Security Technologies Inc.",
+      "city": "Vernon",
+      "year": 2024,
+      "acquirer": "Minuteman Security & Life Safety",
+      "source": "trade press"
+    },
+    {
+      "company": "Sonitrol New England",
+      "city": "Rocky Hill",
+      "year": 2024,
+      "acquirer": "Pye-Barker Fire & Safety",
+      "sponsor": "Altas Partners",
+      "source": "trade press"
+    },
+    {
+      "company": "Customized Service Concepts",
+      "city": "Durham",
+      "year": 2024,
+      "acquirer": "Everon",
+      "sponsor": "GTCR",
+      "source": "SDM / SecurityInfoWatch, Feb 2024"
+    },
+    {
+      "company": "Connecticut Fire Equipment",
+      "city": "Plainville",
+      "year": 2024,
+      "acquirer": "Encore Fire Protection",
+      "sponsor": "Levine Leichtman",
+      "source": "PitchBook, Aug 2024"
+    },
+    {
+      "company": "AFS Fire Protection",
+      "city": "Southington",
+      "year": 2025,
+      "acquirer": "Impact Fire",
+      "sponsor": "Blackstone",
+      "source": "Impact Fire / AI Fire release, May 2025"
+    },
+    {
+      "company": "Homeguard",
+      "city": "Fairfield",
+      "year": 2025,
+      "acquirer": "Pye-Barker Fire & Safety",
+      "sponsor": "Altas Partners",
+      "source": "Pye-Barker H1 2025 release, Jul 2025"
+    },
+    {
+      "company": "Fire Alarm Specialty Design",
+      "city": "North Windham",
+      "year": 2026,
+      "acquirer": "Summit Fire & Security",
+      "source": "trade press"
+    },
+    {
+      "company": "Hartford Sprinkler Co.",
+      "city": "Bloomfield",
+      "year": 2026,
+      "acquirer": "Pye-Barker Fire & Safety",
+      "sponsor": "Altas Partners",
+      "source": "Pye-Barker release, Jul 2026"
+    },
+    {
+      "company": "HTH Automatic Sprinkler",
+      "city": "Goshen",
+      "year": 2026,
+      "acquirer": "Summit Fire & Security",
+      "source": "Summit release, Feb 2026"
+    },
+    {
+      "company": "Integrated Protection Services",
+      "city": "Stamford",
+      "year": null,
+      "acquirer": "Davis-Ulmer / APi Group",
+      "source": "acquirer brands page; no dated announcement found"
+    },
+    {
+      "company": "United Alarm",
+      "city": "Brookfield",
+      "year": null,
+      "acquirer": "Pye-Barker Fire & Safety",
+      "sponsor": "Altas Partners",
+      "source": "acquirer locations page; no dated announcement found"
+    },
+    {
+      "company": "Allstate Fire Equipment",
+      "city": "Plainville",
+      "year": null,
+      "acquirer": "Encore Fire Protection",
+      "verb": "now a brand of",
+      "sponsor": "Levine Leichtman",
+      "source": "acquirer brands page; no dated announcement found"
+    },
+    {
+      "company": "ProTechs Security & Surveillance",
+      "city": "Derby",
+      "year": null,
+      "acquirer": "Knight Security",
+      "source": "acquirer announcement page; no date extractable"
+    }
+  ],
+  "sections": [
+    {
+      "name": "Locksmiths & Safe Specialists",
+      "items": [
+        {
+          "company": "Karpilow Safe & Lock",
+          "city": "Bridgeport",
+          "founded": 1870,
+          "succession": true
+        },
+        {
+          "company": "Cohen's Key Shop",
+          "city": "New Haven",
+          "founded": 1897,
+          "succession": true
+        },
+        {
+          "company": "W.T. Bradley & Son",
+          "city": "Stratford",
+          "founded": 1948,
+          "succession": true
+        },
+        {
+          "company": "Charm's Security Hardware",
+          "city": "Orange",
+          "founded": "~1955",
+          "succession": true
+        },
+        {
+          "company": "Calvert Safe & Lock",
+          "city": "Derby",
+          "founded": 1972,
+          "succession": true
+        },
+        {
+          "company": "Rackliffe Lock & Safe",
+          "city": "Clinton",
+          "founded": 1974,
+          "succession": true
+        },
+        {
+          "company": "Southington Security",
+          "city": "Southington",
+          "founded": 1977,
+          "succession": true
+        },
+        {
+          "company": "AA Lock & Key",
+          "city": "Ledyard",
+          "founded": 1986,
+          "succession": true
+        },
+        {
+          "company": "CT Lock Service",
+          "city": "Waterbury",
+          "founded": 2000
+        },
+        {
+          "company": "The Greenwich Locksmith",
+          "city": "Greenwich",
+          "founded": 2005
+        },
+        {
+          "company": "Alert Security Plus",
+          "city": "Stamford",
+          "founded": 2006
+        },
+        {
+          "company": "Bob Locksmith",
+          "city": "Fairfield",
+          "founded": 2009
+        },
+        {
+          "company": "All United Locksmith",
+          "city": "Stamford",
+          "founded": 2009
+        },
+        {
+          "company": "Ambrogio Lock & More",
+          "city": "Greenwich",
+          "founded": 2014
+        },
+        {
+          "company": "Alpha Lock & Key",
+          "city": "Milford",
+          "founded": 2018
+        },
+        {
+          "company": "CT Security Locksmiths",
+          "city": "Newington",
+          "founded": 2018
+        },
+        {
+          "company": "The Locksmith Center",
+          "city": "West Hartford"
+        },
+        {
+          "company": "Leo's Key & Lock",
+          "city": "Waterbury"
+        },
+        {
+          "company": "Stock & Barrel Locksmithing",
+          "city": "Simsbury"
+        },
+        {
+          "company": "AA Lockserv",
+          "city": "Wallingford"
+        },
+        {
+          "company": "CT Locksmith Plus",
+          "city": "Seymour"
+        },
+        {
+          "company": "Stat Locksmith",
+          "city": "Danbury"
+        }
+      ]
+    },
+    {
+      "name": "Fire & Life Safety",
+      "items": [
+        {
+          "company": "Firepro Integrated Systems",
+          "city": "Bridgeport",
+          "founded": 1977,
+          "succession": true
+        },
+        {
+          "company": "Fire Control Service",
+          "city": "New Milford",
+          "founded": 1977,
+          "succession": true
+        },
+        {
+          "company": "Fire Protection Team",
+          "city": "Cheshire",
+          "founded": 1992
+        },
+        {
+          "company": "Synergy Fire Systems",
+          "city": "Bristol"
+        }
+      ]
+    },
+    {
+      "name": "Security Integrators & Alarm Companies",
+      "items": [
+        {
+          "company": "Integrated Technical Systems",
+          "city": "Wallingford",
+          "founded": 1969,
+          "succession": true
+        },
+        {
+          "company": "Welte Electronic Systems",
+          "city": "Norwalk",
+          "founded": 1969,
+          "succession": true
+        },
+        {
+          "company": "Keller Alarm",
+          "city": "Danbury",
+          "founded": 1972,
+          "succession": true
+        },
+        {
+          "company": "ASP Security Systems",
+          "city": "Waterford",
+          "founded": 1972,
+          "succession": true
+        },
+        {
+          "company": "Advanced Electronic Systems",
+          "city": "Norwalk",
+          "founded": 1973,
+          "succession": true
+        },
+        {
+          "company": "Sonitrol of Bridgeport",
+          "city": "Stratford",
+          "founded": 1973,
+          "succession": true
+        },
+        {
+          "company": "Soundsafe Security Systems",
+          "city": "Stratford",
+          "founded": 1973,
+          "succession": true
+        },
+        {
+          "company": "Alert Alarms",
+          "city": "Derby",
+          "founded": 1976,
+          "succession": true
+        },
+        {
+          "company": "Electronic Security & Control",
+          "city": "Bridgeport",
+          "founded": 1976,
+          "succession": true
+        },
+        {
+          "company": "Security Specialists",
+          "city": "Stamford",
+          "founded": 1978,
+          "succession": true
+        },
+        {
+          "company": "New Canaan Alarm",
+          "city": "New Canaan",
+          "founded": 1978,
+          "succession": true
+        },
+        {
+          "company": "Nationwide Security",
+          "city": "Branford",
+          "founded": 1983,
+          "succession": true
+        },
+        {
+          "company": "Pro Tek Security",
+          "city": "North Haven",
+          "founded": 1985,
+          "succession": true
+        },
+        {
+          "company": "Dynamark Security Centers CT",
+          "city": "Waterbury",
+          "founded": 1987,
+          "succession": true
+        },
+        {
+          "company": "Safe Home Security",
+          "city": "Middletown",
+          "founded": 1988,
+          "succession": true
+        },
+        {
+          "company": "DuBaldo Security Systems",
+          "city": "Manchester",
+          "founded": 1989,
+          "succession": true
+        },
+        {
+          "company": "Berkshire Alarm",
+          "city": "Litchfield",
+          "founded": 1989,
+          "succession": true
+        },
+        {
+          "company": "Command Corporation",
+          "city": "East Granby",
+          "founded": 1991
+        },
+        {
+          "company": "Barnum Engineered Systems",
+          "city": "Derby",
+          "founded": 1991
+        },
+        {
+          "company": "Donnelly Security",
+          "city": "Danbury",
+          "founded": 1992
+        },
+        {
+          "company": "Ram Alarm Services",
+          "city": "Westport",
+          "founded": 1993
+        },
+        {
+          "company": "Century Security",
+          "city": "North Haven",
+          "founded": 1996
+        },
+        {
+          "company": "Lawton Media Services",
+          "city": "Madison",
+          "founded": 2000
+        },
+        {
+          "company": "Venture Communications & Security",
+          "city": "Danielson",
+          "founded": 2005
+        },
+        {
+          "company": "Next Generation Alarms",
+          "city": "East Hartford",
+          "founded": 2007
+        },
+        {
+          "company": "JC Electronic Technologies",
+          "city": "Ansonia",
+          "founded": 2008
+        },
+        {
+          "company": "Lynx Systems",
+          "city": "Southington",
+          "founded": 2010
+        },
+        {
+          "company": "Sourced Security Solutions",
+          "city": "Cromwell",
+          "founded": 2011
+        },
+        {
+          "company": "Connecticut Security Solutions",
+          "city": "Branford",
+          "founded": 2014
+        },
+        {
+          "company": "Hull Alarms",
+          "city": "New Hartford",
+          "founded": 2017
+        },
+        {
+          "company": "Ursa Security & Control",
+          "city": "Plantsville",
+          "founded": 2021
+        },
+        {
+          "company": "KELLSEC",
+          "city": "Cromwell",
+          "founded": 2022
+        },
+        {
+          "company": "Associated Security",
+          "city": "East Hartford"
+        },
+        {
+          "company": "Mammoth Security",
+          "city": "New Britain"
+        },
+        {
+          "company": "SAFEGUARD Security & Surveillance",
+          "city": "Windsor Locks"
+        },
+        {
+          "company": "Advanced Alarm Security Systems",
+          "city": "North Haven"
+        },
+        {
+          "company": "Sterling Security Systems",
+          "city": "Waterbury"
+        },
+        {
+          "company": "Advanced Security Technologies",
+          "city": "Shelton"
+        },
+        {
+          "company": "Vulcan Security Technologies",
+          "city": "South Windsor"
+        },
+        {
+          "company": "Unitech Sound & Security",
+          "city": "Berlin"
+        },
+        {
+          "company": "Evans Alarm",
+          "city": "Danbury"
+        },
+        {
+          "company": "Northeast Security Technologies",
+          "city": "North Haven"
+        },
+        {
+          "company": "NOW Security Systems",
+          "city": "North Haven"
+        },
+        {
+          "company": "B&B Security Systems",
+          "city": "Ansonia"
+        },
+        {
+          "company": "Staysafe Security Systems",
+          "city": "Southington"
+        },
+        {
+          "company": "Automated Security Systems",
+          "city": "Newtown"
+        },
+        {
+          "company": "PPC Alarms",
+          "city": "Trumbull"
+        },
+        {
+          "company": "Mule Security",
+          "city": "Meriden"
+        },
+        {
+          "company": "Alarming Ideas",
+          "city": "North Stonington"
+        },
+        {
+          "company": "FireWire Communications",
+          "city": "Darien"
+        },
+        {
+          "company": "All In 1",
+          "city": "Shelton"
+        },
+        {
+          "company": "Marcus Security",
+          "city": "Manchester"
+        },
+        {
+          "company": "Advanced CCTV Alarm Systems",
+          "city": "New Haven"
+        },
+        {
+          "company": "Best Tech Services",
+          "city": "Danielson"
+        }
+      ]
+    }
+  ],
+  "show_founded": true,
+  "notes": [
+    "REMOVED from prior version: W&M Fire Protection (Plantsville) - acquired Dec 2007 by Davis-Ulmer, well before the 2015 cutoff, and corporate HQ is now Hawthorne NY; Plantsville is a branch.",
+    "REMOVED from candidate list: Legacy Fire Protection (Impact Fire, 2021) - HQ is Ludlow MA, not CT.",
+    "EXCLUDED, corporate carve-out: Stanley Access Technologies, Farmington - $900M automatic-entrance division sold by Stanley Black & Decker to Allegion, closed Jul 2022. Real and large, but a division sale, not an independent going away. Add on request.",
+    "EXCLUDED, manufacturer: ComNet (Communications Networks), Danbury - video transmission hardware maker, acquired by ACRE Dec 2016. Not a service company.",
+    "EXCLUDED, distributors: Orchard Lock Distributors (Hamden) to Lockmasters, Jan 2025; OKEE Industries (West Hartford) to Cook & Boardman, Jun 2024. Both wholesale suppliers, consistent with the roster's exclusion of distributors. Would make a good sub-section if wanted.",
+    "Pye-Barker's Brookfield location page reads 'formerly United Alarm | Homeguard' - the two deals appear to have been consolidated into one branch.",
+    "Hartford Sprinkler is HQ'd in Bloomfield despite the name. P&J Sprinkler city resolved from UNK to Willimantic.",
+    "Four deals could not be dated from any source: Integrated Protection Services, United Alarm, Allstate Fire Equipment, ProTechs. They print without a year rather than with a guess."
+  ]
+}
