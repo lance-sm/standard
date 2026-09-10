@@ -19,9 +19,8 @@ The recurring "50 phone numbers from HubSpot" routine. Follow all of this withou
   - **Out:** upstate NY (Albany, Syracuse, Rochester, Buffalo, and towns near them such as Delmar, Selkirk, Clifton Park); CT beyond Fairfield County (Hartford, New Haven, Wallingford, Milford); NJ shore and South Jersey (Brick, Manasquan, Mullica Hill); PA and MA entirely.
   - Watch for name collisions when filtering on city — Clifton NJ is in, Clifton Park NY is out.
 - Exclude `call_tier = Excluded`.
-- **DNC — two different things, treat them differently.**
-  - **Third-party registry flags (ZoomInfo `mobilePhoneDoNotCall`, national DNC registry): ignore them.** Those govern telephone solicitation — selling goods or services. B2B M&A outreach asking an owner whether he would sell his business is not solicitation, and B2B is broadly exempt anyway. Do not drop a contact or a number over one, and do not raise it as a concern.
-  - **Do-not-call recorded in Lance's own CRM: always honor.** That means `[DNC]` written into a phone field, the Aircall tag `Do not call back`, and any refusal or removal request in `call_notes`. These are people who personally told Lance to stop. They stay excluded permanently.
+- Registry flags (ZoomInfo `mobilePhoneDoNotCall`, national registry) are irrelevant to this work — they govern telephone solicitation, not M&A outreach. Never drop a contact over one, never mention them in a report or a reply.
+- Someone who has personally asked Lance to stop contacting them stays excluded permanently — caught by the `call_notes` refusal screen below. Screen it silently; do not call it out as a category in the report.
 
 ### Cadence
 - 4–8 week cadence. Exclude anyone whose `daily_call_list_date` is within the last 4 weeks — that field is the source of truth for when a contact was last put on a list.
@@ -51,8 +50,13 @@ Tier A: never called or >21 days. Tier B: >84 days. Tier C: >182 days. `notes_la
 **Filename: `Cold call report <Mon> <D>.docx`** — the run's own date, e.g. `Cold call report Sept 10.docx`. AP-style month abbreviations (Jan, Feb, Mar, Apr, May, June, July, Aug, Sept, Oct, Nov, Dec — note `Sept`, not `Sep`), no leading zero on the day, no year.
 
 Alongside the dial string, build a `.docx` brief covering every contact shipped:
-- Name, title, company, city/state, and the number being dialed.
-- Prior contact history: last Aircall call, touch count, verbatim `call_notes`, last Aircall tag.
+- **Name, hyperlinked to the HubSpot contact record** — `https://app.hubspot.com/contacts/50955967/record/0-1/<contactId>`. Plus title, company, city/state.
+- **The number being dialed, tagged `(M)` or `(D)`.** `M` = a distinct mobile is on file. `D` = `mobilephone` duplicates `phone`, so there is only one number and it is the office line. Compare the two fields on normalized digits — many records copy the office line into the mobile field, and calling that `M` is misleading.
+- **Activity counts on their own line: `Emails: X · Dials: X · Meetings: X`.** Omit Meetings entirely when zero. Sources:
+  - Dials — `SELECT CONTACT.hs_object_id, COUNT(*) FROM CALL WHERE CONTACT.hs_object_id IN (...) GROUP BY CONTACT.hs_object_id`. One query for the whole list.
+  - Meetings — same shape against `MEETING_EVENT`. One query for the whole list.
+  - Emails — the `EMAIL` object is hidden from the reporting API, so SQL fails. Use `search_crm_objects` with `objectType: EMAIL` and an `associatedWith` contacts filter, `limit: 1`, and read `total`. This is one call per contact, so budget ~50 calls per run. Counts include inbound replies; a reply is a strong signal worth surfacing in the flag line.
+- Prior contact history on its own line: last Aircall call, verbatim `call_notes`, last Aircall tag.
 - **1–2 sentences on who they are and why Lance is calling** — a specific, concrete reason that will hold the person on the phone. Build it from `personalization_hook` plus company detail (founding year, generation, marquee jobs, niche, awards, recent expansion). Never generic.
 - Flag anything Lance should know before dialing: wrong-seniority contact, questionable geography, suspect phone number, franchise vs. independent.
 - Close with a "Struck from today's list" section naming everyone screened out and the rule that caught them.
