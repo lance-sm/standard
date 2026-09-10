@@ -83,12 +83,52 @@ contact-level fields passed.
 - **Mobile means the `mobilephone` field only.** A number sitting in `phone` is not a mobile —
   classifying it as one inflates the mobile count badly.
 - `(co. line)` inside a number's text demotes it to landline even in the `mobilephone` field.
+- **Drop toll-free numbers entirely** — 800/833/844/855/866/877/888. They route to a receptionist,
+  never the owner. 17 sellers have *only* a toll-free number on file.
+- **85 sellers carry the identical number in both `mobilephone` and `phone`.** That is one number,
+  not a mobile plus a landline — do not count it as mobile coverage.
 - **`[DNC]` free-text tags: ignore them.** Standing instruction from Lance, 2026-09-09. Every
   known tag sits on an office line with a clean mobile alongside, consistent with a vendor scrub
   against the national registry — which does not apply to B2B calls to business owners.
   *One exception:* if a tag or call note records that the person **themselves** asked to stop
   being called, still include the number, but flag it in the summary so Lance decides knowingly.
   Never silently drop it, and never silently include it either.
+
+## The blocklist MUST be number-level, never record-level
+
+This is the most dangerous failure mode in the whole process. **Duplicate contact records exist** —
+the same human under two records, sometimes with a name typo, often with different tiers. Filtering
+on record ID lets the clean twin through and you dial someone who already said no.
+
+Build the blocklist by **phone number across every contact in the portal**, from any record with:
+- `call_tier` = `Excluded`
+- `last_used_aircall_tags` matching `do not call back` or `bad number`
+- `call_notes` matching a rejection
+
+Real cases that defeated record-level filtering:
+- **Bart Didden** — Excluded + "not interested" on one record, Tier B on another, same mobile.
+- **Steven Guardiani / "Seteven Guardiani"** — typo duplicate, Excluded, note `shut dwn` (business
+  closed), same mobile as the live Tier A record. Shipped on a delivered list before it was caught.
+
+**Rejection language is far wider than "not interested".** Also catch: `pass`, `shut dwn` /
+shut down, `closed`, `out of business`, `retired`, `too small`, `hung up`, `declined`,
+`already sold`, `wrong number`. Notes are terse and misspelled — match loosely.
+
+**`booked meeting` in the aircall tags means an active conversation.** Exclude from cold-call
+lists and say so — cold-calling someone mid-deal is the worst error this list can make.
+
+## Geography: trust area codes, not the `state` field
+
+`state` is unreliable and must never be the only geographic filter:
+- **73 sellers** have a `state` contradicting every area code on the record.
+- **14 sellers** have no `state` at all — invisible to any `state IN (...)` query.
+- Observed: a Staten Island alarm company filed under VA; a CT/RI operator under OR; a NY owner
+  under KY.
+
+Filter NYC metro on **area code first**, city as support:
+NY `212 646 332 917 718 347 929 516 631 914 845` · NJ `201 551 973 862 908 732 848` ·
+CT Fairfield `203 475`. Exclude upstate NY (`315 585 716 518 607`), Philly/Trenton NJ
+(`856 609`), Hartford CT (`860 959`).
 
 ## Ranking
 
