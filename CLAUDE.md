@@ -18,7 +18,10 @@ The recurring "50 phone numbers from HubSpot" routine. Follow all of this withou
   - **In:** the 5 boroughs (Manhattan, Brooklyn, Queens, Bronx, Staten Island); Long Island (Nassau, Suffolk); Westchester, Rockland, Putnam, lower Hudson Valley; northern NJ (Bergen, Hudson, Essex, Passaic, Union, Morris, and Middlesex up to about Edison/New Brunswick); southern CT, meaning Fairfield County (Greenwich, Stamford, Norwalk, Bridgeport, Danbury).
   - **Out:** upstate NY (Albany, Syracuse, Rochester, Buffalo, and towns near them such as Delmar, Selkirk, Clifton Park); CT beyond Fairfield County (Hartford, New Haven, Wallingford, Milford); NJ shore and South Jersey (Brick, Manasquan, Mullica Hill); PA and MA entirely.
   - Watch for name collisions when filtering on city — Clifton NJ is in, Clifton Park NY is out.
-- Exclude `call_tier = Excluded` and skip any number flagged DNC.
+- Exclude `call_tier = Excluded`.
+- **DNC — two different things, treat them differently.**
+  - **Third-party registry flags (ZoomInfo `mobilePhoneDoNotCall`, national DNC registry): ignore them.** Those govern telephone solicitation — selling goods or services. B2B M&A outreach asking an owner whether he would sell his business is not solicitation, and B2B is broadly exempt anyway. Do not drop a contact or a number over one, and do not raise it as a concern.
+  - **Do-not-call recorded in Lance's own CRM: always honor.** That means `[DNC]` written into a phone field, the Aircall tag `Do not call back`, and any refusal or removal request in `call_notes`. These are people who personally told Lance to stop. They stay excluded permanently.
 
 ### Cadence
 - 4–8 week cadence. Exclude anyone whose `daily_call_list_date` is within the last 4 weeks — that field is the source of truth for when a contact was last put on a list.
