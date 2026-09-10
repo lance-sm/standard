@@ -14,7 +14,10 @@ The recurring "50 phone numbers from HubSpot" routine. Follow all of this withou
 ### Who goes on the list
 - Sellers only (Contact Type / `banker` = `Seller`; exclude Broker, Banker, Industry Contact).
 - Prefer mobile (`mobilephone`) over landline (`phone`); landline only when no mobile is on file.
-- Default area: companies headquartered in NY/NJ/CT/PA/MA (Badlands' core footprint) unless told otherwise.
+- **NYC metro only.** The target is anyone who could reasonably service NYC. Filter on the company's `city`, not just `state` — a NY/NJ/CT state filter is far too broad and pulls in Buffalo, Syracuse, Albany, Hartford and South Jersey, none of which can service NYC.
+  - **In:** the 5 boroughs (Manhattan, Brooklyn, Queens, Bronx, Staten Island); Long Island (Nassau, Suffolk); Westchester, Rockland, Putnam, lower Hudson Valley; northern NJ (Bergen, Hudson, Essex, Passaic, Union, Morris, and Middlesex up to about Edison/New Brunswick); southern CT, meaning Fairfield County (Greenwich, Stamford, Norwalk, Bridgeport, Danbury).
+  - **Out:** upstate NY (Albany, Syracuse, Rochester, Buffalo, and towns near them such as Delmar, Selkirk, Clifton Park); CT beyond Fairfield County (Hartford, New Haven, Wallingford, Milford); NJ shore and South Jersey (Brick, Manasquan, Mullica Hill); PA and MA entirely.
+  - Watch for name collisions when filtering on city — Clifton NJ is in, Clifton Park NY is out.
 - Exclude `call_tier = Excluded` and skip any number flagged DNC.
 
 ### Cadence
