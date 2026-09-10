@@ -1,0 +1,38 @@
+{
+  "_comment": "Broker project code names → the HubSpot deal they map to. Deals show up in email under the banker's code name while the HubSpot record is filed under the target company. Without this map the hot list reports them as missing records. Add a row whenever a new coded process starts.",
+  "_confirmed_note": "Lance confirmed the SET {New York City Alarm, STAT Fire Sprinkler} on 2026-09-10 but not which code name maps to which. The two entries below marked confirmed:false are inferred from deal type (Flatirons ran an NYC fire & life safety process; Hedgestone ran a suppression process). Flip them if wrong.",
+  "aliases": [
+    {
+      "code_name": "Project Firehouse",
+      "also_seen_as": ["NYC FLS Opportunity", "NYC Fire"],
+      "broker": "Flatirons Capital",
+      "broker_contact": "cslivocka@flatironscap.com",
+      "hubspot_deal": "New York City Alarm",
+      "confirmed": false
+    },
+    {
+      "code_name": "Fire Suppression Co",
+      "also_seen_as": [],
+      "broker": "Hedgestone",
+      "broker_contact": "anthony.perrone@hedgestone.com",
+      "hubspot_deal": "STAT Fire Sprinkler",
+      "confirmed": false
+    },
+    {
+      "code_name": "Project Ignite",
+      "also_seen_as": ["Boston Fire Sprinkler Protection Company, LLC"],
+      "broker": "Dinan Capital Advisors",
+      "broker_contact": "aryan@dinancapital.com",
+      "hubspot_deal": "Boston Fire - Project Ignite",
+      "confirmed": true
+    },
+    {
+      "code_name": "Project Phoenix",
+      "also_seen_as": ["Telenet Disco Call"],
+      "broker": "DGP Capital",
+      "broker_contact": "jackchang@dgpcapital.com",
+      "hubspot_deal": "Telenet VoIP",
+      "confirmed": false
+    }
+  ]
+}
