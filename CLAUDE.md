@@ -45,6 +45,8 @@ Verified on 2026-09-10: skipping these put 16 of 50 contacts on a list who shoul
 Tier A: never called or >21 days. Tier B: >84 days. Tier C: >182 days. `notes_last_contacted` is a secondary check only.
 
 ### Daily call brief (Word doc) — every run
+**Filename: `Cold call report <Mon> <D>.docx`** — the run's own date, e.g. `Cold call report Sept 10.docx`. AP-style month abbreviations (Jan, Feb, Mar, Apr, May, June, July, Aug, Sept, Oct, Nov, Dec — note `Sept`, not `Sep`), no leading zero on the day, no year.
+
 Alongside the dial string, build a `.docx` brief covering every contact shipped:
 - Name, title, company, city/state, and the number being dialed.
 - Prior contact history: last Aircall call, touch count, verbatim `call_notes`, last Aircall tag.
