@@ -8,7 +8,7 @@ When generating a cold-calling phone number list (e.g. the recurring "50 phone n
 
 - Always paste the CSV directly in the chat reply as plain text Lance can copy-paste — do not rely on a file attachment alone.
 - Prefix every phone number with `+1`.
-- One number per line, no header row, no extra columns.
+- Comma-separated on one line (not one per line), no header row, no extra columns.
 - Sellers only (Contact Type = Seller; exclude Broker/Banker/Industry Contact).
 - Prefer mobile numbers over landlines; landline is acceptable only when no mobile is on file.
 - Respect a 4–8 week call cadence: exclude contacts touched in the last 4 weeks.
