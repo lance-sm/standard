@@ -2,6 +2,10 @@
 
 Repo-wide instructions for Claude Code sessions on this repo (Badlands working repo, account: lance@badlandssecurity.com).
 
+## Known personal context (applies to any routine, e.g. daily Meeting Prep)
+
+- **Mark Smith (msmith@kithkitchens.com)** is Lance's father, not a business contact needing a company-overview writeup. He's been in private equity for ~30 years and is a helpful thought partner. For meetings with him, skip the "who is he" background and instead suggest what to discuss — deal strategy, pipeline questions, or anything he could bring his PE experience to bear on — rather than treating him as an external prospect needing enrichment/CRM flags.
+
 ## Cold-call phone list (HubSpot seller outreach)
 
 The recurring "50 phone numbers from HubSpot" routine. Follow all of this without being asked.
