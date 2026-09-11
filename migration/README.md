@@ -1,5 +1,7 @@
 # Claude account migration: tuckersfarm → Badlands
 
+> **Historical.** Exported 2026-08-31 for the account move. The routine inventory below is the OLD account's; the routines actually running on the Badlands account are listed in [`../routines/LIVE.md`](../routines/LIVE.md) (verified 2026-09-11). Nothing here drives a live run.
+
 Exported **2026-08-31** from the old account (`lance@tuckersfarm.com`). This folder holds everything portable from that account, plus the checklist for what has to be re-done by hand on the new Badlands account. Claude accounts can't be merged or renamed, so the move is: reconnect + re-upload + recreate — and this kit makes each of those a single step.
 
 ## What's in this kit
