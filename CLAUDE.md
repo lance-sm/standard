@@ -6,6 +6,19 @@ Repo-wide instructions for Claude Code sessions on this repo (Badlands working r
 
 - **Mark Smith (msmith@kithkitchens.com)** is Lance's father, not a business contact needing a company-overview writeup. He's been in private equity for ~30 years and is a helpful thought partner. For meetings with him, skip the "who is he" background and instead suggest what to discuss — deal strategy, pipeline questions, or anything he could bring his PE experience to bear on — rather than treating him as an external prospect needing enrichment/CRM flags.
 
+## Diligence request list for seller meetings (every Meeting Prep run)
+
+For any meeting today tagged/identified as a **Seller** meeting (calendar category "Seller - Virtual"/"Seller - IP", or `banker`/Contact Type = Seller in HubSpot), generate a Badlands-branded Initial Diligence Request List and attach/deliver it as part of that morning's Meeting Prep email — don't just describe it in prose.
+
+- **Template source of truth**: `Badlands_Initial Request List.docx`, canonical blank copy at `https://thebadlandssecuritycompany.sharepoint.com/sites/Acquisitions/Shared Documents/Badlands Deal Folder/Admin & Ops/NDA and Request List/Badlands_Initial Request List.docx` (also mirrored under `TheBadlandsDrive/.../NDA and Request List/`). Read it fresh each time rather than hardcoding the text below, in case it's revised.
+- **Fixed structure** (single page, header "BADLANDS SECURITY COMPANY", title line `[Target Company] – Initial Diligence Request List – [Date]`), four sections in this order:
+  1. **Corporate Structure** — entity structure (C-Corp/S-Corp/LLC/partnership); cap table / shareholder list with ownership %.
+  2. **Business Description** — corporate overview/marketing materials; services & products; geographies served; tech headcount; union status; total employees; owned/leased service trucks; self-performed vs. sub-contracted work.
+  3. **Customers** — revenue by customer for last 3 years (redacted names OK); core customer base description.
+  4. **Financial** — financials for last 3 years; revenue by segment; average revenue per project/service call/job.
+- When a CIM or other deal material already exists for that target (check HubSpot deal notes/description and SharePoint), tailor bullets the way past examples do (e.g. NYC Alarm's filled list adds specific sub-bullets like license/cert rosters, RMR register, margin-change questions) — pull real numbers in as sub-bullets rather than leaving the generic question bare. When nothing is known yet (early-stage/no CIM), ship the generic template as-is with just company name and date filled in.
+- Build the `.docx` with the same skill/approach as the cold-call report (see docx skill note below on the cloud container needing `npm install docx` in scratchpad first), matching the template's header/title formatting, and attach it to the Meeting Prep email (don't just paste the questions inline in the email body).
+
 ## Cold-call phone list (HubSpot seller outreach)
 
 The recurring "50 phone numbers from HubSpot" routine. Follow all of this without being asked.
