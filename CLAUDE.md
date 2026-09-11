@@ -33,6 +33,8 @@ The recurring "50 phone numbers from HubSpot" routine. Follow all of this withou
 ### Source of truth
 `migration/routines/routines.json` holds the authoritative cold-call spec (the "Cold Call Today" routine prompt). It is stricter and more complete than this file. Read it before every build; where the two disagree, it wins.
 
+**Standing exception, confirmed by Lance 2026-09-11:** the routine prompt's "no spreadsheet or file unless Lance asks" line in its Step 5/6 no longer applies. He has asked, permanently. The Daily call brief docx below (and its email delivery) is mandatory on every run, full stop — this file's instruction on that point overrides routines.json, not the other way around.
+
 ### Screening — every one of these, on every candidate
 Verified on 2026-09-10: skipping these put 16 of 50 contacts on a list who should not have been dialed.
 - **Open deals** — `num_associated_deals` > 0 on the contact **or** its company. Company level is authoritative. Coverage unit is the company.
@@ -46,10 +48,12 @@ Verified on 2026-09-10: skipping these put 16 of 50 contacts on a list who shoul
 ### Cadence — use `aircall_last_call_at`, not `notes_last_contacted`
 Tier A: never called or >21 days. Tier B: >84 days. Tier C: >182 days. `notes_last_contacted` is a secondary check only.
 
-### Daily call brief (Word doc) — every run
-**Filename: `Cold call report <Mon> <D>.docx`** — the run's own date, e.g. `Cold call report Sept 10.docx`. AP-style month abbreviations (Jan, Feb, Mar, Apr, May, June, July, Aug, Sept, Oct, Nov, Dec — note `Sept`, not `Sep`), no leading zero on the day, no year.
+### Daily call brief (Word doc) — every run, mandatory, no exceptions
+**Filename: `Cold call report <Mon> <D>.docx`** — the run's own date, e.g. `Cold call report Sept 10.docx`. AP-style month abbreviations (Jan, Feb, Mar, Apr, May, June, July, Aug, Sept, Oct, Nov, Dec — note `Sept`, not `Sep`), no leading zero on the day, no year. Get the date right — it's the run's own date, not the date of some prior list being referenced.
 
-Alongside the dial string, build a `.docx` brief covering every contact shipped:
+**Delivery: email it, don't just drop it in chat.** The Microsoft-365 mail tools available in this environment (`outlook_send_mail`, `outlook_create_draft`) have no attachment parameter — confirmed 2026-09-11, `outlook_send_draft` even explicitly refuses drafts with attachments. So: upload the .docx via `sharepoint_upload_file` to Lance's OneDrive (driveId `b!sRY4CJgKn0ue4_YulSpe6Vi0hWolvkdPjEqf1z-VtlIq9yYGd7DER477LYoouoxm`, drive root is fine unless a standing folder gets set up later), then email the resulting `webUrl` as a link — not a literal attachment — to lance@badlandssecurity.com via `outlook_send_mail`. Do not rely on SendUserFile/chat alone, since nobody may be watching the session. Target landing in his inbox by **7:00 AM ET**. Subject line: `Cold call report <Mon> <D>`. Body: the link, plus a one-line summary (count shipped, geo mix) — the doc itself carries the detail. If a genuine attachment tool becomes available later, switch to that instead of the link.
+
+Alongside the dial string, build a single `.docx` brief covering every contact shipped — this is one document, not two:
 - **Name, hyperlinked to the HubSpot contact record** — `https://app.hubspot.com/contacts/50955967/record/0-1/<contactId>`. Plus title, company, city/state.
 - **The number being dialed, tagged `(M)` or `(D)`.** `M` = a distinct mobile is on file. `D` = `mobilephone` duplicates `phone`, so there is only one number and it is the office line. Compare the two fields on normalized digits — many records copy the office line into the mobile field, and calling that `M` is misleading.
 - **Activity counts on their own line: `Emails: X · Dials: X · Meetings: X`.** Omit Meetings entirely when zero. Sources:
@@ -65,3 +69,6 @@ Alongside the dial string, build a `.docx` brief covering every contact shipped:
 
 ### Required write-back — do this every time
 After generating the list, stamp `daily_call_list_date` = today's date on every contact on it, via `manage_crm_objects` (max 10 objects per call, so batch it). This is pre-authorized standing work: do not ask for confirmation, and do not skip it. Without the stamp the cadence math breaks on the next run.
+
+### Schedule — 7am ET delivery deadline
+The routine's cron (`migration/routines/routines.json`, "Cold Call Today") fires early enough to build the list, run the activity-count queries, generate the docx, and email it before 7:00 AM ET — currently `10:00 UTC` (6:00 AM EDT), a 1-hour buffer. **DST caveat:** the cron is a fixed UTC time; ET's offset from UTC shifts by an hour at the March/November changeovers, so the buffer shrinks to 0 or grows to 2 hours seasonally. Nudge the cron by an hour at each changeover if the buffer matters, or leave it — a 1-hour miss either way is not worth obsessing over.
