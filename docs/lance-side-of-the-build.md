@@ -5,15 +5,15 @@ Every step Claude cannot take for Lance, in order. Generated 2026-09-15 from the
 ## What merging does
 
 - Four of the six routines (Daily Dials, Daily Calendar Prep, Weekly Email Scan, Tuesday Daniel prep) clone this repo's default branch every time they fire. Whatever is on that branch is the CLAUDE.md and the skills they load.
-- There is no `main`. The default branch is `claude/account-migration-badlands-j4gjyn`, left over from the account-migration session. The new work sits on `claude/hubspot-badlands-setup-yjwjlt`, three commits ahead, no conflicts.
-- Merging copies those commits onto the default branch. From the next firing the routines load the short CLAUDE.md, the two skills and the SAGARIS rules. No HubSpot record, routine schedule, prompt or setting changes.
+- There is no `main`. The default branch is `claude/account-migration-badlands-j4gjyn`, left over from the account-migration session. The new work sits on `claude/hubspot-badlands-setup-yjwjlt`, which was three commits ahead with no conflicts.
+- Merged on 2026-09-15 as PR #12 (merge commit 38cde8e) on Lance's say-so. From the next firing the routines load the short CLAUDE.md, the two skills and the SAGARIS rules. No HubSpot record, routine schedule, prompt or setting changed.
 - Reversible in one click from the merged pull request's Revert button.
 
 ## Repo
 
 ### Give the repo a real default branch (5 min)
 
-Routines clone the repo's default branch every time they fire. There is no `main`. The default today is `claude/account-migration-badlands-j4gjyn`, an old session branch. Naming `main` makes every future merge unambiguous. Skipping this is fine; the next step then merges into the current default.
+Routines clone the repo's default branch every time they fire. There is no `main`. The default today is `claude/account-migration-badlands-j4gjyn`, an old session branch. Naming `main` makes every future merge unambiguous. The first merge already went into the current default branch, so this is housekeeping for the next ones. Skipping it is fine.
 
 1. Open [https://github.com/lance-sm/standard/branches](https://github.com/lance-sm/standard/branches) and click **New branch**.
 2. Name it `main`, source branch `claude/account-migration-badlands-j4gjyn`, click **Create new branch**.
@@ -23,13 +23,11 @@ Routines clone the repo's default branch every time they fire. There is no `main
 
 ### Merge the branch (this is the switch) (2 min)
 
-`claude/hubspot-badlands-setup-yjwjlt` is 3 commits and 7 files ahead of the default branch with no conflicts. Until it is merged, the four routines that check out the repo keep loading the old long CLAUDE.md, which still works. After the merge they load the short CLAUDE.md, the two skills and the outreach rules. No HubSpot data, routine setting or schedule changes.
+Done by Claude on 15 Sept 2026 after Lance said "go ahead and merge": [PR #12](https://github.com/lance-sm/standard/pull/12), merge commit `38cde8e`, 5 commits and 8 files, no conflicts. The four routines that check out the repo now load the short CLAUDE.md, the two skills and the outreach rules from their next firing. No HubSpot data, routine setting or schedule changed.
 
-1. Say **"open the PR"** to Claude, or open [https://github.com/lance-sm/standard/compare/claude/hubspot-badlands-setup-yjwjlt?expand=1](https://github.com/lance-sm/standard/compare/claude/hubspot-badlands-setup-yjwjlt?expand=1) and click **Create pull request**.
-2. Optional: the **Files changed** tab shows CLAUDE.md shrinking, two skills appearing, and the rules and plan files being added. No file is deleted.
-3. Click **Merge pull request**, then **Confirm merge**.
+1. Nothing left to click. The PR page is [https://github.com/lance-sm/standard/pull/12](https://github.com/lance-sm/standard/pull/12); its **Revert** button undoes the merge in one click.
 
-**After:** The next weekday morning, check the Daily Dials list and docx link arrive as usual by 7:00 ET. If anything is off, the merged PR page has a **Revert** button that undoes it in one click.
+**After:** The next weekday morning, check the Daily Dials list and docx link arrive as usual by 7:00 ET.
 
 ## HubSpot
 
