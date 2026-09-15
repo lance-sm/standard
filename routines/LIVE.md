@@ -13,6 +13,6 @@ Verified 2026-09-11 from the account's trigger list. All crons are UTC. Every ro
 
 The six routines in `migration/routines/routines.json` were the old account's. They are not running here; that file is kept because its "Cold Call Today" prompt is the strictest written cold-call spec.
 
-Routines clone the default branch, so a change to `CLAUDE.md` or a skill reaches them only once it is merged to `main`.
+Routines clone the default branch, so a change to `CLAUDE.md` or a skill reaches them only once it is merged into the default branch (today `claude/account-migration-badlands-j4gjyn`; there is no `main`).
 
 DST: crons are fixed UTC, so local times shift an hour at the March/November changeovers.
