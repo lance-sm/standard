@@ -66,6 +66,37 @@ for r in read(D+"nyc__excluded.csv"):
 # ---------- verified corrections (web-checked 2026-09-21) ----------
 # Each of these was checked individually because it sat in the top two size tiers,
 # where a wrong row is most visible to BDO.
+# Found by URL verification 2026-09-22: each company's own domain now serves the
+# acquirer's branded page, so it is no longer an independent target.
+_ACQUIRED = {
+ "High Rise Fire Protection":"Acquired by Scutum Group (Mar 2020); highrisefire.com now serves Scutum's site",
+ "Alarm & Communication Technologies":"Acquired by Encore Fire Protection; njact.com -> encorefireprotection.com",
+ "1 Venus Fire Safety":"Acquired by Encore Fire Protection; domain -> encorefireprotection.com",
+ "Life Safety Fire Protection":"Acquired by Encore Fire Protection; domain -> encorefireprotection.com",
+ "ASAP Fire & Safety":"Acquired by Impact Fire Services; domain -> impactfireservices.com acquisition page",
+ "Professional Fire Systems":"Acquired by Impact Fire Services; domain -> impactfireservices.com acquisition page",
+ "Global Security Group":"Acquired by Per Mar Security; securitygsg.com -> permarsecurity.com",
+ "Instant Alarm":"Now part of American Alarm; domain -> americanalarm.com",
+ "Monitor Controls":"Now part of American Alarm; domain -> americanalarm.com",
+ "Firstline Locksmiths":"Now Academy Access Solutions; domain -> academybyleo.com",
+ "IML Security":"Now Summit Access & Security; domain -> summitaccessandsecurity.com",
+ "Statewide Central Station":"Part of Scutum; domain -> scutum-digital.com",
+ "Day Automation":"Acquired by Stark Tech; domain says 'Day Automation is now Stark Tech'",
+ "ENE Systems":"Acquired by Stark Tech; enesystems.com -> starktech.com",
+ "Advanced Door Service":"Acquired by Door Services Corporation; domain -> doorservicescorporation.com",
+}
+# Domain on file belongs to someone else entirely - cleared, company kept.
+_BAD_DOMAIN = {
+ "AFFORDABLE LOCKSMITH & HARDWARE III, INC.":"bbb.org is the Better Business Bureau, not the company",
+ "Firequench Inc.":"starlyns.com is a marketing agency",
+ "West Fire Systems Inc":"rochestersecuritytrainingcenter.com is a training centre",
+ "A Lock Busters":"locksmithnj.com is a licence-check directory",
+ "METROPOLITAN LOCKSMITH INC.":"nycbestlocksmiths.com is a lead-generation aggregator",
+ "Access Control Group":"theaccessway.com now redirects to TelemetryX, fleet telematics",
+ "Solid Rock Solutions":"srscctek.com now redirects to a VoIP provider",
+ "DSS, Inc.":"dsssecure.com redirects to DSS World, an unrelated holding company",
+}
+
 _CORR_RAW = {
  "Winfield Security Corporation":"Guard / security-officer services; joined Tarian (PE platform already on the PE-Owned tab)",
  "Building Security Services":"Guard / security-officer services (unarmed guards, concierge, mobile patrol)",
@@ -74,7 +105,10 @@ _CORR_RAW = {
 }
 # Keys are derived with the same normalizer used for matching - never hardcoded.
 CORRECTIONS = {norm_name(k):("REMOVE",v) for k,v in _CORR_RAW.items()}
+CORRECTIONS.update({norm_name(k):("REMOVE","No longer independent: "+v) for k,v in _ACQUIRED.items()})
 FIX_DOMAIN = {norm_name("Mac Security Systems"):""}        # macsecurity.com.ec is an Ecuador TLD, not this company
+FIX_DOMAIN.update({norm_name(k):"" for k in _BAD_DOMAIN})
+_BAD_DOMAIN_N = {norm_name(k):v for k,v in _BAD_DOMAIN.items()}
 FIX_TIER   = {norm_name("Security 101 - Rochester"):"Unknown"}  # 620 emp is the national franchise network
 
 # ---------- deals: hold-back / broker ----------
@@ -97,6 +131,13 @@ for cid,rec in holdback.items():
     if norm_domain(rec[1]): hb_keys.add(("d",norm_domain(rec[1])))
     hb_keys.add(("n",norm_name(rec[0])))
 
+# Domains that redirect elsewhere, from the 2026-09-22 verification pass. Applied before
+# the blocklist and the dedupe run, so both see the address the domain actually resolves to.
+# This is how County Fire NY and County Fire Inc. turn out to be one company, and how
+# The Flying Locksmiths resolves onto a franchise system already on the blocklist.
+import json as _json, os as _os
+REDIRECTS = _json.load(open("redirects.json",encoding="utf-8")) if _os.path.exists("redirects.json") else {}
+
 def tier(emp):
     if emp is None or emp=="" : return "Unknown"
     try: e=int(float(emp))
@@ -115,6 +156,8 @@ rows=[]; removed=[]; held=[]; adjacent_hs=[]
 seen={}
 def add(company,website,city,state,vertical,emp,source,urlcheck,note=""):
     d=norm_domain(website); n=norm_name(company)
+    if d in REDIRECTS:
+        d=REDIRECTS[d]; website=d
     # A domain match always means the same company. A loose-name match only means the
     # same company when the state agrees too - "American Alarm" is three different
     # companies in MA, CT and NY, and the loose normalizer cannot tell them apart.
@@ -123,7 +166,8 @@ def add(company,website,city,state,vertical,emp,source,urlcheck,note=""):
     if n in CORRECTIONS:
         removed.append([company,website,city,state,vertical,CORRECTIONS[n][1],source]); return
     if n in FIX_DOMAIN:
-        website=FIX_DOMAIN[n]; d=""; kd=None; note=(note+"; " if note else "")+"ZoomInfo domain was wrong - cleared"
+        website=FIX_DOMAIN[n]; d=""; kd=None
+        note=(note+"; " if note else "")+_BAD_DOMAIN_N.get(n,"Domain on file was wrong - cleared")
     # blocklist
     for k in (kd,("n",n)):
         if k and k in block:
@@ -181,8 +225,6 @@ for i,r in enumerate(unscr):
 for _nm,_dom,_city,_st,_vert,_emp,_note in [
     ("American Alarm","americanalarmltd.com","Norwalk","CT","Alarm & Monitoring","",
      "Distinct from American Alarm & Communications (MA) and American Alarm (Newburgh, NY)"),
-    ("Approved Fire Protection","approvedfps.com","Somerset","NJ","Fire & Life Safety","",
-     "Second NJ record under this name (other is afpnj.com) - confirm it is not a duplicate"),
 ]:
     add(_nm,_dom,_city,_st,_vert,_emp,"HubSpot screen","Not verified",_note)
 
@@ -226,6 +268,12 @@ for r in nu:
     unclass.append([r["Company Name"], h["domain"] if h else "", r["City"], r["State"],
                     zi_ind or "", zemp or "", (zrev or ""), tier(zemp), flag])
 
+# URL verification resolved a name collision I could not: afpnj.com redirects to
+# approvedfps.com, proving the two NJ "Approved Fire Protection" records are one company.
+removed.append(["Approved Fire Protection","approvedfps.com","Somerset","NJ","Fire & Life Safety",
+                "Duplicate of Approved Fire Protection & Security - afpnj.com redirects to approvedfps.com",
+                "HubSpot screen"])
+
 _seen_rm=set(); removed_u=[]
 for _r in removed:
     _k=(norm_name(_r[0]), _r[5])
@@ -252,9 +300,12 @@ for _r in rows: _on_a_tab.add(norm_name(_r["Company"])); _on_a_tab.add(norm_doma
 for _grp in (removed_u, held_all, adjacent, unclass):
     for _r in _grp: _on_a_tab.add(norm_name(_r[0])); _on_a_tab.add(norm_domain(_r[1] or ""))
 _on_a_tab.discard("")
+def _resolved(h):
+    d=norm_domain(h["domain"])
+    return REDIRECTS.get(d,d)
 _lost=[h for h in hs if norm_state(h["state"]) in FOOT
        and norm_name(h["name"]) not in _on_a_tab
-       and (not norm_domain(h["domain"]) or norm_domain(h["domain"]) not in _on_a_tab)]
+       and (not _resolved(h) or _resolved(h) not in _on_a_tab)]
 print("GUARD in-footprint HubSpot records on no tab:",len(_lost))
 for _h in _lost[:10]: print("   LOST:",_h["name"],"|",_h["domain"],"|",_h["city"],_h["state"])
 

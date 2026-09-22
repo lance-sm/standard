@@ -11,12 +11,13 @@ Output: `BDO Target List - Combined Send File.xlsx`, saved flat in `~/Desktop/Cl
 | Tab | Rows | For BDO? |
 |---|---|---|
 | Summary | — | counts, method, caveats |
-| BDO Send List | 1,246 | **yes** — company-level columns only |
-| Send List - Internal Detail | 1,246 | no — per-row provenance |
+| BDO Send List | 1,230 | **yes** — company-level columns only |
+| Send List - Internal Detail | 1,230 | no — per-row provenance |
 | Hold Back - Live Deals | 41 | no — Lance decides |
 | Adjacent - Review | 63 | no — Lance decides |
 | NYC Unclassified - Review | 77 | no — Lance decides |
-| Removed | 321 | no — audit trail |
+| Removed | 336 | no — audit trail |
+| URL Check | 44 | no — rows whose URL needs a human eye |
 
 Send List columns are exactly the ones decision 4 of the handoff allows:
 Company | Website | City | State | Vertical | Size Tier | In HubSpot.
@@ -90,14 +91,11 @@ and access integrator in Hermon ME, not a guard company — it stays. **Wayman F
 
 ## Known gaps
 
-- **URL verification is not complete.** This session's network policy blocks outbound access to
-  company websites, so homepages could not be fetched and matched against company names. Domains
-  from the universe build are ZoomInfo-sourced; domains taken from HubSpot are unverified. The
-  `URL Check` column on the internal detail tab says which is which. Roughly 1,000 rows still
-  need a real URL check. To do it properly, set the cloud environment's **Network access** to
-  **Full** (claude.ai/code → cloud icon → edit environment); the default **Trusted** level
-  allows package registries and GitHub only. ZoomInfo bulk enrichment is the alternative.
-- **Size tier is incomplete:** 785 of 1,246 rows have no headcount. The NYC metro list carried no
+- **URL verification ran on 2026-09-22**, once the cloud environment's **Network access** was
+  set to **Full**. 302 of 1,096 domains sit behind a bot wall that rejects a datacentre IP, and
+  72 more return a page with no server-rendered title. Those are inconclusive, not wrong, and
+  their domains were left as filed. A browser session would resolve them.
+- **Size tier is incomplete:** ~780 of 1,230 rows have no headcount. The NYC metro list carried no
   size data and most HubSpot records have no employee count.
 - The NYC "Unclassified" names were left on their own review tab rather than guessed onto the send
   list. ZoomInfo's industry codes do not separate low-voltage installers from IT shops in that
@@ -122,3 +120,50 @@ Three separate defects all traced to the loose normalizer the handoff specified,
 
 The loose normalizer is still used for the `In HubSpot` flag, where a fuzzy match is what you
 want. It is no longer trusted on its own to decide that two rows are the same company.
+
+## URL verification (2026-09-22)
+
+`verify.py` fetches every domain on every tab (1,315 of them, 14 threads, https then http with
+one retry), and `match.py` scores the page's title, `og:site_name` and copyright line against
+the company name, allowing for acronyms and squashed names — *Communications Electronics Systems*
+trades as "CES Integrated", *SecureWatch24* as "SW24". `apply_verify.py` folds the result back in.
+
+| Outcome | Rows |
+|---|---|
+| Verified | 670 |
+| Likely OK (domain echoes the name) | 31 |
+| Bot-walled — site rejects datacentre IPs | 302 |
+| Empty page — renders via JavaScript | 72 |
+| No website on file | 101 |
+| Dead / unreachable | 32 |
+| Mismatch, needs an eye | 10 |
+| Parked | 1 |
+
+Only a domain proven wrong is cleared: 32 dead and 1 parked. A redirect updates the cell to the
+live address instead, since that is the working one. Bot-walled and empty pages keep their domain.
+
+**This pass removed 15 companies that are no longer independent** — each one's own domain now
+serves the acquirer's site:
+
+| Company | Now part of |
+|---|---|
+| High Rise Fire Protection | Scutum Group (confirmed: SDM, Mar 2020) |
+| Alarm & Communication Technologies, 1 Venus Fire Safety, Life Safety Fire Protection | Encore Fire Protection |
+| ASAP Fire & Safety, Professional Fire Systems | Impact Fire Services |
+| Global Security Group | Per Mar Security |
+| Instant Alarm, Monitor Controls | American Alarm |
+| Firstline Locksmiths | Academy Access Solutions |
+| IML Security | Summit Access & Security |
+| Statewide Central Station | Scutum Digital |
+| Day Automation, ENE Systems | Stark Tech |
+| Advanced Door Service | Door Services Corporation |
+
+Eight more had a domain belonging to someone else entirely — `bbb.org` filed for a locksmith, a
+marketing agency for Firequench, a lead-generation aggregator for Metropolitan Locksmith. Those
+domains were cleared and the company kept.
+
+Redirects are resolved **before** the blocklist and the dedupe run, which is how two more
+problems surfaced: County Fire NY and County Fire Inc. are one company (both land on
+`countyfire.us`), and The Flying Locksmiths resolves onto `flylock.com`, a franchise system
+already on the Excluded tab. The same map also proved the two NJ "Approved Fire Protection"
+records are one company, settling the name collision the earlier pass could not.
