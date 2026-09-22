@@ -1,6 +1,7 @@
 import sys, csv, re
 sys.path.insert(0,'.')
 from lib import *
+FOOT={'ME','NH','VT','MA','RI','CT','NY','NJ','PA','DE','MD','DC','VA'}
 from screen import S
 from resolved import R
 from zi_nyc import Z
@@ -23,6 +24,31 @@ for r in hs:
     if d: hs_by_dom.setdefault(d,r)
     if n: hs_by_name.setdefault(n,r)
     if sN: hs_by_strict.setdefault(sN,r)
+hs_groups={}
+for r in hs:
+    sN=norm_name_strict(r["name"])
+    if sN: hs_groups.setdefault(sN,[]).append(r)
+
+def lookup_hs(name, city, state):
+    """Find the HubSpot record for a source row.
+
+    HubSpot holds several distinct companies that share a name - three different
+    "American Alarm" records, for example. Taking the first match hands one company
+    another's domain and headcount, so when a name is ambiguous this disambiguates
+    on state, then city, and gives up rather than guess.
+    """
+    g=hs_groups.get(norm_name_strict(name))
+    if not g: return None, ""
+    if len(g)==1: return g[0], ""
+    doms={norm_domain(x["domain"]) for x in g if norm_domain(x["domain"])}
+    if len(doms)<=1: return g[0], ""            # same company, duplicated in HubSpot
+    st=norm_state(state)
+    byst=[x for x in g if norm_state(x["state"])==st]
+    if len(byst)==1: return byst[0], ""
+    pool=byst or g
+    bycity=[x for x in pool if city and city.lower() in (x["city"] or "").lower()]
+    if len(bycity)==1: return bycity[0], ""
+    return None, "Several different HubSpot companies share this name - domain left blank rather than guessed"
 
 # ---------- blocklist ----------
 block={}
@@ -89,18 +115,21 @@ rows=[]; removed=[]; held=[]; adjacent_hs=[]
 seen={}
 def add(company,website,city,state,vertical,emp,source,urlcheck,note=""):
     d=norm_domain(website); n=norm_name(company)
-    kd=("d",d) if d else None; kn=("n",n)
+    # A domain match always means the same company. A loose-name match only means the
+    # same company when the state agrees too - "American Alarm" is three different
+    # companies in MA, CT and NY, and the loose normalizer cannot tell them apart.
+    kd=("d",d) if d else None; kn=("n",n,norm_state(state))
     # verified corrections take precedence
     if n in CORRECTIONS:
         removed.append([company,website,city,state,vertical,CORRECTIONS[n][1],source]); return
     if n in FIX_DOMAIN:
         website=FIX_DOMAIN[n]; d=""; kd=None; note=(note+"; " if note else "")+"ZoomInfo domain was wrong - cleared"
     # blocklist
-    for k in (kd,kn):
+    for k in (kd,("n",n)):
         if k and k in block:
             removed.append([company,website,city,state,vertical,block[k][0],source]); return
     # hold-back
-    for k in (kd,kn):
+    for k in (kd,("n",n)):
         if k and k in hb_keys:
             stg=next((r[4] for r in holdback.values() if norm_name(r[0])==n or (d and norm_domain(r[1])==d)),"Active")
             held.append([company,website,city,state,vertical,stg,source]); return
@@ -146,12 +175,23 @@ for i,r in enumerate(unscr):
         lbl={"N":"Not a buy-box business","D":"Duplicate record"}[dec]
         removed.append([r["name"], r["domain"], r["city"], r["state"], "", lbl+": "+val, "HubSpot screen"]); continue
     add(r["name"], r["domain"], r["city"], r["state"], val, emp, "HubSpot screen", uc, note)
+# B2) Records the name-collision above had hidden from the screen.
+# A HubSpot record was treated as "already on a prior list" whenever ANY company shared
+# its name, so genuinely different companies were dropped. Recovered and classified here.
+for _nm,_dom,_city,_st,_vert,_emp,_note in [
+    ("American Alarm","americanalarmltd.com","Norwalk","CT","Alarm & Monitoring","",
+     "Distinct from American Alarm & Communications (MA) and American Alarm (Newburgh, NY)"),
+    ("Approved Fire Protection","approvedfps.com","Somerset","NJ","Fire & Life Safety","",
+     "Second NJ record under this name (other is afpnj.com) - confirm it is not a duplicate"),
+]:
+    add(_nm,_dom,_city,_st,_vert,_emp,"HubSpot screen","Not verified",_note)
+
 # C) NYC qualified
 for r in nq:
-    h=hs_by_strict.get(norm_name_strict(r["Company Name"]))
+    h,amb = lookup_hs(r["Company Name"], r["City"], r["State"])
     dom=h["domain"] if h else ""
     emp=h["numberofemployees"] if h else ""
-    add(r["Company Name"], dom, r["City"], r["State"], r["Vertical"], emp, "NYC metro list", "Not verified")
+    add(r["Company Name"], dom, r["City"], r["State"], r["Vertical"], emp, "NYC metro list", "Not verified", amb)
 
 TIERORD={"1: 250+":0,"2: 100-249":1,"3: 50-99":2,"4: 20-49":3,"5: <20":4,"Unknown":5}
 def empnum(r):
@@ -174,7 +214,7 @@ for a in adjacent_hs:
 
 unclass=[]
 for r in nu:
-    h=hs_by_strict.get(norm_name_strict(r["Company Name"]))
+    h,_amb = lookup_hs(r["Company Name"], r["City"], r["State"])
     dom=norm_domain(h["domain"]) if h else ""
     z=Z.get(dom)
     if z:
@@ -192,6 +232,31 @@ for _r in removed:
     if _k in _seen_rm: continue
     _seen_rm.add(_k); removed_u.append(_r)
 removed_u.sort(key=lambda x:(x[5], x[0].lower()))
+
+# The hold-back tab is built from the deal pipeline itself, so every active deal appears
+# whether or not that company happened to sit on one of the source lists.
+_held_by_name={norm_name(h[0]):h for h in held}
+held_all=[]
+for cid,rec in holdback.items():
+    nm,dom,city,st,stage = rec
+    h=_held_by_name.get(norm_name(nm))
+    vert = h[4] if h else ""
+    src_ = h[6] if h else "HubSpot deal pipeline"
+    held_all.append([nm,dom,city,st,vert,stage,src_])
+_ORD={"Due Diligence":0,"IOI":1,"Management Meeting":2,"Initial Meeting":3,"On Hold":4}
+held_all.sort(key=lambda x:(_ORD.get(x[5],9), x[0].lower()))
+
+# ---------- guard: no in-footprint HubSpot record may vanish silently ----------
+_on_a_tab=set()
+for _r in rows: _on_a_tab.add(norm_name(_r["Company"])); _on_a_tab.add(norm_domain(_r["Website"] or ""))
+for _grp in (removed_u, held_all, adjacent, unclass):
+    for _r in _grp: _on_a_tab.add(norm_name(_r[0])); _on_a_tab.add(norm_domain(_r[1] or ""))
+_on_a_tab.discard("")
+_lost=[h for h in hs if norm_state(h["state"]) in FOOT
+       and norm_name(h["name"]) not in _on_a_tab
+       and (not norm_domain(h["domain"]) or norm_domain(h["domain"]) not in _on_a_tab)]
+print("GUARD in-footprint HubSpot records on no tab:",len(_lost))
+for _h in _lost[:10]: print("   LOST:",_h["name"],"|",_h["domain"],"|",_h["city"],_h["state"])
 
 # ---------- write workbook ----------
 import openpyxl
@@ -261,18 +326,6 @@ sheet("BDO Send List", ["Company","Website","City","State","Vertical","Size Tier
       [[r["Company"],r["Website"],r["City"],r["State"],r["Vertical"],r["Size Tier"],r["In HubSpot"]] for r in rows], W)
 sheet("Send List - Internal Detail", ["Company","Source","URL Check","Notes"],
       [[r["Company"],r["Source"],r["URL Check"],r["Notes"]] for r in rows], W)
-# The hold-back tab is built from the deal pipeline itself, so every active deal appears
-# whether or not that company happened to sit on one of the source lists.
-_held_by_name={norm_name(h[0]):h for h in held}
-held_all=[]
-for cid,rec in holdback.items():
-    nm,dom,city,st,stage = rec
-    h=_held_by_name.get(norm_name(nm))
-    vert = h[4] if h else ""
-    src_ = h[6] if h else "HubSpot deal pipeline"
-    held_all.append([nm,dom,city,st,vert,stage,src_])
-_ORD={"Due Diligence":0,"IOI":1,"Management Meeting":2,"Initial Meeting":3,"On Hold":4}
-held_all.sort(key=lambda x:(_ORD.get(x[5],9), x[0].lower()))
 sheet("Hold Back - Live Deals", ["Company","Website","City","State","Vertical","Deal Stage","Source"], held_all, W)
 sheet("Adjacent - Review", ["Company","Website","City","State","Vertical","Employees","Source","Why Borderline"], adjacent, W)
 sheet("NYC Unclassified - Review", ["Company","Website","City","State","ZI Industry","ZI Employees","ZI Revenue","Size Tier","Flag"], unclass, W)

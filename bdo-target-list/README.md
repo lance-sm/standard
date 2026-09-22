@@ -11,8 +11,8 @@ Output: `BDO Target List - Combined Send File.xlsx`, saved flat in `~/Desktop/Cl
 | Tab | Rows | For BDO? |
 |---|---|---|
 | Summary | — | counts, method, caveats |
-| BDO Send List | 1,238 | **yes** — company-level columns only |
-| Send List - Internal Detail | 1,238 | no — per-row provenance |
+| BDO Send List | 1,246 | **yes** — company-level columns only |
+| Send List - Internal Detail | 1,246 | no — per-row provenance |
 | Hold Back - Live Deals | 41 | no — Lance decides |
 | Adjacent - Review | 63 | no — Lance decides |
 | NYC Unclassified - Review | 77 | no — Lance decides |
@@ -57,7 +57,13 @@ Nothing was written to HubSpot.
    Meeting, IOI, Due Diligence, On Hold. "Pass" deals stay on the send list; they are dead
    and carry no NDA. The hold-back tab is built from the pipeline itself, so an active deal
    appears whether or not it sat on a source list.
-4. Deduped by domain, then by normalized name.
+4. Deduped by domain, then by normalized name **within a state**. A domain match always
+   means one company; a loose-name match only does when the state agrees too. Keeping the
+   two apart matters — "American Alarm" is three different companies, in MA, CT and NY.
+5. `lookup_hs()` disambiguates on state, then city, when several HubSpot records share a
+   name, and leaves the domain blank rather than guess when it still can't tell. 15 names
+   in HubSpot are shared by more than one distinct domain.
+6. A guard at the end asserts that no in-footprint HubSpot record ends up on no tab at all.
 
 ## Verified corrections
 
@@ -88,8 +94,10 @@ and access integrator in Hermon ME, not a guard company — it stays. **Wayman F
   company websites, so homepages could not be fetched and matched against company names. Domains
   from the universe build are ZoomInfo-sourced; domains taken from HubSpot are unverified. The
   `URL Check` column on the internal detail tab says which is which. Roughly 1,000 rows still
-  need a real URL check — ZoomInfo bulk enrichment is the workable route.
-- **Size tier is incomplete:** 779 of 1,238 rows have no headcount. The NYC metro list carried no
+  need a real URL check. To do it properly, set the cloud environment's **Network access** to
+  **Full** (claude.ai/code → cloud icon → edit environment); the default **Trusted** level
+  allows package registries and GitHub only. ZoomInfo bulk enrichment is the alternative.
+- **Size tier is incomplete:** 785 of 1,246 rows have no headcount. The NYC metro list carried no
   size data and most HubSpot records have no employee count.
 - The NYC "Unclassified" names were left on their own review tab rather than guessed onto the send
   list. ZoomInfo's industry codes do not separate low-voltage installers from IT shops in that
@@ -97,3 +105,20 @@ and access integrator in Hermon ME, not a guard company — it stays. **Wayman F
   deal companies, so the group does contain real targets.
 - The universe Review-Adjacent rows are on their own tab, not the send list, matching the intent
   of that tab in the universe build.
+
+## Name collisions
+
+Three separate defects all traced to the loose normalizer the handoff specified, which strips
+`systems`, `services` and `group`:
+
+1. It joined **Excel Security Systems Inc.** (Brooklyn) to **Excel Security** (Manhattan),
+   handing the Brooklyn company the wrong domain and a 900-employee headcount.
+2. It hid HubSpot records from screening whenever any other company shared their name.
+   **American Alarm** (Norwalk CT) and **Approved Fire Protection** (Somerset NJ) were
+   recovered by hand; the guard now fails the build if this recurs.
+3. It merged distinct same-name companies across states. Seven pairs are now kept apart,
+   among them Integrated Security (NY) vs Integrated Security Group (CT), and the three
+   American Alarms.
+
+The loose normalizer is still used for the `In HubSpot` flag, where a fuzzy match is what you
+want. It is no longer trusted on its own to decide that two rows are the same company.
