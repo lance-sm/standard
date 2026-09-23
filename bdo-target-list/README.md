@@ -6,22 +6,38 @@ Step 3 (URL verification) is only partly done — see **Known gaps**.
 
 Output: `BDO Target List - Combined Send File.xlsx`, saved flat in `~/Desktop/Claude Files/`.
 
-## Tabs
+## Output
 
-| Tab | Rows | For BDO? |
+`slim.py` collapses the working book into the two-tab deliverable:
+
+| Tab | Rows | What it is |
 |---|---|---|
-| Summary | — | counts, method, caveats |
-| BDO Send List | 1,230 | **yes** — company-level columns only |
-| Send List - Internal Detail | 1,230 | no — per-row provenance |
-| Hold Back - Live Deals | 41 | no — Lance decides |
-| Adjacent - Review | 63 | no — Lance decides |
-| NYC Unclassified - Review | 77 | no — Lance decides |
-| Removed | 336 | no — audit trail |
-| URL Check | 44 | no — rows whose URL needs a human eye |
+| Target List | 1,230 | The list. Company, Website, City, State, Vertical, Size Tier, In HubSpot — nothing internal, send as-is. |
+| Excluded | 669 | Every company that did not make it, with the reason and the supporting detail. |
 
-Send List columns are exactly the ones decision 4 of the handoff allows:
-Company | Website | City | State | Vertical | Size Tier | In HubSpot.
-No owner names, no revenue estimates, no ownership notes, no sources.
+Excluded is grouped by reason, live deals first:
+
+| Why excluded | Rows |
+|---|---|
+| Live deal — held back for your call | 41 |
+| Acquired — no longer independent | 16 |
+| PE-owned or subsidiary | 108 |
+| Above buy-box | 7 |
+| Adjacent — your call | 57 |
+| NYC unclassified — your call | 74 |
+| Guard services | 43 |
+| Not a buy-box business | 306 |
+| Broker or advisor | 16 |
+| Badlands-owned | 1 |
+
+Rules the two tabs hold to: no company appears on both; every excluded row carries a reason
+and a detail; a duplicate record is treated as merged into the row that survived, not excluded;
+and an acquired company keeps its own name but not its website, since that domain now resolves
+to the buyer.
+
+The intermediate book (`BDO Target List - Combined Send File.xlsx`, seven working tabs including
+per-row URL-check results) is what `build.py` writes; `slim.py` reads it. Keep it if you want the
+provenance, send the two-tab file.
 
 ## Inputs
 
