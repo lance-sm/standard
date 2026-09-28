@@ -1,0 +1,20 @@
+{
+  "slug": "ameritech-systems-corp",
+  "EFFECTIVE_DATE": "September 28, 2026",
+  "BADLANDS_ENTITY": "[[CONFIRM: Badlands legal entity name]]",
+  "BADLANDS_JURISDICTION": "[[CONFIRM: a Delaware limited liability company]]",
+  "BADLANDS_ADDRESS": "[[CONFIRM: Badlands notice address]]",
+  "BADLANDS_SIGNATORY": "Lance Smith",
+  "BADLANDS_SIGNATORY_TITLE": "Corporate Development",
+  "BADLANDS_EMAIL": "lance@badlandssecurity.com",
+  "COMPANY_ENTITY": "Ameritech Systems Corp.",
+  "COMPANY_JURISDICTION": "a New York corporation",
+  "COMPANY_ADDRESS": "[[CONFIRM: Ameritech notice address, Flushing, NY]]",
+  "COMPANY_SIGNATORY": "Steven Lee",
+  "COMPANY_SIGNATORY_TITLE": "President",
+  "COMPANY_EMAIL": "steven@ameritechsystems.net",
+  "GOVERNING_STATE": "New York",
+  "VENUE_COUNTY": "New York County",
+  "TERM_YEARS": "two (2)",
+  "NONSOLICIT_MONTHS": "twenty-four (24)"
+}
