@@ -5,6 +5,10 @@ starting draft for counsel to review before it goes out on a live deal.
 
 ## NDAs
 
+The drafting procedure lives in the `nda` skill (`.claude/skills/nda/SKILL.md`), which loads on
+any NDA ask and is invocable as `/nda <company>`. What follows is the same ground for anyone
+reading the repo directly.
+
 `templates/mutual-nda.md` is the standing form: a mutual NDA sized for a lower-middle-market
 acquisition conversation. Mutual rather than one-way, because Badlands shares its own thesis,
 financing and structure with a seller as readily as the seller shares financials.
@@ -29,7 +33,10 @@ python3 legal/scripts/build_nda.py legal/nda/<slug>.json
 ```
 
 That writes `<slug>.md` (the filled text, reviewable in a diff) and `<slug>.docx`
-(signature-ready, two-column signature block and notice addresses).
+(signature-ready, two-column signature block and notice addresses), then **opens the .docx in
+Word**. Opening is the default on every run — `--no-open` suppresses it. On a machine with no
+desktop to open on (a cloud Claude Code session, CI, an ssh shell) the script says so and skips
+rather than failing.
 
 Anything left as `[[CONFIRM: ...]]` in the parameter file is an open item: it renders
 **bold and highlighted yellow** in the .docx and the script lists it on stdout. Never send a

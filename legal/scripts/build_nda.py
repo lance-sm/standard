@@ -2,14 +2,24 @@
 """Render a Badlands NDA from a template plus a JSON parameter file.
 
 Writes a filled Markdown copy and a signature-ready .docx next to the
-parameter file. Anything still wrapped in [[double brackets]] is an open
-item: it is highlighted yellow in the .docx and listed on stdout.
+parameter file, then opens the .docx in Word. Anything still wrapped in
+[[double brackets]] is an open item: it is highlighted yellow in the .docx
+and listed on stdout.
 
     python3 legal/scripts/build_nda.py legal/nda/ameritech-systems-corp.json
+    python3 legal/scripts/build_nda.py <params.json> --no-open
+
+Opening is the default so the draft lands in front of you for review. It is
+skipped automatically when there is no desktop to open it on — a cloud
+Claude Code session, CI, an ssh shell — and the script says so rather than
+failing.
 """
 
 import json
+import os
+import platform
 import re
+import subprocess
 import sys
 from pathlib import Path
 
@@ -142,10 +152,36 @@ def build_docx(text, params, out_path):
     doc.save(out_path)
 
 
+def open_in_word(path):
+    """Open the .docx in Word. Returns a note describing what happened."""
+    system = platform.system()
+
+    if system == "Darwin":
+        for argv in (["open", "-a", "Microsoft Word", str(path)], ["open", str(path)]):
+            if subprocess.run(argv, capture_output=True).returncode == 0:
+                return "opened in %s" % ("Word" if "Microsoft Word" in argv else "the default handler")
+        return "could not open it — do it by hand"
+
+    if system == "Windows":
+        try:
+            os.startfile(str(path))  # noqa: S606 - Windows-only, opens the default handler
+            return "opened in Word"
+        except OSError as exc:
+            return "could not open it (%s) — do it by hand" % exc
+
+    if not (os.environ.get("DISPLAY") or os.environ.get("WAYLAND_DISPLAY")):
+        return "no desktop session here, so nothing was opened — the file is listed above"
+    if subprocess.run(["xdg-open", str(path)], capture_output=True).returncode == 0:
+        return "handed to the desktop's default handler"
+    return "could not open it — do it by hand"
+
+
 def main():
-    if len(sys.argv) != 2:
+    argv = [a for a in sys.argv[1:] if a != "--no-open"]
+    auto_open = "--no-open" not in sys.argv
+    if len(argv) != 1:
         sys.exit(__doc__)
-    params_path = Path(sys.argv[1]).resolve()
+    params_path = Path(argv[0]).resolve()
     params = json.loads(params_path.read_text())
     slug = params.get("slug") or params_path.stem
 
@@ -165,6 +201,9 @@ def main():
         print("\n%d open item(s) highlighted in the .docx:" % len(open_items))
         for item in open_items:
             print("  - %s" % item)
+
+    if auto_open:
+        print("\nWord: %s" % open_in_word(docx_path))
 
 
 if __name__ == "__main__":

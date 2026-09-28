@@ -11,6 +11,7 @@ Lance Smith, Corporate Development at Badlands Security: an M&A holdco buying in
 - **Any cold-call ask** — a list of phone numbers from HubSpot, a dial string, the daily dials, a call list, a call brief, who to call today — read `.claude/skills/cold-call/SKILL.md` in full before touching HubSpot. It is the complete spec, moved verbatim from this file. The live "Daily Dials" routine carries only a two-line prompt and depends on that skill for every rule.
 - **Any outreach copy** — email, sequence step, SMS, voicemail, call opener, LinkedIn note, follow-up, breakup, re-engagement, template, HubSpot sequence build — read `.claude/skills/outreach-writing/SKILL.md`, then `outreach/SAGARIS-RULES.md`. Lance adopted those rules as gospel on 2026-09-11.
 - **Any market map, state landscape, independents roster, or acquisition history** — the `state-market-map` skill in `.claude/skills/`.
+- **Any NDA, mutual non-disclosure or confidentiality agreement** — the `nda` skill in `.claude/skills/`. It carries the HubSpot lookup, the standing terms, and the auto-open in Word.
 
 ## Invariants (never break these, whatever the ask)
 
@@ -20,6 +21,7 @@ Lance Smith, Corporate Development at Badlands Security: an M&A holdco buying in
 - HubSpot writes are limited to what a skill explicitly authorizes. For the cold-call list that is exactly two: `daily_call_list_date` on shipped contacts and `call_tier` = Excluded on notes-screen refusals.
 - Third-party DNC registry flags (ZoomInfo, national registry) are irrelevant to M&A outreach: never drop a contact over one, never mention them.
 - The daily call brief docx and its emailed link are mandatory on every cold-call run.
+- A deal document — NDA, LOI, anything a seller would sign — is drafted and handed to Lance, never sent to the counterparty. That call is his every time.
 
 ## Where things live
 
@@ -28,6 +30,8 @@ Lance Smith, Corporate Development at Badlands Security: an M&A holdco buying in
 | `.claude/skills/cold-call/SKILL.md` | Complete cold-call list spec (screening, cadence, brief, write-backs, delivery) | 2026-09-11 |
 | `.claude/skills/outreach-writing/SKILL.md` + `outreach/SAGARIS-RULES.md` | Outreach writing standard, verbatim rules, five sequence shapes | 2026-09-11 |
 | `.claude/skills/state-market-map/` | State market map skill | — |
+| `.claude/skills/nda/SKILL.md` | NDA drafting spec: HubSpot lookup, standing terms, build, auto-open in Word | 2026-09-28 |
+| `legal/` | The mutual NDA form, the renderer, and per-deal drafts. See `legal/README.md`. | 2026-09-28 |
 | `hubspot/sequences/seller-fast-track.md` | HubSpot build plan for the 17-touch seller sequence | 2026-09-11 |
 | `migration/routines/nyc_metro_cities.json` | Canonical NYC-metro city list per state | 2026-09-11 |
 | `migration/routines/routines.json` | The old-account routine export. The "Cold Call Today" prompt inside it is still the strictest written spec and the cold-call skill tells you to read it. | exported 2026-08-31 |
