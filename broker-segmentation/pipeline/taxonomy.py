@@ -169,7 +169,7 @@ SPECIALIST_PHRASES = [
 # Security-industry words that count when found near transaction language.
 # HARD: language that only ever means physical security / life safety.
 PHYSICAL_HARD = [
-    r"(?<!false )\balarms?\b", r"burglar", r"fire alarm", r"life safety", r"locksmith",
+    r"burglar", r"fire alarm", r"life safety", r"locksmith",
     r"video surveillance", r"\bcctv\b", r"central station", r"fire protection",
     r"fire sprinkler", r"security guard", r"guard service", r"door hardware",
     r"\brmr\b", r"recurring monthly revenue", r"perimeter security", r"monitored security",
@@ -186,6 +186,17 @@ PHYSICAL_WEAK = [
     r"security compan", r"security services", r"systems integrator", r"low[- ]voltage",
     r"security business", r"security industry",
 ]
+# "alarm" on its own: strong evidence (Alarm.com, Smith Alarm Holdings, ACME Alarm Co.)
+# but it has two innocent senses that must not count.
+ALARM_TERMS = [r"\balarms?\b", r"alarm\.com"]
+# The consumer-device sense (a sleep app's "smart alarm") and the metaphor
+# ("sounded the alarm"). Either one disqualifies a bare "alarm" match.
+ALARM_NONSECURITY = [
+    r"\bsleep\b", r"alarm clock", r"\bsnooze\b", r"smartwatch", r"wake[- ]?up",
+    r"\bapp\b", r"\bapps\b", r"iphone", r"android", r"mobile app",
+    r"false alarm", r"alarm bells", r"(?:set off|sound|sounded|sounding|raise[sd]?|raising|cause for) (?:the |an )?alarm",
+]
+
 # Cyber wording. If present, only HARD language still counts as physical security.
 CYBER_TERMS = [
     r"cyber", r"infosec", r"information security", r"network security", r"data security",
@@ -239,11 +250,13 @@ PHYSICAL_HARD_RE = _compile(PHYSICAL_HARD)
 PHYSICAL_STRONG_RE = _compile(PHYSICAL_STRONG)
 PHYSICAL_WEAK_RE = _compile(PHYSICAL_WEAK)
 CYBER_RE = _compile(CYBER_TERMS)
+ALARM_RE = _compile(ALARM_TERMS)
+ALARM_NONSECURITY_RE = _compile(ALARM_NONSECURITY)
 TRANSACTION_RE = _compile(TRANSACTION_TERMS)
 TRANSACTION_WEAK_RE = _compile(TRANSACTION_WEAK)
 ALL_KEYWORD_RE = _compile(
     [f for v in VERTICALS.values() for f in v]
     + GENERALIST_PHRASES + SPECIALIST_PHRASES + SECURITY_DEAL_TERMS
-    + PHYSICAL_HARD + PHYSICAL_STRONG + PHYSICAL_WEAK
+    + PHYSICAL_HARD + PHYSICAL_STRONG + PHYSICAL_WEAK + ALARM_TERMS
     + TRANSACTION_TERMS + TRANSACTION_WEAK
 )

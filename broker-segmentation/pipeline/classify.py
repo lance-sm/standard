@@ -6,14 +6,17 @@ import gzip, json, os, re, sys
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 from taxonomy import (VERTICAL_RE, GENERALIST_RE, SPECIALIST_RE, TRANSACTION_RE,
                       TRANSACTION_WEAK_RE, WEAK_ALONE, WEAK_ALONE_MIN, DEAL_PAGE_HINTS,
-                      PHYSICAL_HARD_RE, PHYSICAL_STRONG_RE, PHYSICAL_WEAK_RE, CYBER_RE)
+                      PHYSICAL_HARD_RE, PHYSICAL_STRONG_RE, PHYSICAL_WEAK_RE, CYBER_RE,
+                      ALARM_RE, ALARM_NONSECURITY_RE)
 
 
 def is_physical_security(line):
-    """Physical security / life safety only. A cyber deal must never land here."""
+    """Physical security / life safety only. Never a cyber deal, and never a
+    sleep app's 'smart alarm' or a 'sounded the alarm' metaphor."""
+    alarm = bool(ALARM_RE.search(line)) and not ALARM_NONSECURITY_RE.search(line)
     if CYBER_RE.search(line):
-        return bool(PHYSICAL_HARD_RE.search(line))
-    return bool(PHYSICAL_STRONG_RE.search(line))
+        return bool(PHYSICAL_HARD_RE.search(line)) or alarm
+    return bool(PHYSICAL_STRONG_RE.search(line)) or alarm
 
 
 def is_ambiguous_security(line):
