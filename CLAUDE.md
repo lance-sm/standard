@@ -10,6 +10,7 @@ Lance Smith, Corporate Development at Badlands Security: an M&A holdco buying in
 
 - **Any cold-call ask** — a list of phone numbers from HubSpot, a dial string, the daily dials, a call list, a call brief, who to call today — read `.claude/skills/cold-call/SKILL.md` in full before touching HubSpot. It is the complete spec, moved verbatim from this file. The live "Daily Dials" routine carries only a two-line prompt and depends on that skill for every rule.
 - **Any outreach copy** — email, sequence step, SMS, voicemail, call opener, LinkedIn note, follow-up, breakup, re-engagement, template, HubSpot sequence build — read `.claude/skills/outreach-writing/SKILL.md`, then `outreach/SAGARIS-RULES.md`. Lance adopted those rules as gospel on 2026-09-11.
+- **Any inbox filing, file cleanup, or "where does this file go"** — read `.claude/skills/file-inbox/SKILL.md`. Deal-critical files go to the Acquisitions SharePoint deal folders only; never create a deal folder without Lance's yes; never delete without his yes.
 - **Any market map, state landscape, independents roster, or acquisition history** — the `state-market-map` skill in `.claude/skills/`.
 
 ## Invariants (never break these, whatever the ask)
@@ -28,6 +29,7 @@ Lance Smith, Corporate Development at Badlands Security: an M&A holdco buying in
 | `.claude/skills/cold-call/SKILL.md` | Complete cold-call list spec (screening, cadence, brief, write-backs, delivery) | 2026-09-11 |
 | `.claude/skills/outreach-writing/SKILL.md` + `outreach/SAGARIS-RULES.md` | Outreach writing standard, verbatim rules, five sequence shapes | 2026-09-11 |
 | `.claude/skills/state-market-map/` | State market map skill | — |
+| `.claude/skills/file-inbox/SKILL.md` | Nightly inbox filing: OneDrive vs Acquisitions SharePoint, folder ids, ask-before rules | 2026-10-01 |
 | `hubspot/sequences/seller-fast-track.md` | HubSpot build plan for the 17-touch seller sequence | 2026-09-11 |
 | `migration/routines/nyc_metro_cities.json` | Canonical NYC-metro city list per state | 2026-09-11 |
 | `migration/routines/routines.json` | The old-account routine export. The "Cold Call Today" prompt inside it is still the strictest written spec and the cold-call skill tells you to read it. | exported 2026-08-31 |
