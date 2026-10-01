@@ -1,0 +1,5 @@
+# crawl output: regenerable, and large
+out*/
+*.seed.tsv
+*.log
+__pycache__/
