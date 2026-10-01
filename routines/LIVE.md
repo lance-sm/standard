@@ -10,7 +10,7 @@ Verified 2026-09-11 from the account's trigger list; Nightly Inbox Filing added 
 | Weekly Email Scan | `trig_01FE5MHaR6k5fGACyBnQrX5q` | `0 10 * * 1` | 6:00a Mon | yes | Unanswered asks, at-risk threads, last 21 days. |
 | Tuesday prep — Daniel sync | `trig_01B4fUrWUecWNfZHLc34DQ2h` | `0 11 * * 2` | 7:00a Tue | yes | Uses `daniel-sync/`. |
 | HubSpot CRM Audit — Monthly | `trig_0133bTxJcqMhJoSQDZ2HKzE9` | `0 10 1-7 * *` | first Mon 6:00a | no | Day-guard skips non-Mondays. |
-| Nightly Inbox Filing | `trig_013RwXcWmh8bDA3jSsr9ajag` | `CRON_TZ=America/New_York 56 21 * * *` | 9:56p daily | **needs adding** | Created 2026-10-01 **disabled**: it was created without this repo and without the Microsoft 365 connector. Lance adds both in the claude.ai routines page, then enables it. Every rule comes from `.claude/skills/file-inbox/SKILL.md`. Cron is in ET, so it does not shift at DST. |
+| Nightly Inbox Filing | `trig_013RwXcWmh8bDA3jSsr9ajag` | `CRON_TZ=America/New_York 56 21 * * *` | 9:56p daily | yes | Created 2026-10-01; repo and Microsoft 365 connector added and enabled by Lance the same day. Every rule comes from `.claude/skills/file-inbox/SKILL.md`. Cron is in ET, so it does not shift at DST. |
 
 The six routines in `migration/routines/routines.json` were the old account's. They are not running here; that file is kept because its "Cold Call Today" prompt is the strictest written cold-call spec.
 
