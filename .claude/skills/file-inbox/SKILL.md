@@ -17,7 +17,8 @@ When unsure whether a file is deal-critical, it stays in OneDrive and goes on th
 ## Hard rules (never break)
 
 1. **Never create a deal folder.** If a deal-critical file names a company with no folder under Acquisitions `Deals/` (check `Deals/`, `Deals/Farm Deals/`, `Deals/On Hold/`, `Deals/Dead/`), leave the file in `0 Inbox` and ask: "<Company>: <what arrived>. No deal folder yet. Create one?" Say why it might be time (e.g. "financials received"). Lance only opens a folder when a deal is genuinely moving and financials are in hand or expected soon. Ask once per company; ask again only when a new file for that company arrives.
-2. **Never delete anything.** Duplicates, installers (`.pkg`, `.dmg`, `.exe`), and zips that duplicate an unzipped folder go on the "OK to delete?" list. Delete only after Lance says yes.
+2. **Never delete anything.** Installers (`.pkg`, `.dmg`, `.exe`) and zips that duplicate an unzipped folder go on the "OK to delete?" list. Delete only after Lance says yes.
+2a. **Duplicates and old iterations go to `6 Archive`, not the delete list** (Lance, 2026-10-02: duplicates typically come from iterating with Claude). If the inbox copy is the same document as one already filed, or an older version of a file, move the inbox copy to `6 Archive` and list it under Filed. Moving is not deleting.
 3. **Leave files younger than 48 hours alone**; he may still be working on them.
 4. **Personal files** (family photos, personal finance, `.pst` backups, anything non-Badlands): file by filename only to `6 Archive/Personal`; do not open them.
 5. **Don't share or re-share anything.** Filing never changes permissions.
@@ -68,6 +69,8 @@ Acquisitions SharePoint driveId `b!AjvqY5-7oUGnL66ShD9sTLE9RuTBi5tMkq6crSzvqU3pO
 Deal folders change; list `Deals/` and its three grouping folders fresh on every run rather than trusting a cached list. Match company names loosely (NYFD = NY Fireproof Door, NYCA = New York City Alarm Corp, C&M = C&M Door / Project Columbus). Project code names: check the deal folder names and file contents; if a code name can't be tied to a folder, ask.
 
 ## Extra inboxes
+
+Also treat loose files sitting directly at the OneDrive root as inbox items under the same rules (Lance, 2026-10-02: apps and Claude outputs save there even though he saves to `0 Inbox`). Leave the numbered folders (`0 Inbox` ... `6 Archive`, `2 Deals`) themselves alone.
 
 If `Desktop`, `Documents` or `Downloads` exist at the OneDrive root (Mac folder backup), treat loose files in them as inbox items under the same rules. Leave their subfolders alone and never touch app or code folders (anything containing `.git`, `node_modules`, `.app`).
 
