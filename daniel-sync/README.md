@@ -14,22 +14,21 @@ time — they have to live here, in the repo the routine checks out.
 daniel-sync/
   templates/
     agenda-template.docx        <- copy of "August 26 Agenda.docx"
-    live-deals-template.xlsx    <- copy of "Live Deals Aug 19.xlsx"   (MISSING - see below)
+    live-deals-template.xlsx    <- copy of "Live Deals Aug 19.xlsx"
   scripts/
     build_agenda_docx.py
     build_live_deals_xlsx.py
 ```
 
-## ⚠ Missing file
-
-`templates/live-deals-template.xlsx` is **not yet committed**. Copy
-`Live Deals Aug 19.xlsx` from OneDrive `0 Inbox/` to that path and commit it.
-
-Until it lands, `build_live_deals_xlsx.py` falls back to constructing a fresh
-workbook from the style spec recorded in the script (Aptos Narrow 11, accounting
-format on D/E/F, wrapped column H, the exact column widths). That output is
-visually correct but is *not* the template-derived file, and the script prints
-`[FRESH-WORKBOOK FALLBACK]` plus a stderr warning so the run reports it honestly.
+Both templates are committed and verified present as of 2026-10-05. (An earlier
+version of this file claimed `live-deals-template.xlsx` was missing; it is not.)
+If either template is ever deleted, `build_live_deals_xlsx.py` falls back to
+constructing a fresh workbook from the style spec recorded in the script (Aptos
+Narrow 11, accounting format on D/E/F, wrapped column H, the exact column
+widths). That output is visually correct but is *not* the template-derived file,
+and the script prints `[FRESH-WORKBOOK FALLBACK]` plus a stderr warning so the
+run reports it honestly. `build_agenda_docx.py` aborts outright rather than emit
+a mis-styled document.
 
 ## Usage
 
@@ -70,3 +69,64 @@ stable.
 Deal descriptions come verbatim from HubSpot and regularly contain internal
 `KILL` diligence notes and price anchors. The generated spreadsheet is an
 internal document — it must not be sent to a broker or seller as-is.
+
+## Where the deliverables go  (corrected 2026-10-05)
+
+**Primary destination — Acquisitions SharePoint, one folder per meeting date.**
+
+Drive id `b!AjvqY5-7oUGnL66ShD9sTLE9RuTBi5tMkq6crSzvqU3pO6DGZYzaQ72XNf-pUIpX`
+
+| Folder | Item id |
+|---|---|
+| `Biz Dev` | `01ATLQUZBDEWY24DOKHJBLTWWUL2GZB5LW` |
+| `Biz Dev/Weekly Agendas & Docs` | `01ATLQUZEOATC35R5DHJBYXGALCYGTZ5XS` |
+| `Biz Dev/Weekly Agendas & Docs/October 5` | `01ATLQUZGDYJ5TNIN5DRGJHC3QPLP5RARB` |
+
+Each run creates a **new dated subfolder directly under `Weekly Agendas & Docs`**,
+named `"<Month> <Day>"` — e.g. `October 5`, matching the existing `September 28`.
+Use `sharepoint_create_folder` with `parentItemId` =
+`01ATLQUZEOATC35R5DHJBYXGALCYGTZ5XS`. Do **not** nest under a month folder: July
+and August did that, September 28 onward is flat, and flat is the current
+convention.
+
+All three deliverables go in that dated folder: the agenda `.docx`, the live
+deals `.xlsx`, and the current BD scorecard.
+
+**OneDrive `0 Inbox`** (secondary / staging only)
+
+Drive id `b!sRY4CJgKn0ue4_YulSpe6Vi0hWolvkdPjEqf1z-VtlIq9yYGd7DER477LYoouoxm`
+
+| Folder | Item id |
+|---|---|
+| `0 Inbox` | `01XYRJS5B47CCG5ILBT5HLRX56JSBD6ZHM` |
+| `4 Admin/Calendar & Meetings` | `01XYRJS5BFPCX4RDSE6BCYREJB6QQWQJDE` |
+
+⚠ The id `01XYRJS5DJDOILEMV4OZBK6FZV3DAOKL3J`, which the routine prompt carried
+for `0 Inbox`, is **dead** — it returns `NOT_FOUND`. The live id is the one
+above, and it is also in `.claude/skills/file-inbox/SKILL.md`, which is the
+authoritative list. Never hardcode a folder id in the routine prompt; read it
+from that skill.
+
+## Known tooling limit: binary upload
+
+`mcp__Microsoft-365__sharepoint_upload_file` has **no file-path parameter**. It
+accepts only `content` (UTF-8 text) or `contentBase64`. A `.docx` / `.xlsx`
+therefore has to be base64-encoded into the model's own context and re-emitted
+by hand, which for a ~10-20 KB file is 13k-26k characters and is **not reliably
+transcribable** — a single dropped or duplicated character fails validation.
+
+So the routine instruction "pass the local file path to the upload tool" cannot
+be followed: no such parameter exists.
+
+What does work without any transcription:
+
+- **`sharepoint_copy_item`** — server-side, cross-drive, no bytes through
+  context. Use it for anything that already lives in OneDrive or SharePoint
+  (e.g. the BD scorecard from `4 Admin/Calendar & Meetings`).
+- **`sharepoint_create_folder`**, `sharepoint_move_item`, `sharepoint_rename_item`
+  — all metadata-only.
+
+The two *generated* files (agenda, live deals) have no server-side source to copy
+from, so until the connector grows a path-based upload they must be placed by
+hand, or generated into a location the connector can already see. They are
+committed to this folder each week so the run always leaves a durable copy.
