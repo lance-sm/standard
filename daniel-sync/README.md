@@ -131,7 +131,7 @@ from, so until the connector grows a path-based upload they must be placed by
 hand, or generated into a location the connector can already see. They are
 committed to this folder each week so the run always leaves a durable copy.
 
-### If you ever do attempt a base64 upload: always pass `expectedBytes`
+### Do not attempt a base64 upload of a generated file
 
 Proven the hard way on 2026-10-05. Two hand-transcription attempts at
 `Live Deals Oct 5.xlsx` (10,096 bytes / 13,464 base64 chars):
@@ -147,3 +147,24 @@ So: `expectedBytes` is the only thing standing between a dropped character and
 a corrupt file that nobody notices until Daniel opens it. Never omit it. And
 treat the byte count in the success message as something to check, not to
 trust — compare it against `stat -c%s` on the source before moving on.
+
+**Correction, same day.** A third attempt was made using indexed 1000-character
+blocks (`print('%05d|%s' % (i, b[i:i+1000]))`) to make the ordering verifiable,
+**and passing `expectedBytes=10096`**. It uploaded **18,004 bytes anyway** — the
+guard did not reject it. So:
+
+- `expectedBytes` catches a *malformed* payload (attempt 1, `bad_length`, nothing
+  written) but did **not** catch a well-formed payload of the wrong length.
+  Do not rely on it.
+- Three attempts, three failures; two of them wrote a corrupt workbook into the
+  deal folder that had to be deleted.
+- The payload keeps arriving at roughly 24,000 characters instead of 13,464,
+  i.e. something in the path is duplicating content, and no amount of care in
+  the re-emission fixes it.
+
+**Conclusion: a generated `.docx`/`.xlsx` cannot be uploaded through this
+connector. Do not try.** Build the files, commit them here, and hand them to
+Lance to drop into the dated SharePoint folder — that is the supported path
+until the connector gains a file-path upload. Everything that already exists in
+OneDrive or SharePoint (the BD scorecard) goes across fine with
+`sharepoint_copy_item`, which touches no bytes.
