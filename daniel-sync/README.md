@@ -130,3 +130,20 @@ The two *generated* files (agenda, live deals) have no server-side source to cop
 from, so until the connector grows a path-based upload they must be placed by
 hand, or generated into a location the connector can already see. They are
 committed to this folder each week so the run always leaves a durable copy.
+
+### If you ever do attempt a base64 upload: always pass `expectedBytes`
+
+Proven the hard way on 2026-10-05. Two hand-transcription attempts at
+`Live Deals Oct 5.xlsx` (10,096 bytes / 13,464 base64 chars):
+
+- Attempt 1 **with** `expectedBytes` — rejected, `bad_length`, 13,493 chars
+  received (29 too many). Nothing was written. Correct outcome.
+- Attempt 2 **without** `expectedBytes` — **accepted, and wrote 18,001 bytes**,
+  i.e. a duplicated chunk, a silently corrupt workbook sitting in the deal
+  folder under a name that looks right. It had to be found by comparing the
+  reported byte count against the local file and then deleted.
+
+So: `expectedBytes` is the only thing standing between a dropped character and
+a corrupt file that nobody notices until Daniel opens it. Never omit it. And
+treat the byte count in the success message as something to check, not to
+trust — compare it against `stat -c%s` on the source before moving on.
