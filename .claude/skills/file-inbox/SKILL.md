@@ -17,9 +17,10 @@ When unsure whether a file is deal-critical, it stays in OneDrive and goes on th
 ### Seller discovery conversations → OneDrive `2 Deals` (added 2026-10-07)
 
 Notes, transcripts, recordings and summaries of Lance's discovery ("disco") calls with sellers go to the company's folder under OneDrive `2 Deals/<Company>`, **whether or not the deal is progressing**. `2 Deals` is the private staging area for every deal, for filing purposes. When a deal progresses (a deal folder opens in the Acquisitions SharePoint), its material moves up to the SharePoint deal folder; until then it stays in `2 Deals`.
-
-- Put the file in the company's existing folder under `2 Deals` (list `2 Deals` fresh each run; match names loosely, as with SharePoint deal folders). Use `sharepoint_move_item`; it is the same drive.
-- Disco notes never go to the SharePoint on their own, even for a company that has a deal folder there, unless Lance says the deal has progressed and to move it. If a company already has a SharePoint deal folder, tell Lance in the email and ask once whether this file should go there.
+- Put the file in the company's folder under `2 Deals` (list `2 Deals` fresh each run; match names loosely, as with SharePoint deal folders). Use `sharepoint_move_item`; it is the same drive.
+- Disco notes stay in `2 Deals` even for a company that has a SharePoint deal folder; do not move the folder or its other files up on your own. Exception, meeting notes: if the company has a SharePoint deal folder, also copy the notes into its `Meeting Notes` subfolder (`sharepoint_copy_item` with `destinationDriveId`, confirm the file is there). The OneDrive copy stays in `2 Deals`. Never delete or re-share anything.
+- No matching folder in `2 Deals`: create `2 Deals/<Company>` (Lance approved auto-creating these on 2026-10-07; this applies to `2 Deals` only, never to a SharePoint deal folder) and file the notes there. List each new folder in the morning email.
+- Upgrade question: if a `2 Deals` folder looks like it should move to SharePoint (financials received, NDA signed, a request list, an IOI/LOI, or the company shows in Live Deals), ask in the morning email, with the reason. Ask once per company; never create the SharePoint deal folder or move the folder without his yes.
 - No matching folder in `2 Deals`: leave the file in `0 Inbox` and ask "<Company>: disco notes arrived, no `2 Deals` folder yet. Create one?" Do not create it without his yes (the never-create-a-folder rule applies here too).
 - A file that is deal-critical (NDA, financials, CIM, IOI, LOI, request list, model) is still filed by the rules above, not here.
 - The 48-hour rule still applies.
