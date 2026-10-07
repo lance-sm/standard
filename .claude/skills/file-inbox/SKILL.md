@@ -14,6 +14,16 @@ Lance saves everything to one place and never picks a folder. This job files it 
 
 When unsure whether a file is deal-critical, it stays in OneDrive and goes on the questions list.
 
+### Seller discovery conversations → OneDrive `2 Deals` (added 2026-10-07)
+
+Notes, transcripts, recordings and summaries of Lance's discovery ("disco") calls with sellers go to the company's folder under OneDrive `2 Deals/<Company>`, **whether or not the deal is progressing**. `2 Deals` is the private staging area for every deal, for filing purposes. When a deal progresses (a deal folder opens in the Acquisitions SharePoint), its material moves up to the SharePoint deal folder; until then it stays in `2 Deals`.
+
+- Put the file in the company's existing folder under `2 Deals` (list `2 Deals` fresh each run; match names loosely, as with SharePoint deal folders). Use `sharepoint_move_item`; it is the same drive.
+- Disco notes never go to the SharePoint on their own, even for a company that has a deal folder there, unless Lance says the deal has progressed and to move it. If a company already has a SharePoint deal folder, tell Lance in the email and ask once whether this file should go there.
+- No matching folder in `2 Deals`: leave the file in `0 Inbox` and ask "<Company>: disco notes arrived, no `2 Deals` folder yet. Create one?" Do not create it without his yes (the never-create-a-folder rule applies here too).
+- A file that is deal-critical (NDA, financials, CIM, IOI, LOI, request list, model) is still filed by the rules above, not here.
+- The 48-hour rule still applies.
+
 ## Hard rules (never break)
 
 1. **Never create a deal folder.** If a deal-critical file names a company with no folder under Acquisitions `Deals/` (check `Deals/`, `Deals/Farm Deals/`, `Deals/On Hold/`, `Deals/Dead/`), leave the file in `0 Inbox` and ask: "<Company>: <what arrived>. No deal folder yet. Create one?" Say why it might be time (e.g. "financials received"). Lance only opens a folder when a deal is genuinely moving and financials are in hand or expected soon. Ask once per company; ask again only when a new file for that company arrives.
