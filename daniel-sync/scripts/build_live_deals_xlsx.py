@@ -31,9 +31,14 @@ HERE = os.path.dirname(os.path.abspath(__file__))
 DEFAULT_TPL = os.path.join(HERE, os.pardir, "templates", "live-deals-template.xlsx")
 
 HEADERS = [
-    "Deal Name", "Deal Stage", "Location", "Revenue", "EBITDA",
-    "Valuation Proposed", "Multiple", "Deal Description", "Deal Source",
+    "Deal Name", "Deal Stage", "Last Contacted", "Notes", "Location",
+    "Revenue", "EBITDA", "Valuation Proposed", "Multiple",
+    "Deal Description", "Deal Source",
 ]
+NCOLS = len(HEADERS)
+DESC_COL = HEADERS.index("Deal Description") + 1          # wrapped
+MONEY_COLS = tuple(HEADERS.index(h) + 1 for h in ("Revenue", "EBITDA", "Valuation Proposed"))
+DATE_COL = HEADERS.index("Last Contacted") + 1
 
 STAGE_ORDER = [
     "Initial Meeting", "NDA Sent", "NDA Signed", "Management Meeting",
@@ -42,9 +47,11 @@ STAGE_ORDER = [
 
 # Verified against "Live Deals Aug 19.xlsx" - used only for the no-template fallback.
 COL_WIDTHS = {
-    "A": 28.33203125, "B": 19.44140625, "C": 16.88671875, "D": 14.88671875,
-    "E": 13.88671875, "F": 18.21875, "G": 7.88671875, "H": 75.0, "I": 11.109375,
+    "A": 28.33203125, "B": 19.44140625, "C": 16.0, "D": 40.0, "E": 16.88671875,
+    "F": 14.88671875, "G": 13.88671875, "H": 18.21875, "I": 7.88671875,
+    "J": 75.0, "K": 11.109375,
 }
+DATE_FMT = "m/d/yyyy"
 ACCOUNTING_FMT = '_("$"* #,##0.00_);_("$"* \\(#,##0.00\\);_("$"* "-"??_);_(@_)'
 
 
@@ -70,7 +77,7 @@ def build(deals, out_path, tab_date, tpl_path):
         wb = openpyxl.load_workbook(tpl_path)
         ws = wb[wb.sheetnames[0]]
         style = {}
-        for c in range(1, 10):
+        for c in range(1, NCOLS + 1):
             cell = ws.cell(2, c)
             style[c] = (copy.copy(cell.font), copy.copy(cell.fill),
                         cell.number_format, copy.copy(cell.alignment),
@@ -90,9 +97,12 @@ def build(deals, out_path, tab_date, tpl_path):
             cell = ws.cell(1, c, value=h)
             cell.font = copy.copy(base)
         style = {}
-        for c in range(1, 10):
-            align = openpyxl.styles.Alignment(wrap_text=True) if c == 8 else openpyxl.styles.Alignment()
-            fmt = ACCOUNTING_FMT if c in (4, 5, 6) else "General"
+        for c in range(1, NCOLS + 1):
+            align = (openpyxl.styles.Alignment(wrap_text=True)
+                     if c in (DESC_COL, HEADERS.index("Notes") + 1)
+                     else openpyxl.styles.Alignment())
+            fmt = (ACCOUNTING_FMT if c in MONEY_COLS
+                   else DATE_FMT if c == DATE_COL else "General")
             style[c] = (copy.copy(base), openpyxl.styles.PatternFill(), fmt, align,
                         openpyxl.styles.Border())
 
@@ -101,6 +111,8 @@ def build(deals, out_path, tab_date, tpl_path):
         values = [
             d.get("dealname"),
             d.get("stage"),
+            d.get("last_contacted"),   # maintained by hand; HubSpot has no reliable field
+            d.get("notes"),            # maintained by hand
             d.get("location"),
             d.get("revenue"),
             d.get("ebitda"),

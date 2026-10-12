@@ -44,8 +44,24 @@ python3 scripts/build_live_deals_xlsx.py deals.json "Live Deals Sep 15.xlsx" 202
 
 `deals.json` — list of
 `{dealname, stage, location, revenue, ebitda, description, deal_source}`.
-`revenue` / `ebitda` may be `null`. **Valuation Proposed** and **Multiple** are
-always written blank; HubSpot has no such fields and they must never be inferred.
+`revenue` / `ebitda` may be `null`.
+
+Column order (11 columns, one tab):
+
+| A | B | C | D | E | F | G | H | I | J | K |
+|---|---|---|---|---|---|---|---|---|---|---|
+| Deal Name | Deal Stage | Last Contacted | Notes | Location | Revenue | EBITDA | Valuation Proposed | Multiple | Deal Description | Deal Source |
+
+**Always written blank** — never inferred, never auto-filled:
+
+- **Valuation Proposed** and **Multiple** — HubSpot has no such fields.
+- **Last Contacted** (date, `m/d/yyyy`) and **Notes** — added 2026-10-12 at
+  Lance's request, maintained by hand. HubSpot's `notes_last_contacted` is *not*
+  a safe source: it only moves when an engagement is logged, so on 2026-10-12 it
+  read 8/28 for New York City Alarm even though the LOI went out 10/6. Writing it
+  would understate real contact and hide exactly the staleness the column exists
+  to expose. The builder will pass through optional `last_contacted` / `notes`
+  keys if they are ever present in `deals.json`, but the routine does not set them.
 
 ## Guarantees
 
