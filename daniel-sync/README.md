@@ -12,6 +12,7 @@ time — they have to live here, in the repo the routine checks out.
 
 ```
 daniel-sync/
+  agenda-carry-forward.md       <- items parked between syncs; READ THIS when building the agenda
   templates/
     agenda-template.docx        <- copy of "August 26 Agenda.docx"
     live-deals-template.xlsx    <- copy of "Live Deals Aug 19.xlsx"   (MISSING - see below)
@@ -19,6 +20,18 @@ daniel-sync/
     build_agenda_docx.py
     build_live_deals_xlsx.py
 ```
+
+## Agenda carry-forward
+
+`agenda-carry-forward.md` holds items parked between syncs — things Daniel or
+Lance asked to raise at the *next* call rather than the current one. When
+building the agenda (STEP 4), read it and fold every item under **Open** into
+the numbered list, in addition to the unresolved items from last week's
+transcript and whatever the CRM/email audit surfaced.
+
+These are not optional extras. An item is in this file because someone asked for
+it on the agenda by name, so it outranks anything inferred. After the sync, move
+what was covered to **Closed** with the date; never delete entries.
 
 ## ⚠ Missing file
 
