@@ -1,0 +1,51 @@
+deal_id,dealname,dealstage,deal_stage(custom),closedate,revenue_usd,ebitda_usd,issues,url
+55575520317,Cosmic Fischer,Closed,LOI,2026-08-05,5029000,1768000,deal_stage 'LOI' != dealstage 'Closed' | no associated contact,https://app.hubspot.com/contacts/50955967/record/0-3/55575520317
+60177838999,Eastern American Technologies,Due Diligence,Dud Diligence,2026-12-31,3000000,,open deal missing ebitda_usd,https://app.hubspot.com/contacts/50955967/record/0-3/60177838999
+64133463832,L.I. Locksmith & Alarm Co.,Initial Meeting,,2027-06-30,,,open deal missing revenue_usd+ebitda_usd,https://app.hubspot.com/contacts/50955967/record/0-3/64133463832
+64175075628,Secure 360,Initial Meeting,,2027-03-31,,,open deal missing revenue_usd+ebitda_usd,https://app.hubspot.com/contacts/50955967/record/0-3/64175075628
+64879098721,Ambush Alarm,Initial Meeting,,2027-06-30,,,no associated contact | open deal missing revenue_usd+ebitda_usd,https://app.hubspot.com/contacts/50955967/record/0-3/64879098721
+64880804686,Zebra Lock,Initial Meeting,,2027-06-30,,,no associated contact | open deal missing revenue_usd+ebitda_usd,https://app.hubspot.com/contacts/50955967/record/0-3/64880804686
+64882367618,Able Fire,Initial Meeting,,2027-06-30,,,no associated contact | open deal missing revenue_usd+ebitda_usd,https://app.hubspot.com/contacts/50955967/record/0-3/64882367618
+64885627671,Lock City,Initial Meeting,,2027-06-30,,,no associated contact | open deal missing revenue_usd+ebitda_usd,https://app.hubspot.com/contacts/50955967/record/0-3/64885627671
+57830069867,South East Banking Systems ,Management Meeting,On Hold,2026-07-15,,,deal_stage 'On Hold' != dealstage 'Management Meeting' | open stage with past closedate 2026-07-15 | open deal missing revenue_usd+ebitda_usd,https://app.hubspot.com/contacts/50955967/record/0-3/57830069867
+60142315376,S&S Locksmiths,Management Meeting,On Hold,2026-12-31,,,deal_stage 'On Hold' != dealstage 'Management Meeting' | open deal missing revenue_usd+ebitda_usd,https://app.hubspot.com/contacts/50955967/record/0-3/60142315376
+60786248213,Dynamic Protection Systems,Management Meeting,On Hold,2026-12-31,5000000,,deal_stage 'On Hold' != dealstage 'Management Meeting' | open deal missing ebitda_usd,https://app.hubspot.com/contacts/50955967/record/0-3/60786248213
+62044684437,Precision Lock,Management Meeting,NDA,2026-12-31,3000000,400000,deal_stage 'NDA' != dealstage 'Management Meeting',https://app.hubspot.com/contacts/50955967/record/0-3/62044684437
+65423697680,King Lock,Management Meeting,,2026-12-31,2500000,,open deal missing ebitda_usd,https://app.hubspot.com/contacts/50955967/record/0-3/65423697680
+56896714241,Top Lock,On Hold,On Hold,2027-06-30,,,open deal missing revenue_usd+ebitda_usd,https://app.hubspot.com/contacts/50955967/record/0-3/56896714241
+57093137813,Kintronics,On Hold,On Hold,2026-05-04,,,open stage with past closedate 2026-05-04 | open deal missing revenue_usd+ebitda_usd,https://app.hubspot.com/contacts/50955967/record/0-3/57093137813
+57826538805,FCS Metro,On Hold,On Hold,2026-05-04,,,open stage with past closedate 2026-05-04 | open deal missing revenue_usd+ebitda_usd,https://app.hubspot.com/contacts/50955967/record/0-3/57826538805
+58136169514,Security Management Systems,On Hold,On Hold,2027-03-31,,,open deal missing revenue_usd+ebitda_usd,https://app.hubspot.com/contacts/50955967/record/0-3/58136169514
+58208313389,NE Security Solutions,On Hold,On Hold,2026-05-04,2870000,291000,open stage with past closedate 2026-05-04,https://app.hubspot.com/contacts/50955967/record/0-3/58208313389
+59275434332,MDU Security,On Hold,On Hold,2026-12-31,,,open deal missing revenue_usd+ebitda_usd,https://app.hubspot.com/contacts/50955967/record/0-3/59275434332
+59915184955,Sabre,On Hold,On Hold,2026-05-31,,,open stage with past closedate 2026-05-31 | open deal missing revenue_usd+ebitda_usd,https://app.hubspot.com/contacts/50955967/record/0-3/59915184955
+59963166769,Pro Locksmith & Security,On Hold,On Hold,2026-12-31,,,open deal missing revenue_usd+ebitda_usd,https://app.hubspot.com/contacts/50955967/record/0-3/59963166769
+59963168405,ADR Security,On Hold,On Hold,2026-12-31,,,open deal missing revenue_usd+ebitda_usd,https://app.hubspot.com/contacts/50955967/record/0-3/59963168405
+60355531835,All-Tech,On Hold,On Hold,2026-12-31,2200000,,open deal missing ebitda_usd,https://app.hubspot.com/contacts/50955967/record/0-3/60355531835
+61129404290,SSI Fire & Security,On Hold,On Hold,2026-12-31,1000000,,no associated contact | open deal missing ebitda_usd,https://app.hubspot.com/contacts/50955967/record/0-3/61129404290
+62622477644,Metro Access Control - NJ,On Hold,Management Meeting,2026-12-31,1500000,,deal_stage 'Management Meeting' != dealstage 'On Hold' | open deal missing ebitda_usd,https://app.hubspot.com/contacts/50955967/record/0-3/62622477644
+62706631306,EMS Communications,On Hold,,2027-06-30,800000,,open deal missing ebitda_usd,https://app.hubspot.com/contacts/50955967/record/0-3/62706631306
+62853288345,Target Security,On Hold,,2027-12-31,8000000,,open deal missing ebitda_usd,https://app.hubspot.com/contacts/50955967/record/0-3/62853288345
+63087061251,Alarm Masters,On Hold,,2027-12-01,,,no associated contact | open deal missing revenue_usd+ebitda_usd,https://app.hubspot.com/contacts/50955967/record/0-3/63087061251
+63433756582,CRETO,On Hold,,2027-12-31,3000000,,open deal missing ebitda_usd,https://app.hubspot.com/contacts/50955967/record/0-3/63433756582
+63504928054,Alpha Locksmith and Security,On Hold,,2026-08-05,,,open stage with past closedate 2026-08-05 | open deal missing revenue_usd+ebitda_usd,https://app.hubspot.com/contacts/50955967/record/0-3/63504928054
+63680192333,Oneida Fire Protection,On Hold,,2027-09-30,20000000,,open deal missing ebitda_usd,https://app.hubspot.com/contacts/50955967/record/0-3/63680192333
+64133490249,Kaploss Security,On Hold,,2027-03-31,,,open deal missing revenue_usd+ebitda_usd,https://app.hubspot.com/contacts/50955967/record/0-3/64133490249
+64133490264,Protection Technologies,On Hold,,2027-06-30,10000000,,open deal missing ebitda_usd,https://app.hubspot.com/contacts/50955967/record/0-3/64133490264
+64338420235,MacKenzie Door Company,On Hold,,2027-01-01,,,no associated contact | open deal missing revenue_usd+ebitda_usd,https://app.hubspot.com/contacts/50955967/record/0-3/64338420235
+64338543169,NSG Life Safety,On Hold,,2026-08-31,,,open stage with past closedate 2026-08-31 | open deal missing revenue_usd+ebitda_usd,https://app.hubspot.com/contacts/50955967/record/0-3/64338543169
+65428200198,Liberty Lock,On Hold,,2026-09-30,1500000,,open stage with past closedate 2026-09-30 | open deal missing ebitda_usd,https://app.hubspot.com/contacts/50955967/record/0-3/65428200198
+55477755906,Advance Lock,Pass,Pass,2026-07-15,,,no associated contact,https://app.hubspot.com/contacts/50955967/record/0-3/55477755906
+55483385683,Academy Mailbox,Pass,LOI,2026-08-19,4421000,753000,deal_stage 'LOI' != dealstage 'Pass',https://app.hubspot.com/contacts/50955967/record/0-3/55483385683
+55573975188,Linked Security,Pass,Pass,2026-05-08,,,no associated contact | no associated company,https://app.hubspot.com/contacts/50955967/record/0-3/55573975188
+55577276293,Merrick Master Lock,Pass,Pass,2026-07-02,,,no associated contact,https://app.hubspot.com/contacts/50955967/record/0-3/55577276293
+59086937639,Peace of Mind,Pass,NDA,2026-08-19,17000000,,deal_stage 'NDA' != dealstage 'Pass',https://app.hubspot.com/contacts/50955967/record/0-3/59086937639
+60673007375,VIP Security,Pass,NDA,2026-10-06,1700000,,deal_stage 'NDA' != dealstage 'Pass',https://app.hubspot.com/contacts/50955967/record/0-3/60673007375
+61293019156,Sure Lock & Key,Pass,Pass,2026-07-02,,,no associated contact,https://app.hubspot.com/contacts/50955967/record/0-3/61293019156
+61475170995,Keys4Less,Pass,Pass,2026-07-01,2800000,612000,no associated contact,https://app.hubspot.com/contacts/50955967/record/0-3/61475170995
+62640951316,Telephone Business Systems,Pass,NDA,2026-07-17,2000000,300000,deal_stage 'NDA' != dealstage 'Pass',https://app.hubspot.com/contacts/50955967/record/0-3/62640951316
+63433873056,Hi-Tech,Pass,,2026-08-13,900000,,no associated company,https://app.hubspot.com/contacts/50955967/record/0-3/63433873056
+63436276525,Accurate Electronics,Pass,,2026-08-03,10000000,1912000,no associated contact,https://app.hubspot.com/contacts/50955967/record/0-3/63436276525
+63676966756,Boston Fire - Project Ignite,Pass,,2026-10-02,19500000,5100000,no associated contact,https://app.hubspot.com/contacts/50955967/record/0-3/63676966756
+64338357610,US Virtual Guard,Pass,,2026-09-10,,,no associated contact,https://app.hubspot.com/contacts/50955967/record/0-3/64338357610
+64338449464,Roundtable Solutions Security,Pass,,2026-09-10,5200000,700000,no associated contact,https://app.hubspot.com/contacts/50955967/record/0-3/64338449464

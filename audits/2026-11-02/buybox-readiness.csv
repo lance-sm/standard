@@ -1,0 +1,601 @@
+company_id,name,state,sector(lock),est_revenue_M,owner_id,contacts,missing_for_go_no_go,url
+54789998670,Central Home Systems,NY,AC,0.5,87401864,1,READY,https://app.hubspot.com/contacts/50955967/record/0-2/54789998670
+51369073050,"CK Technology Group, LLC",NY,AC,5,87401864,1,READY,https://app.hubspot.com/contacts/50955967/record/0-2/51369073050
+51691449131,COMTEX INC,NJ,AC,5,87401864,3,READY,https://app.hubspot.com/contacts/50955967/record/0-2/51691449131
+50928017155,DGA,NY,AC,30,87401864,2,READY,https://app.hubspot.com/contacts/50955967/record/0-2/50928017155
+50924150048,Doyle,NY,Ancilary,5,87401864,1,READY,https://app.hubspot.com/contacts/50955967/record/0-2/50924150048
+50347613526,Fradon Lock Co Inc,NY,Lock,5,87401864,1,READY,https://app.hubspot.com/contacts/50955967/record/0-2/50347613526
+50512446025,Golden Key,NY,Lock,5,87401864,1,READY,https://app.hubspot.com/contacts/50955967/record/0-2/50512446025
+50927590532,Highline Integrated Security,NY,AC,5,87401864,1,READY,https://app.hubspot.com/contacts/50955967/record/0-2/50927590532
+54896488314,Hoboken Lock,NJ,Lock,0.9,87401864,1,READY,https://app.hubspot.com/contacts/50955967/record/0-2/54896488314
+50788013835,Integrated Security,NY,AC,30,87401864,2,READY,https://app.hubspot.com/contacts/50955967/record/0-2/50788013835
+50927894847,"L.I. Locksmith & Alarm Co., Inc.",NY,Lock,5,87401864,2,READY,https://app.hubspot.com/contacts/50955967/record/0-2/50927894847
+54896380502,Locksmith Solutions,NY,Lock,0.8,87401864,1,READY,https://app.hubspot.com/contacts/50955967/record/0-2/54896380502
+51696758105,MDU Security,NY,AC,5,87401864,2,READY,https://app.hubspot.com/contacts/50955967/record/0-2/51696758105
+50928017161,NYC Intercom,NY,AC,1.1,87401864,1,READY,https://app.hubspot.com/contacts/50955967/record/0-2/50928017161
+50927894840,Paragon Security & Locksmith,NY,Lock,5,87401864,4,READY,https://app.hubspot.com/contacts/50955967/record/0-2/50927894840
+51367814490,Parker Custom Security,NY,AC,5,87401864,1,READY,https://app.hubspot.com/contacts/50955967/record/0-2/51367814490
+56131074738,Precision Lock & Safe,NY,Lock,1.4,87401864,2,READY,https://app.hubspot.com/contacts/50955967/record/0-2/56131074738
+50927404663,Rapid Response,NY,AC,75,87401864,3,READY,https://app.hubspot.com/contacts/50955967/record/0-2/50927404663
+50924150042,Sabre,NY,AC,0.5,87401864,2,READY,https://app.hubspot.com/contacts/50955967/record/0-2/50924150042
+50927773101,Safeco,NY,AC,5,87401864,1,READY,https://app.hubspot.com/contacts/50955967/record/0-2/50927773101
+50927956770,SG Security,NY,AC,1,87401864,2,READY,https://app.hubspot.com/contacts/50955967/record/0-2/50927956770
+50927894836,Speco,NY,AC,30,87401864,1,READY,https://app.hubspot.com/contacts/50955967/record/0-2/50927894836
+55771245164,Sure Lock & Key,CT,Lock,7,87401864,1,READY,https://app.hubspot.com/contacts/50955967/record/0-2/55771245164
+56463537306,Telephone Business Systems,NY,AC,1.5,87401864,1,READY,https://app.hubspot.com/contacts/50955967/record/0-2/56463537306
+51309929129,TSG Security,NY,AC,5,87401864,1,READY,https://app.hubspot.com/contacts/50955967/record/0-2/51309929129
+50205116300,Vertex Security Systems,NY,AC,5,87401864,1,READY,https://app.hubspot.com/contacts/50955967/record/0-2/50205116300
+51532953093,2 Krew Security,PA,AC,,87401864,1,est_revenue,https://app.hubspot.com/contacts/50955967/record/0-2/51532953093
+50614022024,360 Degrees,NY,Fire,3.2,87401864,1,fte,https://app.hubspot.com/contacts/50955967/record/0-2/50614022024
+51811096338,A2 Systems,MA,AC,5,,1,owner,https://app.hubspot.com/contacts/50955967/record/0-2/51811096338
+50182894253,Academy Mailbox & Intercom,NY,Lock,0.5,87401864,0,no_contact_at_all,https://app.hubspot.com/contacts/50955967/record/0-2/50182894253
+50687007341,Accessia,NY,AC,0.3,87401864,2,fte,https://app.hubspot.com/contacts/50955967/record/0-2/50687007341
+51288696209,AccessSI,NJ,AC,5.5,87401864,1,fte,https://app.hubspot.com/contacts/50955967/record/0-2/51288696209
+53656641196,ADRM,MA,AC,20,87401864,2,fte,https://app.hubspot.com/contacts/50955967/record/0-2/53656641196
+50617217051,Advanced Electronic,NY,AC,11.4,87401864,2,fte,https://app.hubspot.com/contacts/50955967/record/0-2/50617217051
+51694443286,AISG,NY,AC,5,,1,owner,https://app.hubspot.com/contacts/50955967/record/0-2/51694443286
+50595792923,"AL, INC.(J STEIN LOCKSMITH)",NY,Lock,1.2,87401864,1,fte,https://app.hubspot.com/contacts/50955967/record/0-2/50595792923
+55013845100,Alarmco Systems,NJ,AC,0.6,87401864,2,fte,https://app.hubspot.com/contacts/50955967/record/0-2/55013845100
+51302765921,Alliance Door & Hardware Inc,NY,Lock,0.5,,1,owner,https://app.hubspot.com/contacts/50955967/record/0-2/51302765921
+51301527672,Ally Door Hardware,NY,Lock,2.2,,1,owner,https://app.hubspot.com/contacts/50955967/record/0-2/51301527672
+51299375237,American Alliance,NY,AC,5,,1,owner,https://app.hubspot.com/contacts/50955967/record/0-2/51299375237
+51999701508,ASM Integrators,NY,AC,6,87401864,1,fte,https://app.hubspot.com/contacts/50955967/record/0-2/51999701508
+51292329054,Associated Lock & Safe Inc,NY,Lock,0.5,,1,owner,https://app.hubspot.com/contacts/50955967/record/0-2/51292329054
+52039276616,Associated Security Corporation,CT,AC,3.1,87401864,1,fte,https://app.hubspot.com/contacts/50955967/record/0-2/52039276616
+51543948847,Atlantic Coast Alarm,NJ,AC,,87401864,1,est_revenue,https://app.hubspot.com/contacts/50955967/record/0-2/51543948847
+51533022472,AVS Technology,NJ,AC,15,87401864,1,fte,https://app.hubspot.com/contacts/50955967/record/0-2/51533022472
+51816974447,Beacon Protection,NJ,AC,30,,1,owner,https://app.hubspot.com/contacts/50955967/record/0-2/51816974447
+51621097782,BGPS Group,NY,AC,2.5,87401864,1,fte,https://app.hubspot.com/contacts/50955967/record/0-2/51621097782
+51930408115,Boston Security Integration,MA,AC,5,,1,owner,https://app.hubspot.com/contacts/50955967/record/0-2/51930408115
+51322428496,Buckmiller,NY,Fire,5,,1,owner,https://app.hubspot.com/contacts/50955967/record/0-2/51322428496
+52033816119,Buffalo Security & Fire Co.,NY,Fire,4.7,87401864,1,fte,https://app.hubspot.com/contacts/50955967/record/0-2/52033816119
+51813419358,Capital Security Systems Inc,NY,AC,30,,1,owner,https://app.hubspot.com/contacts/50955967/record/0-2/51813419358
+50635940106,"Care Security Systems, Inc.",NY,AC,,87401864,1,est_revenue,https://app.hubspot.com/contacts/50955967/record/0-2/50635940106
+51321654943,Casco Security Systems,NY,AC,5,,1,owner,https://app.hubspot.com/contacts/50955967/record/0-2/51321654943
+55930362717,Central Lock,NY,Lock,1.5,87401864,1,fte,https://app.hubspot.com/contacts/50955967/record/0-2/55930362717
+52034121279,"Champion Alarm Systems, LTD",NY,AC,3.7,87401864,1,fte,https://app.hubspot.com/contacts/50955967/record/0-2/52034121279
+51326638159,Citywide Fire Sprinkler,NY,Fire,5,,1,owner,https://app.hubspot.com/contacts/50955967/record/0-2/51326638159
+50791370638,Complete Sound Solutions,NY,AC,1.1,87401864,1,fte,https://app.hubspot.com/contacts/50955967/record/0-2/50791370638
+51308999964,Coranet,NY,AC,30,,1,owner,https://app.hubspot.com/contacts/50955967/record/0-2/51308999964
+51291397176,Corporate Security Resources,NY,AC,5,,1,owner,https://app.hubspot.com/contacts/50955967/record/0-2/51291397176
+54754156307,Eastern American Technologies,NY,AC,2.2,87401864,2,fte,https://app.hubspot.com/contacts/50955967/record/0-2/54754156307
+51533013833,Electronix Systems,NY,AC,,87401864,1,est_revenue,https://app.hubspot.com/contacts/50955967/record/0-2/51533013833
+51871398496,ESCA,PA,AC,5,,1,owner,https://app.hubspot.com/contacts/50955967/record/0-2/51871398496
+51763274069,Excel Security,NY,AC,175,,1,owner,https://app.hubspot.com/contacts/50955967/record/0-2/51763274069
+51309773995,FireLab,NJ,Fire,0.9,,1,owner,https://app.hubspot.com/contacts/50955967/record/0-2/51309773995
+51272772370,FireMaxx Systems,NY,Fire,5,,1,owner,https://app.hubspot.com/contacts/50955967/record/0-2/51272772370
+52195447179,Fortress Controls,NJ,AC,3.4,87401864,2,fte,https://app.hubspot.com/contacts/50955967/record/0-2/52195447179
+51927398178,Global Protection Systems Inc,NY,Fire,1.3,,1,owner,https://app.hubspot.com/contacts/50955967/record/0-2/51927398178
+52050876440,GMI Automation,NJ,AC,19.6,87401864,1,fte,https://app.hubspot.com/contacts/50955967/record/0-2/52050876440
+51533385244,Haig Service,NJ,AC,,87401864,1,est_revenue,https://app.hubspot.com/contacts/50955967/record/0-2/51533385244
+50628163616,Hatzel & Buehler,DE,Ancilary,150,87401864,2,fte,https://app.hubspot.com/contacts/50955967/record/0-2/50628163616
+52038349391,"Home & Commercial Security, Inc.",MA,AC,4.3,87401864,1,fte,https://app.hubspot.com/contacts/50955967/record/0-2/52038349391
+51321654944,Hulk Security,NY,AC,0.5,,1,owner,https://app.hubspot.com/contacts/50955967/record/0-2/51321654944
+50674625383,IK Systems,NY,AC,9,87401864,2,fte,https://app.hubspot.com/contacts/50955967/record/0-2/50674625383
+54058505103,Interactive Control,NY,AC,1.1,87401864,1,fte,https://app.hubspot.com/contacts/50955967/record/0-2/54058505103
+50691076186,"Islandwide Locksmith, Inc.",NY,Lock,0.75,87401864,1,fte,https://app.hubspot.com/contacts/50955967/record/0-2/50691076186
+50762241321,JPM Lock & Security,NY,Lock,4,87401864,1,fte,https://app.hubspot.com/contacts/50955967/record/0-2/50762241321
+51872790297,Kintronics Inc,NY,AC,5,,3,owner,https://app.hubspot.com/contacts/50955967/record/0-2/51872790297
+56136991051,Kriebel Security,PA,AC,5.5,87401864,1,fte,https://app.hubspot.com/contacts/50955967/record/0-2/56136991051
+51235022132,Linear Technologies,NY,AC,4.5,87401864,1,fte,https://app.hubspot.com/contacts/50955967/record/0-2/51235022132
+50927773105,Linked Security,NY,AC,5,87401864,0,no_contact_at_all,https://app.hubspot.com/contacts/50955967/record/0-2/50927773105
+50480789522,Maffey's,NJ,AC,5,87401864,0,no_contact_at_all,https://app.hubspot.com/contacts/50955967/record/0-2/50480789522
+51315615927,McCray Global Protection,NJ,AC,30,,1,owner,https://app.hubspot.com/contacts/50955967/record/0-2/51315615927
+51298136363,Metropolis Electric,NY,AC,1,,1,owner,https://app.hubspot.com/contacts/50955967/record/0-2/51298136363
+52046970700,MHT Technologies,NY,AC,3.4,87401864,1,fte,https://app.hubspot.com/contacts/50955967/record/0-2/52046970700
+50518993520,"Minkel Safe & Lock Co., Inc.",NY,Lock,5,87401864,0,no_contact_at_all,https://app.hubspot.com/contacts/50955967/record/0-2/50518993520
+51315615928,Montro Protection,NY,AC,0.5,,1,owner,https://app.hubspot.com/contacts/50955967/record/0-2/51315615928
+52062941053,"MSS Electronics, Inc.",NY,AC,4.3,87401864,1,fte,https://app.hubspot.com/contacts/50955967/record/0-2/52062941053
+52052112436,"N.A.S. Security Systems, Inc.",NY,AC,3.3,87401864,1,fte,https://app.hubspot.com/contacts/50955967/record/0-2/52052112436
+51929197928,NCD Communications,NY,AC,5,,2,owner,https://app.hubspot.com/contacts/50955967/record/0-2/51929197928
+51532953451,NY Security Solutions,NY,AC,,87401864,1,est_revenue,https://app.hubspot.com/contacts/50955967/record/0-2/51532953451
+55460945503,Orbit Security Systems,NY,AC,1.8,87401864,1,fte,https://app.hubspot.com/contacts/50955967/record/0-2/55460945503
+52059534947,Park Security Systems,PA,AC,3.5,87401864,1,fte,https://app.hubspot.com/contacts/50955967/record/0-2/52059534947
+51291859841,Peace of Mind Technologies (POM),NY,AC,30,,3,owner,https://app.hubspot.com/contacts/50955967/record/0-2/51291859841
+50818190716,Pointer Tech,NY,AC,1.2,87401864,1,fte,https://app.hubspot.com/contacts/50955967/record/0-2/50818190716
+51311746075,Ray Door,NY,Lock,5,,1,owner,https://app.hubspot.com/contacts/50955967/record/0-2/51311746075
+50686697819,Safeguard Security,CT,AC,2.7,87401864,1,fte,https://app.hubspot.com/contacts/50955967/record/0-2/50686697819
+50939596964,SAFEWATCH SECURITY GROUP,NY,AC,2.5,87401864,1,fte,https://app.hubspot.com/contacts/50955967/record/0-2/50939596964
+51828888632,Security 2000,NJ,AC,5,,1,owner,https://app.hubspot.com/contacts/50955967/record/0-2/51828888632
+51988491568,Security Service,PA,AC,4.8,87401864,1,fte,https://app.hubspot.com/contacts/50955967/record/0-2/51988491568
+51800776313,Shepherd Security,NY,AC,5,,1,owner,https://app.hubspot.com/contacts/50955967/record/0-2/51800776313
+50938358950,Simon Security Systems,NY,AC,1.8,87401864,1,fte,https://app.hubspot.com/contacts/50955967/record/0-2/50938358950
+50521721701,Sky Locksmith,NY,Lock,0.5,87401864,0,no_contact_at_all,https://app.hubspot.com/contacts/50955967/record/0-2/50521721701
+55404764760,SL Security Pros,NY,AC,2.6,87401864,1,fte,https://app.hubspot.com/contacts/50955967/record/0-2/55404764760
+50940371341,Stone Security,NY,AC,6,87401864,1,fte,https://app.hubspot.com/contacts/50955967/record/0-2/50940371341
+51871088047,Systems Integration,NJ,AC,5,,1,owner,https://app.hubspot.com/contacts/50955967/record/0-2/51871088047
+51449481069,TechComm Solution Services,NY,AC,5,,3,owner,https://app.hubspot.com/contacts/50955967/record/0-2/51449481069
+52360019225,The Wilkins Company,PA,AC,5.7,87401864,1,fte,https://app.hubspot.com/contacts/50955967/record/0-2/52360019225
+51532827761,Trifecta Fire and Security,NY,Fire,1.1,,1,owner,https://app.hubspot.com/contacts/50955967/record/0-2/51532827761
+50480632381,Umbrella Locksmith Service,NY,Lock,0.5,87401864,0,no_contact_at_all,https://app.hubspot.com/contacts/50955967/record/0-2/50480632381
+52360019223,Vertriax,CT,AC,7,87401864,1,fte,https://app.hubspot.com/contacts/50955967/record/0-2/52360019223
+50928017163,ViewScan,VA,AC,,87401864,2,est_revenue,https://app.hubspot.com/contacts/50955967/record/0-2/50928017163
+51626169102,5ksecurity,NY,AC,0.6,,1,fte; owner,https://app.hubspot.com/contacts/50955967/record/0-2/51626169102
+53716496927,A&I Security,PA,AC,0.9,,1,fte; owner,https://app.hubspot.com/contacts/50955967/record/0-2/53716496927
+50691230896,"A.B.C. LOCKSMITH & SUPPLIES, INC.",NY,Lock,,87401864,1,est_revenue; fte,https://app.hubspot.com/contacts/50955967/record/0-2/50691230896
+54548088924,Able Locksmith Inc.,NY,Lock,0.8,,1,fte; owner,https://app.hubspot.com/contacts/50955967/record/0-2/54548088924
+51276170356,Active Security Systems,NY,AC,0.5,,2,fte; owner,https://app.hubspot.com/contacts/50955967/record/0-2/51276170356
+50597653067,ADR Security,NY,AC,,87401864,2,est_revenue; fte,https://app.hubspot.com/contacts/50955967/record/0-2/50597653067
+52194982724,Advanced Alarm,NY,AC,4.3,,1,fte; owner,https://app.hubspot.com/contacts/50955967/record/0-2/52194982724
+52187501374,Advanced Alarm Systems,MA,AC,5.8,,1,fte; owner,https://app.hubspot.com/contacts/50955967/record/0-2/52187501374
+52197304072,Advanced Security Technologies,CT,AC,3.9,,1,fte; owner,https://app.hubspot.com/contacts/50955967/record/0-2/52197304072
+51995018268,Advanced Solutions Communications Corp. (ASCC) Inc.,PA,AC,21,,1,fte; owner,https://app.hubspot.com/contacts/50955967/record/0-2/51995018268
+52910890892,AdvaniDe,MA,Lock,10.7,,1,fte; owner,https://app.hubspot.com/contacts/50955967/record/0-2/52910890892
+50660861967,"AFFORDABLE LOCKSMITH & HARDWARE III, INC.",NY,Lock,,87401864,1,est_revenue; fte,https://app.hubspot.com/contacts/50955967/record/0-2/50660861967
+50606109716,Alarm New England,MA,AC,,87401864,0,est_revenue; no_contact_at_all,https://app.hubspot.com/contacts/50955967/record/0-2/50606109716
+53611421004,Alarmex,MA,AC,6.3,,1,fte; owner,https://app.hubspot.com/contacts/50955967/record/0-2/53611421004
+52181754227,Alarmingly Affordable,NY,AC,3,,1,fte; owner,https://app.hubspot.com/contacts/50955967/record/0-2/52181754227
+52028913929,Alen Security,NJ,AC,4,,1,fte; owner,https://app.hubspot.com/contacts/50955967/record/0-2/52028913929
+52724849524,Alertus,MD,AC,53.8,,1,fte; owner,https://app.hubspot.com/contacts/50955967/record/0-2/52724849524
+51928425045,All Phase Video-Security Inc,NY,AC,2,,1,fte; owner,https://app.hubspot.com/contacts/50955967/record/0-2/51928425045
+54896513280,All Tech Alarms,NY,Fire,,87401864,2,est_revenue; fte,https://app.hubspot.com/contacts/50955967/record/0-2/54896513280
+51314687520,"Alliance Systems Integrators, Inc.",NY,AC,,87401864,1,est_revenue; fte,https://app.hubspot.com/contacts/50955967/record/0-2/51314687520
+54040313676,Always Secure,NY,AC,3,,1,fte; owner,https://app.hubspot.com/contacts/50955967/record/0-2/54040313676
+53635682895,American Alarm,MA,AC,30,,2,fte; owner,https://app.hubspot.com/contacts/50955967/record/0-2/53635682895
+54052348789,American Alarm,CT,AC,0.5,,1,fte; owner,https://app.hubspot.com/contacts/50955967/record/0-2/54052348789
+53723772557,American Best Locksmith,PA,Lock,3,,1,fte; owner,https://app.hubspot.com/contacts/50955967/record/0-2/53723772557
+50657148830,American Total Protection,CT,AC,,87401864,0,est_revenue; no_contact_at_all,https://app.hubspot.com/contacts/50955967/record/0-2/50657148830
+54754212631,APB Security Systems,NY,AC,5,,2,fte; owner,https://app.hubspot.com/contacts/50955967/record/0-2/54754212631
+50796180022,Approved Fire Protection,NJ,Fire,,87401864,1,est_revenue; fte,https://app.hubspot.com/contacts/50955967/record/0-2/50796180022
+54711479983,Approved Fire Protection Co.,NJ,Fire,37,,1,fte; owner,https://app.hubspot.com/contacts/50955967/record/0-2/54711479983
+52387311156,APS Corporation,NJ,AC,3.2,,1,fte; owner,https://app.hubspot.com/contacts/50955967/record/0-2/52387311156
+52805119291,ARK Systems,MD,AC,23.9,,1,fte; owner,https://app.hubspot.com/contacts/50955967/record/0-2/52805119291
+54045633831,Arrow Security,NY,AC,1,,1,fte; owner,https://app.hubspot.com/contacts/50955967/record/0-2/54045633831
+50598581762,Associated Fire Protection,NJ,Fire,,87401864,0,est_revenue; no_contact_at_all,https://app.hubspot.com/contacts/50955967/record/0-2/50598581762
+52743663701,Assurance Media,DE,AC,13.2,,1,fte; owner,https://app.hubspot.com/contacts/50955967/record/0-2/52743663701
+54754948359,Audio Video Solutions CT,CT,AC,2.2,,1,fte; owner,https://app.hubspot.com/contacts/50955967/record/0-2/54754948359
+51328651288,"Auto Sound Systems, Inc.",NY,AC,5,,0,owner; no_contact_at_all,https://app.hubspot.com/contacts/50955967/record/0-2/51328651288
+52953786985,Axios Security Group,DC,AC,11.1,,1,fte; owner,https://app.hubspot.com/contacts/50955967/record/0-2/52953786985
+52838924147,Baldino's Lock & Key,VA,Lock,8.3,,2,fte; owner,https://app.hubspot.com/contacts/50955967/record/0-2/52838924147
+50791247753,Bay Ridge Security,NY,AC,,87401864,1,est_revenue; fte,https://app.hubspot.com/contacts/50955967/record/0-2/50791247753
+57671259476,Bay Safety & Security,NJ,Fire,,87401864,1,est_revenue; fte,https://app.hubspot.com/contacts/50955967/record/0-2/57671259476
+53616505894,BCM Controls,MA,AC,60,,1,fte; owner,https://app.hubspot.com/contacts/50955967/record/0-2/53616505894
+50684117504,BEE LOCKSMITH LLC,NY,Lock,,87401864,1,est_revenue; fte,https://app.hubspot.com/contacts/50955967/record/0-2/50684117504
+54754235139,Berkshire Alarm,CT,AC,1.8,,1,fte; owner,https://app.hubspot.com/contacts/50955967/record/0-2/54754235139
+52815311658,Berkshire Systems,PA,AC,17.4,,1,fte; owner,https://app.hubspot.com/contacts/50955967/record/0-2/52815311658
+54711503169,Better Security,NJ,AC,,87401864,1,est_revenue; fte,https://app.hubspot.com/contacts/50955967/record/0-2/54711503169
+52195602027,Bettwy Systems,PA,AC,4.25,,1,fte; owner,https://app.hubspot.com/contacts/50955967/record/0-2/52195602027
+50678308902,Black Knight Security,NY,AC,,87401864,1,est_revenue; fte,https://app.hubspot.com/contacts/50955967/record/0-2/50678308902
+53607700765,Black Lab Alarm,MA,AC,3.3,,1,fte; owner,https://app.hubspot.com/contacts/50955967/record/0-2/53607700765
+54040160126,Brothers Security,NY,AC,3,,1,fte; owner,https://app.hubspot.com/contacts/50955967/record/0-2/54040160126
+53728320392,Brunell & Sons,PA,AC,2.3,,1,fte; owner,https://app.hubspot.com/contacts/50955967/record/0-2/53728320392
+54711732052,Building Security Services,NJ,AC,18,,1,fte; owner,https://app.hubspot.com/contacts/50955967/record/0-2/54711732052
+52971514945,Burtel Security,VA,AC,6.4,,1,fte; owner,https://app.hubspot.com/contacts/50955967/record/0-2/52971514945
+51304004894,C.M. Armitage Electrical Contracting,NY,AC,5,,0,owner; no_contact_at_all,https://app.hubspot.com/contacts/50955967/record/0-2/51304004894
+52968302212,C.V. Security,MD,AC,4.2,,1,fte; owner,https://app.hubspot.com/contacts/50955967/record/0-2/52968302212
+52181599395,Cape Cod Alarm,MA,AC,1.5,,1,fte; owner,https://app.hubspot.com/contacts/50955967/record/0-2/52181599395
+52039739932,Cat's Eye Security,PA,AC,,87401864,1,est_revenue; fte,https://app.hubspot.com/contacts/50955967/record/0-2/52039739932
+52177903897,CC-Teknologies,MA,AC,1.5,,1,fte; owner,https://app.hubspot.com/contacts/50955967/record/0-2/52177903897
+52032679264,CCTV Services Inc.,NY,AC,13.7,,1,fte; owner,https://app.hubspot.com/contacts/50955967/record/0-2/52032679264
+51054995014,Central Security Integration,NY,AC,,87401864,1,est_revenue; fte,https://app.hubspot.com/contacts/50955967/record/0-2/51054995014
+54896123522,Certified Protection,NJ,AC,1.6,,1,fte; owner,https://app.hubspot.com/contacts/50955967/record/0-2/54896123522
+51594965342,CGL Security,MA,AC,,87401864,1,est_revenue; fte,https://app.hubspot.com/contacts/50955967/record/0-2/51594965342
+57248278909,City Wide Auto Locksmith,NY,Lock,,87401864,1,est_revenue; fte,https://app.hubspot.com/contacts/50955967/record/0-2/57248278909
+54050179115,Citywide Commercial Services,NY,AC,15,,1,fte; owner,https://app.hubspot.com/contacts/50955967/record/0-2/54050179115
+54546690611,Classic Systems Inc.,NY,AC,3.8,,1,fte; owner,https://app.hubspot.com/contacts/50955967/record/0-2/54546690611
+50927404655,Clermont,NY,AC,,87401864,1,est_revenue; fte,https://app.hubspot.com/contacts/50955967/record/0-2/50927404655
+54735317587,CMAC Corporation,NJ,AC,2.2,,1,fte; owner,https://app.hubspot.com/contacts/50955967/record/0-2/54735317587
+52181599394,Colline Integrated Security Services,NJ,AC,4,,1,fte; owner,https://app.hubspot.com/contacts/50955967/record/0-2/52181599394
+52373130136,Contral Security,NJ,AC,1.2,,1,fte; owner,https://app.hubspot.com/contacts/50955967/record/0-2/52373130136
+52736111455,Control Technologies,MA,AC,27,,1,fte; owner,https://app.hubspot.com/contacts/50955967/record/0-2/52736111455
+54176706973,Covert Security,CT,AC,2,,1,fte; owner,https://app.hubspot.com/contacts/50955967/record/0-2/54176706973
+53608014493,"Creative Services, Inc.",MA,AC,11.8,,1,fte; owner,https://app.hubspot.com/contacts/50955967/record/0-2/53608014493
+54771094361,CSAV Systems,NJ,AC,5.7,,1,fte; owner,https://app.hubspot.com/contacts/50955967/record/0-2/54771094361
+50678308900,CSI Security Systems,NY,AC,,87401864,1,est_revenue; fte,https://app.hubspot.com/contacts/50955967/record/0-2/50678308900
+51299979173,"Cursive Security, Inc.",NY,AC,5,,0,owner; no_contact_at_all,https://app.hubspot.com/contacts/50955967/record/0-2/51299979173
+52868061724,"Cyber Communications Sales, Inc.",MA,AC,11.4,,1,fte; owner,https://app.hubspot.com/contacts/50955967/record/0-2/52868061724
+54754916751,Cyclone Home Systems,CT,AC,4.5,,1,fte; owner,https://app.hubspot.com/contacts/50955967/record/0-2/54754916751
+52869297749,Cypress Door & Glass,PA,Lock,1.8,,1,fte; owner,https://app.hubspot.com/contacts/50955967/record/0-2/52869297749
+50691230895,DAQ,NJ,AC,,87401864,1,est_revenue; fte,https://app.hubspot.com/contacts/50955967/record/0-2/50691230895
+54896194677,Dash Lock & Key,NY,Lock,1,,1,fte; owner,https://app.hubspot.com/contacts/50955967/record/0-2/54896194677
+54755095992,Data-Tele Contractors,NJ,AC,20.4,,1,fte; owner,https://app.hubspot.com/contacts/50955967/record/0-2/54755095992
+52946854566,DC Locksmith,DC,Lock,0.4,,1,fte; owner,https://app.hubspot.com/contacts/50955967/record/0-2/52946854566
+52862061472,DEI Systems,MA,AC,11.6,,1,fte; owner,https://app.hubspot.com/contacts/50955967/record/0-2/52862061472
+53719742102,Digital Innovation,PA,AC,2.2,,1,fte; owner,https://app.hubspot.com/contacts/50955967/record/0-2/53719742102
+52965237554,"Digitronics, Inc.",VA,AC,6.1,,1,fte; owner,https://app.hubspot.com/contacts/50955967/record/0-2/52965237554
+52377863187,Dmi Locksmith,PA,Lock,1,,1,fte; owner,https://app.hubspot.com/contacts/50955967/record/0-2/52377863187
+52866668569,Door & Gate USA,DE,Lock,2.7,,1,fte; owner,https://app.hubspot.com/contacts/50955967/record/0-2/52866668569
+51321035777,"DSS, Inc.",NY,AC,5,,0,owner; no_contact_at_all,https://app.hubspot.com/contacts/50955967/record/0-2/51321035777
+54770236022,DTM Installations,NY,AC,2.3,,1,fte; owner,https://app.hubspot.com/contacts/50955967/record/0-2/54770236022
+51998424583,DW Security,NY,AC,6.1,,2,fte; owner,https://app.hubspot.com/contacts/50955967/record/0-2/51998424583
+54755085190,Eastec,NJ,AC,8,,1,fte; owner,https://app.hubspot.com/contacts/50955967/record/0-2/54755085190
+54754216718,Eastern DataComm,NJ,AC,11,,1,fte; owner,https://app.hubspot.com/contacts/50955967/record/0-2/54754216718
+51183503961,Efficient Computer Technology,NY,AC,5,,0,owner; no_contact_at_all,https://app.hubspot.com/contacts/50955967/record/0-2/51183503961
+54035230237,Electronic Alarm System,RI,Fire,1,,1,fte; owner,https://app.hubspot.com/contacts/50955967/record/0-2/54035230237
+53633050671,Electronic Security Group,MA,AC,3.5,,1,fte; owner,https://app.hubspot.com/contacts/50955967/record/0-2/53633050671
+54755076120,Electronic Service Solutions (ESS),NY,AC,8,,1,fte; owner,https://app.hubspot.com/contacts/50955967/record/0-2/54755076120
+52970432665,"Emergency 911 Security,Inc",DC,AC,4.2,,1,fte; owner,https://app.hubspot.com/contacts/50955967/record/0-2/52970432665
+51305243537,Empire Fire Protection Services Inc,NY,Fire,0.5,,0,owner; no_contact_at_all,https://app.hubspot.com/contacts/50955967/record/0-2/51305243537
+53732008531,ERA Fire,PA,Fire,3.4,,1,fte; owner,https://app.hubspot.com/contacts/50955967/record/0-2/53732008531
+52169101733,ESCS - Electronic Security Control Systems,MA,AC,2.4,,1,fte; owner,https://app.hubspot.com/contacts/50955967/record/0-2/52169101733
+54057884986,Essential Security,NY,AC,2,,1,fte; owner,https://app.hubspot.com/contacts/50955967/record/0-2/54057884986
+51304004895,Expert Fire Sprinkler LLC.,NY,Fire,0.5,,0,owner; no_contact_at_all,https://app.hubspot.com/contacts/50955967/record/0-2/51304004895
+52861438390,"Express Technologies, Inc.",VA,AC,9,,1,fte; owner,https://app.hubspot.com/contacts/50955967/record/0-2/52861438390
+50933164137,F & O Security of NY,NY,AC,,87401864,1,est_revenue; fte,https://app.hubspot.com/contacts/50955967/record/0-2/50933164137
+54770242872,FBS Security Systems,NJ,Fire,0.86,,1,fte; owner,https://app.hubspot.com/contacts/50955967/record/0-2/54770242872
+51722011308,FCS Metro,NJ,Fire,,87401864,1,est_revenue; fte,https://app.hubspot.com/contacts/50955967/record/0-2/51722011308
+51328805811,Felluca Overhead Doors Inc.,NY,Lock,0.5,,0,owner; no_contact_at_all,https://app.hubspot.com/contacts/50955967/record/0-2/51328805811
+52840645772,Fidelity Burglar & Fire Alarm Co.,PA,Fire,3.8,,2,fte; owner,https://app.hubspot.com/contacts/50955967/record/0-2/52840645772
+51309310073,Fire Safety Directors,NY,Fire,5,,0,owner; no_contact_at_all,https://app.hubspot.com/contacts/50955967/record/0-2/51309310073
+52185005868,Fire Safety Systems,NY,Fire,2.7,,1,fte; owner,https://app.hubspot.com/contacts/50955967/record/0-2/52185005868
+52187346476,Fire Security Technologies,NJ,Fire,5.1,,1,fte; owner,https://app.hubspot.com/contacts/50955967/record/0-2/52187346476
+52850621776,FireBot,VA,Fire,0.9,,1,fte; owner,https://app.hubspot.com/contacts/50955967/record/0-2/52850621776
+51306482497,Firequench Inc.,NJ,Fire,0.5,,0,owner; no_contact_at_all,https://app.hubspot.com/contacts/50955967/record/0-2/51306482497
+52962812325,Force Security Solutions LLC,VA,AC,5.6,,1,fte; owner,https://app.hubspot.com/contacts/50955967/record/0-2/52962812325
+52188585042,Fox Brothers Alarms,PA,AC,4.24,,1,fte; owner,https://app.hubspot.com/contacts/50955967/record/0-2/52188585042
+53732916325,Fox Chase Lock & Key,PA,Lock,1.5,,1,fte; owner,https://app.hubspot.com/contacts/50955967/record/0-2/53732916325
+52195911694,Gladd Security,NY,AC,2.5,,1,fte; owner,https://app.hubspot.com/contacts/50955967/record/0-2/52195911694
+52959408210,Granilux Solutions,MD,AC,3.8,,1,fte; owner,https://app.hubspot.com/contacts/50955967/record/0-2/52959408210
+52000379530,Great Lakes Building Systems,NY,Fire,5,,1,fte; owner,https://app.hubspot.com/contacts/50955967/record/0-2/52000379530
+54055720970,Greenwich Lock,CT,Lock,2,,1,fte; owner,https://app.hubspot.com/contacts/50955967/record/0-2/54055720970
+52169101732,Grid Squared,NY,AC,2.2,,1,fte; owner,https://app.hubspot.com/contacts/50955967/record/0-2/52169101732
+52957850713,Guardian Fire,MD,Fire,19.3,,1,fte; owner,https://app.hubspot.com/contacts/50955967/record/0-2/52957850713
+54511245459,Harlem Data Communications,NY,AC,,87401864,1,est_revenue; fte,https://app.hubspot.com/contacts/50955967/record/0-2/54511245459
+50686852526,Hogan Security,NJ,AC,4.5,,1,fte; owner,https://app.hubspot.com/contacts/50955967/record/0-2/50686852526
+52879627866,HS Technology Group,MD,AC,4.5,,1,fte; owner,https://app.hubspot.com/contacts/50955967/record/0-2/52879627866
+54041954590,IAL Total Security,NY,AC,0.9,,2,fte; owner,https://app.hubspot.com/contacts/50955967/record/0-2/54041954590
+52953173372,IDEMIA,DC,AC,3339,,1,fte; owner,https://app.hubspot.com/contacts/50955967/record/0-2/52953173372
+52188739734,IDR Technology,NY,AC,1.5,,1,fte; owner,https://app.hubspot.com/contacts/50955967/record/0-2/52188739734
+53718192194,Independent Hardware,PA,Lock,8.5,,1,fte; owner,https://app.hubspot.com/contacts/50955967/record/0-2/53718192194
+52953634698,"Innovative Security Systems, Inc.",MD,AC,4.2,,1,fte; owner,https://app.hubspot.com/contacts/50955967/record/0-2/52953634698
+52197922388,Intelligent Electronic Systems,PA,Fire,4.2,,1,fte; owner,https://app.hubspot.com/contacts/50955967/record/0-2/52197922388
+52952397941,Intellimar,MD,AC,12.6,,1,fte; owner,https://app.hubspot.com/contacts/50955967/record/0-2/52952397941
+54041485169,Island AVNS,NY,AC,3,,1,fte; owner,https://app.hubspot.com/contacts/50955967/record/0-2/54041485169
+52374213715,JEM Security Solutions,NY,AC,0.9,,1,fte; owner,https://app.hubspot.com/contacts/50955967/record/0-2/52374213715
+54754232976,Johnston Communications,NJ,AC,4.3,,1,fte; owner,https://app.hubspot.com/contacts/50955967/record/0-2/54754232976
+54039998211,Jules Security,NY,AC,3,,1,fte; owner,https://app.hubspot.com/contacts/50955967/record/0-2/54039998211
+54511387716,Keystone Lock & Safe,NY,Lock,0.5,,1,fte; owner,https://app.hubspot.com/contacts/50955967/record/0-2/54511387716
+52948095297,Keystone Security,DC,AC,0.9,,2,fte; owner,https://app.hubspot.com/contacts/50955967/record/0-2/52948095297
+51326328609,Keystone Security Systems,NY,Fire,0.5,,0,owner; no_contact_at_all,https://app.hubspot.com/contacts/50955967/record/0-2/51326328609
+52181289544,Kiska Solutions,NY,AC,12,,1,fte; owner,https://app.hubspot.com/contacts/50955967/record/0-2/52181289544
+54770219811,Knight Protect NY,NY,AC,1.2,,1,fte; owner,https://app.hubspot.com/contacts/50955967/record/0-2/54770219811
+54770298189,Knight Scurity NY,NY,AC,3,,1,fte; owner,https://app.hubspot.com/contacts/50955967/record/0-2/54770298189
+54187208226,Laser Central Alarms Inc,NY,AC,3,,1,fte; owner,https://app.hubspot.com/contacts/50955967/record/0-2/54187208226
+54511327313,Liberty Lock and Key Locksmith,NY,Lock,3,,1,fte; owner,https://app.hubspot.com/contacts/50955967/record/0-2/54511327313
+50682573723,Life Safety Engineered,NY,AC,9,,0,owner; no_contact_at_all,https://app.hubspot.com/contacts/50955967/record/0-2/50682573723
+54052962311,Lighthouse Security,NY,AC,0.5,,1,fte; owner,https://app.hubspot.com/contacts/50955967/record/0-2/54052962311
+54770105707,Lock and Tech USA,NY,Lock,2.9,,1,fte; owner,https://app.hubspot.com/contacts/50955967/record/0-2/54770105707
+57527768083,Lock City NYC,NY,Lock,,87401864,1,est_revenue; fte,https://app.hubspot.com/contacts/50955967/record/0-2/57527768083
+54193942706,Locksmith Men Nassau,NY,Lock,0.5,,1,fte; owner,https://app.hubspot.com/contacts/50955967/record/0-2/54193942706
+52373903974,Lookout Security Systems,CT,AC,1.1,,1,fte; owner,https://app.hubspot.com/contacts/50955967/record/0-2/52373903974
+52198540686,LowV Systems,PA,AC,4,,1,fte; owner,https://app.hubspot.com/contacts/50955967/record/0-2/52198540686
+52198385995,LumiRing,NY,AC,3.5,,1,fte; owner,https://app.hubspot.com/contacts/50955967/record/0-2/52198385995
+54188644953,M.A.M Enterprize,CT,AC,2,,1,fte; owner,https://app.hubspot.com/contacts/50955967/record/0-2/54188644953
+51312209570,MAC Security LLC,NY,AC,30,,0,owner; no_contact_at_all,https://app.hubspot.com/contacts/50955967/record/0-2/51312209570
+50623705721,MacKenzie Door Company,NJ,Lock,19.9,,2,fte; owner,https://app.hubspot.com/contacts/50955967/record/0-2/50623705721
+53615446683,"Madison Security Group, Inc.",MA,AC,28,,1,fte; owner,https://app.hubspot.com/contacts/50955967/record/0-2/53615446683
+54754866776,Mammoth Security,CT,AC,2.3,,1,fte; owner,https://app.hubspot.com/contacts/50955967/record/0-2/54754866776
+52883036968,"Marathon Technology Solutions, Inc.",MD,AC,3.8,,1,fte; owner,https://app.hubspot.com/contacts/50955967/record/0-2/52883036968
+51561064853,Master Fire Prevention Systems,NY,Fire,5.5,,1,fte; owner,https://app.hubspot.com/contacts/50955967/record/0-2/51561064853
+51306637368,Master Halco,NY,Fire,5,,0,owner; no_contact_at_all,https://app.hubspot.com/contacts/50955967/record/0-2/51306637368
+54720715599,Maximum Sound & Security,CT,AC,2.8,,1,fte; owner,https://app.hubspot.com/contacts/50955967/record/0-2/54720715599
+50636712715,Merrick Master Locksmith,NY,Lock,,87401864,1,est_revenue; fte,https://app.hubspot.com/contacts/50955967/record/0-2/50636712715
+52958313374,Mi-27,DC,AC,1.1,,1,fte; owner,https://app.hubspot.com/contacts/50955967/record/0-2/52958313374
+52953943109,"Mike's Locksmith, LLC",MD,Lock,0.5,,1,fte; owner,https://app.hubspot.com/contacts/50955967/record/0-2/52953943109
+53623489061,Minuteman Security & Life Safety,MA,Fire,102,,1,fte; owner,https://app.hubspot.com/contacts/50955967/record/0-2/53623489061
+54512070822,MJ Koester INC,NY,Fire,2.5,,1,fte; owner,https://app.hubspot.com/contacts/50955967/record/0-2/54512070822
+51311589787,Monroe Extinguisher Company,NY,Fire,5,,0,owner; no_contact_at_all,https://app.hubspot.com/contacts/50955967/record/0-2/51311589787
+51367814505,My-Guard Security Corporation,NY,AC,5,,0,owner; no_contact_at_all,https://app.hubspot.com/contacts/50955967/record/0-2/51367814505
+52390741540,National Security and Protection,NY,AC,4.1,,2,fte; owner,https://app.hubspot.com/contacts/50955967/record/0-2/52390741540
+54553365927,National Technology Group Inc.,NY,AC,7.6,,1,fte; owner,https://app.hubspot.com/contacts/50955967/record/0-2/54553365927
+52178523177,Nationwide Security Corporation,CT,AC,16.8,,1,fte; owner,https://app.hubspot.com/contacts/50955967/record/0-2/52178523177
+50595484303,NEAD ELECTRIC INC,NJ,Fire,,87401864,2,est_revenue; fte,https://app.hubspot.com/contacts/50955967/record/0-2/50595484303
+52868524214,New England Safety Systems,MA,AC,1.5,,1,fte; owner,https://app.hubspot.com/contacts/50955967/record/0-2/52868524214
+54771137464,New World Solutions,NJ,AC,1.6,,1,fte; owner,https://app.hubspot.com/contacts/50955967/record/0-2/54771137464
+51317628934,New York Career Training & Advancement Inc.,NY,AC,0.5,,0,owner; no_contact_at_all,https://app.hubspot.com/contacts/50955967/record/0-2/51317628934
+52382909789,New York Fire Detection,NY,Fire,4.2,,1,fte; owner,https://app.hubspot.com/contacts/50955967/record/0-2/52382909789
+51309464637,Nexise Manufacturing,NY,AC,5,,0,owner; no_contact_at_all,https://app.hubspot.com/contacts/50955967/record/0-2/51309464637
+54770167417,Next Generation Alarms,CT,AC,1.3,,1,fte; owner,https://app.hubspot.com/contacts/50955967/record/0-2/54770167417
+52860509238,"Next Generation Security Concepts, Inc.",VA,AC,3,,1,fte; owner,https://app.hubspot.com/contacts/50955967/record/0-2/52860509238
+54755058083,North American Video,NJ,AC,21.2,,1,fte; owner,https://app.hubspot.com/contacts/50955967/record/0-2/54755058083
+53730022675,Northeast Fence & Iron Works,PA,Lock,8.8,,1,fte; owner,https://app.hubspot.com/contacts/50955967/record/0-2/53730022675
+52037076881,"Northeast Protection Partners, Inc.",PA,AC,4.9,,1,fte; owner,https://app.hubspot.com/contacts/50955967/record/0-2/52037076881
+51780497513,NYCONN Security Systems Inc,NY,AC,1.3,,1,fte; owner,https://app.hubspot.com/contacts/50955967/record/0-2/51780497513
+52027387817,Octeum,NY,AC,5.1,,1,fte; owner,https://app.hubspot.com/contacts/50955967/record/0-2/52027387817
+53735938622,Ohmcomm,PA,AC,3.5,,1,fte; owner,https://app.hubspot.com/contacts/50955967/record/0-2/53735938622
+54896488551,Omni Data,CT,AC,4.5,,1,fte; owner,https://app.hubspot.com/contacts/50955967/record/0-2/54896488551
+51327721992,On Madison Park / Arclinea NY,NY,AC,0.5,,0,owner; no_contact_at_all,https://app.hubspot.com/contacts/50955967/record/0-2/51327721992
+52949496361,One Source Systems,MD,AC,5,,1,fte; owner,https://app.hubspot.com/contacts/50955967/record/0-2/52949496361
+53733996100,Oneida Fire Protection,PA,Fire,3.5,,1,fte; owner,https://app.hubspot.com/contacts/50955967/record/0-2/53733996100
+52189514065,Peloda,NJ,AC,2.4,,1,fte; owner,https://app.hubspot.com/contacts/50955967/record/0-2/52189514065
+54179365505,"Perey Turnstiles, Inc",NY,AC,2.9,,1,fte; owner,https://app.hubspot.com/contacts/50955967/record/0-2/54179365505
+54727458168,Perfect Connections,NJ,AC,1.1,,1,fte; owner,https://app.hubspot.com/contacts/50955967/record/0-2/54727458168
+55511338591,Phoenix Security Systems,PA,AC,,87401864,1,est_revenue; fte,https://app.hubspot.com/contacts/50955967/record/0-2/55511338591
+52183147842,Phonetel,CT,AC,2.1,,1,fte; owner,https://app.hubspot.com/contacts/50955967/record/0-2/52183147842
+52194156360,Power Tech,NY,AC,2.5,,1,fte; owner,https://app.hubspot.com/contacts/50955967/record/0-2/52194156360
+51302765922,Precision Garage Door of Rochester,NY,Lock,0.5,,0,owner; no_contact_at_all,https://app.hubspot.com/contacts/50955967/record/0-2/51302765922
+52022608567,"PSX, Inc.",PA,AC,11,,1,fte; owner,https://app.hubspot.com/contacts/50955967/record/0-2/52022608567
+51329580071,Quality Sprinkler Inc.,NY,Fire,5,,0,owner; no_contact_at_all,https://app.hubspot.com/contacts/50955967/record/0-2/51329580071
+52964631928,R 24 Security,MD,AC,3.3,,1,fte; owner,https://app.hubspot.com/contacts/50955967/record/0-2/52964631928
+54755076121,RCS International,NJ,AC,3.1,,1,fte; owner,https://app.hubspot.com/contacts/50955967/record/0-2/54755076121
+52874248112,"RFP Solutions, Inc",NJ,AC,4.7,,1,fte; owner,https://app.hubspot.com/contacts/50955967/record/0-2/52874248112
+53719274563,Rittenhouse Comms,PA,AC,2.9,,1,fte; owner,https://app.hubspot.com/contacts/50955967/record/0-2/53719274563
+53708880056,Robotek,PA,AC,1.4,,1,fte; owner,https://app.hubspot.com/contacts/50955967/record/0-2/53708880056
+51316854528,Rochester Colonial Manufacturing,NY,Lock,30,,0,owner; no_contact_at_all,https://app.hubspot.com/contacts/50955967/record/0-2/51316854528
+51299530135,RocTech Solution,NY,AC,30,,0,owner; no_contact_at_all,https://app.hubspot.com/contacts/50955967/record/0-2/51299530135
+51292793465,Roly-Door Inc,NY,Lock,5,,0,owner; no_contact_at_all,https://app.hubspot.com/contacts/50955967/record/0-2/51292793465
+52968153702,"Secom, LLC",MD,AC,6,,1,fte; owner,https://app.hubspot.com/contacts/50955967/record/0-2/52968153702
+50929293141,"Sector Security Of NY, Inc.",NY,AC,1.6,,1,fte; owner,https://app.hubspot.com/contacts/50955967/record/0-2/50929293141
+54549320494,SecureTech Systems,NY,AC,1.2,,1,fte; owner,https://app.hubspot.com/contacts/50955967/record/0-2/54549320494
+52166159779,Securewire Technologies,PA,AC,1.3,,1,fte; owner,https://app.hubspot.com/contacts/50955967/record/0-2/52166159779
+51298445469,Security 101 - Rochester,NY,AC,75,,0,owner; no_contact_at_all,https://app.hubspot.com/contacts/50955967/record/0-2/51298445469
+51305708142,Security Camera NY,NY,AC,5,,0,owner; no_contact_at_all,https://app.hubspot.com/contacts/50955967/record/0-2/51305708142
+52843610630,Security Instrument Corp.,DE,AC,13,,1,fte; owner,https://app.hubspot.com/contacts/50955967/record/0-2/52843610630
+52033968999,Security Management Systems,NY,AC,,87401864,1,est_revenue; fte,https://app.hubspot.com/contacts/50955967/record/0-2/52033968999
+55404698884,Security Specialists,CT,Fire,,87401864,1,est_revenue; fte,https://app.hubspot.com/contacts/50955967/record/0-2/55404698884
+52034540426,Security Systems of America,PA,AC,20,,2,fte; owner,https://app.hubspot.com/contacts/50955967/record/0-2/52034540426
+51185977700,Sentry Communications & Security,NY,AC,5,,0,owner; no_contact_at_all,https://app.hubspot.com/contacts/50955967/record/0-2/51185977700
+52722067802,Setronics,MA,AC,16.9,,2,fte; owner,https://app.hubspot.com/contacts/50955967/record/0-2/52722067802
+54770291370,Sherlock Security Systems,NY,Lock,3.2,,1,fte; owner,https://app.hubspot.com/contacts/50955967/record/0-2/54770291370
+51328186452,"Signature Building Systems, Inc.",NY,AC,5,,0,owner; no_contact_at_all,https://app.hubspot.com/contacts/50955967/record/0-2/51328186452
+51290628884,Silverseal,NY,AC,30,,0,owner; no_contact_at_all,https://app.hubspot.com/contacts/50955967/record/0-2/51290628884
+51311280192,"SolutionOne, Inc.",NY,Fire,0.5,,0,owner; no_contact_at_all,https://app.hubspot.com/contacts/50955967/record/0-2/51311280192
+52379348343,Soundsafe Security Systems,CT,AC,1.8,,1,fte; owner,https://app.hubspot.com/contacts/50955967/record/0-2/52379348343
+52377089199,SoundWorks & Security,CT,AC,0.8,,1,fte; owner,https://app.hubspot.com/contacts/50955967/record/0-2/52377089199
+52378264478,Spectrum IT,MA,AC,6,,1,fte; owner,https://app.hubspot.com/contacts/50955967/record/0-2/52378264478
+51299220299,Standard Technology Integration Corp.,NY,AC,0.5,,0,owner; no_contact_at_all,https://app.hubspot.com/contacts/50955967/record/0-2/51299220299
+50630211342,"STAR GATE & EMPIRE LOCKSMITH, INC.",NY,Lock,,87401864,1,est_revenue; fte,https://app.hubspot.com/contacts/50955967/record/0-2/50630211342
+53618054249,StarTec Communications,MA,AC,1,,1,fte; owner,https://app.hubspot.com/contacts/50955967/record/0-2/53618054249
+52883495786,Strat Security Systems Inc,MD,AC,2.9,,1,fte; owner,https://app.hubspot.com/contacts/50955967/record/0-2/52883495786
+52187501373,Strongbox Security Services,MA,AC,1.2,,1,fte; owner,https://app.hubspot.com/contacts/50955967/record/0-2/52187501373
+51308690308,Suffolk Security Systems,NY,AC,1.9,,1,fte; owner,https://app.hubspot.com/contacts/50955967/record/0-2/51308690308
+53629707625,Sullivan & McLaughlin (SullyMac),MA,AC,250,,1,fte; owner,https://app.hubspot.com/contacts/50955967/record/0-2/53629707625
+52849228350,Superior Communication Services,MA,AC,25,,1,fte; owner,https://app.hubspot.com/contacts/50955967/record/0-2/52849228350
+52958772396,Surveillance Secure,MD,AC,3.6,,1,fte; owner,https://app.hubspot.com/contacts/50955967/record/0-2/52958772396
+52879627869,"Tangent Cable Systems, Inc.",DE,AC,2.7,,1,fte; owner,https://app.hubspot.com/contacts/50955967/record/0-2/52879627869
+51724609886,Taylor Tech,NY,AC,,87401864,1,est_revenue; fte,https://app.hubspot.com/contacts/50955967/record/0-2/51724609886
+52173723017,Tech Services of NJ,NJ,AC,3.5,,1,fte; owner,https://app.hubspot.com/contacts/50955967/record/0-2/52173723017
+54714441483,Technocality,NJ,AC,3.7,,1,fte; owner,https://app.hubspot.com/contacts/50955967/record/0-2/54714441483
+51298136366,Teleco Business Telephone Systems,NJ,AC,0.5,,0,owner; no_contact_at_all,https://app.hubspot.com/contacts/50955967/record/0-2/51298136366
+54550097069,Telecom Infrastructure Corp,NY,AC,5,,1,fte; owner,https://app.hubspot.com/contacts/50955967/record/0-2/54550097069
+52386382105,Teltech Security,NY,AC,1.6,,1,fte; owner,https://app.hubspot.com/contacts/50955967/record/0-2/52386382105
+54511382272,Thompson Lock & Supply,NY,Lock,3.6,,1,fte; owner,https://app.hubspot.com/contacts/50955967/record/0-2/54511382272
+51316700050,Titan Technology Systems,NY,Fire,5,,0,owner; no_contact_at_all,https://app.hubspot.com/contacts/50955967/record/0-2/51316700050
+50627390027,Top Lock Locksmiths and Security,NY,Lock,,87401864,1,est_revenue; fte,https://app.hubspot.com/contacts/50955967/record/0-2/50627390027
+57558563620,Top Notch Locksmith & Security NYC,NY,Lock,,87401864,1,est_revenue; fte,https://app.hubspot.com/contacts/50955967/record/0-2/57558563620
+50631450647,Total Security,NY,AC,,87401864,1,est_revenue; fte,https://app.hubspot.com/contacts/50955967/record/0-2/50631450647
+54755027568,TPC Systems,CT,Fire,11,,1,fte; owner,https://app.hubspot.com/contacts/50955967/record/0-2/54755027568
+51316235289,"Tracey Door Company, Inc.",NY,Lock,0.5,,0,owner; no_contact_at_all,https://app.hubspot.com/contacts/50955967/record/0-2/51316235289
+52172484655,Translucent Security,NJ,AC,1.5,,1,fte; owner,https://app.hubspot.com/contacts/50955967/record/0-2/52172484655
+53733688375,Tri State Fire Protection,PA,Fire,2.2,,1,fte; owner,https://app.hubspot.com/contacts/50955967/record/0-2/53733688375
+50659160098,TSS INTEGRATED SYSTEMS INC,NY,Fire,,87401864,1,est_revenue; fte,https://app.hubspot.com/contacts/50955967/record/0-2/50659160098
+52953786986,TufDoor,DC,Lock,1.8,,1,fte; owner,https://app.hubspot.com/contacts/50955967/record/0-2/52953786986
+52182993059,Uni-Tel Group,NJ,AC,5.9,,1,fte; owner,https://app.hubspot.com/contacts/50955967/record/0-2/52182993059
+54755021989,Unitech Sound & Security,CT,AC,2.2,,1,fte; owner,https://app.hubspot.com/contacts/50955967/record/0-2/54755021989
+51298756162,United Security Systems,NY,AC,0.5,,0,owner; no_contact_at_all,https://app.hubspot.com/contacts/50955967/record/0-2/51298756162
+51326328608,Upstate Alarm LLC,NY,Fire,5,,0,owner; no_contact_at_all,https://app.hubspot.com/contacts/50955967/record/0-2/51326328608
+51313603405,Us Telecom,DC,AC,5,,0,owner; no_contact_at_all,https://app.hubspot.com/contacts/50955967/record/0-2/51313603405
+54728149367,Vantage Security Systems,NY,AC,1.1,,1,fte; owner,https://app.hubspot.com/contacts/50955967/record/0-2/54728149367
+52386691853,Venture Security,PA,AC,1.5,,1,fte; owner,https://app.hubspot.com/contacts/50955967/record/0-2/52386691853
+54723501570,Video Surveillance Corp,NY,AC,1.5,,2,fte; owner,https://app.hubspot.com/contacts/50955967/record/0-2/54723501570
+53628004360,"Videray Technologies, Inc.",MA,AC,2,,1,fte; owner,https://app.hubspot.com/contacts/50955967/record/0-2/53628004360
+52194982723,VIRSIG,NY,AC,18.7,,1,fte; owner,https://app.hubspot.com/contacts/50955967/record/0-2/52194982723
+50927964855,Virtual Doorman,NY,AC,6,,1,fte; owner,https://app.hubspot.com/contacts/50955967/record/0-2/50927964855
+55405398346,Walbaum Locksmiths,NY,Lock,,87401864,1,est_revenue; fte,https://app.hubspot.com/contacts/50955967/record/0-2/55405398346
+52382754909,Watkins Security,PA,AC,0.9,,1,fte; owner,https://app.hubspot.com/contacts/50955967/record/0-2/52382754909
+53627694668,Wayne Alarm Systems,MA,AC,16,,1,fte; owner,https://app.hubspot.com/contacts/50955967/record/0-2/53627694668
+50330390405,Webster Lock & Hardware,NY,Lock,,87401864,1,est_revenue; fte,https://app.hubspot.com/contacts/50955967/record/0-2/50330390405
+53739914898,Wick Fisher White,PA,Fire,6.4,,1,fte; owner,https://app.hubspot.com/contacts/50955967/record/0-2/53739914898
+54770242868,Wicked Technologies,NJ,AC,0.5,,1,fte; owner,https://app.hubspot.com/contacts/50955967/record/0-2/54770242868
+51321190248,Winfield Security Corporation,NY,AC,75,,0,owner; no_contact_at_all,https://app.hubspot.com/contacts/50955967/record/0-2/51321190248
+54060672315,Wingman IP,NY,AC,3,,1,fte; owner,https://app.hubspot.com/contacts/50955967/record/0-2/54060672315
+50660089665,WSS,NJ,AC,,87401864,0,est_revenue; no_contact_at_all,https://app.hubspot.com/contacts/50955967/record/0-2/50660089665
+51312519824,xManhattan Fire Extinguisher Inspection & Service,NY,Fire,0.5,,0,owner; no_contact_at_all,https://app.hubspot.com/contacts/50955967/record/0-2/51312519824
+51635117473,1 Venus Fire Safety,NY,Fire,,,1,est_revenue; fte; owner,https://app.hubspot.com/contacts/50955967/record/0-2/51635117473
+54560241685,AB Solutions ITS,NY,AC,,,1,est_revenue; fte; owner,https://app.hubspot.com/contacts/50955967/record/0-2/54560241685
+52959250843,Acme Safe & Lock,DC,Lock,,,1,est_revenue; fte; owner,https://app.hubspot.com/contacts/50955967/record/0-2/52959250843
+50687851906,Advance Lock & Key,NY,Lock,,87401864,0,est_revenue; fte; no_contact_at_all,https://app.hubspot.com/contacts/50955967/record/0-2/50687851906
+55592613957,Alarming Ideas,CT,AC,,87401864,0,est_revenue; fte; no_contact_at_all,https://app.hubspot.com/contacts/50955967/record/0-2/55592613957
+54754204762,All Around Security,NY,AC,,,1,est_revenue; fte; owner,https://app.hubspot.com/contacts/50955967/record/0-2/54754204762
+53619757379,Alliance Security,MA,AC,,,1,est_revenue; fte; owner,https://app.hubspot.com/contacts/50955967/record/0-2/53619757379
+50633772614,Alliance Security,NY,AC,,87401864,0,est_revenue; fte; no_contact_at_all,https://app.hubspot.com/contacts/50955967/record/0-2/50633772614
+54662182658,Altronix,NY,AC,,,1,est_revenue; fte; owner,https://app.hubspot.com/contacts/50955967/record/0-2/54662182658
+55329538898,Argus 365,NJ,AC,,87401864,0,est_revenue; fte; no_contact_at_all,https://app.hubspot.com/contacts/50955967/record/0-2/55329538898
+50924150043,ARTIST SECURITY SYSTEMS INC,NY,AC,,87401864,0,est_revenue; fte; no_contact_at_all,https://app.hubspot.com/contacts/50955967/record/0-2/50924150043
+50633772616,ASSURED SECURITY LOCKSMITH & HARDWARE CO,NY,Lock,,87401864,0,est_revenue; fte; no_contact_at_all,https://app.hubspot.com/contacts/50955967/record/0-2/50633772616
+54755648138,Atlantic Security & Fire,NJ,Fire,,,1,est_revenue; fte; owner,https://app.hubspot.com/contacts/50955967/record/0-2/54755648138
+54627950622,Atlas Security Services,NY,AC,,,1,est_revenue; fte; owner,https://app.hubspot.com/contacts/50955967/record/0-2/54627950622
+51979352443,Automated Security,PA,AC,,,2,est_revenue; fte; owner,https://app.hubspot.com/contacts/50955967/record/0-2/51979352443
+53651727030,Baltic Security,MA,AC,,,1,est_revenue; fte; owner,https://app.hubspot.com/contacts/50955967/record/0-2/53651727030
+53623179425,Basco Security,MA,AC,,,1,est_revenue; fte; owner,https://app.hubspot.com/contacts/50955967/record/0-2/53623179425
+54997881216,Best Monitoring,NY,AC,,87401864,0,est_revenue; fte; no_contact_at_all,https://app.hubspot.com/contacts/50955967/record/0-2/54997881216
+50633772615,BOBBY'S LOCKSMITH INC.,NY,Lock,,87401864,0,est_revenue; fte; no_contact_at_all,https://app.hubspot.com/contacts/50955967/record/0-2/50633772615
+54097911152,Brivo,MD,AC,,,5,est_revenue; fte; owner,https://app.hubspot.com/contacts/50955967/record/0-2/54097911152
+56481531291,Brookhill,NY,AC,,,1,est_revenue; fte; owner,https://app.hubspot.com/contacts/50955967/record/0-2/56481531291
+50681958279,Brooklyn Low Voltage,NY,AC,,87401864,0,est_revenue; fte; no_contact_at_all,https://app.hubspot.com/contacts/50955967/record/0-2/50681958279
+54754235140,CCi Voice,CT,AC,,,1,est_revenue; fte; owner,https://app.hubspot.com/contacts/50955967/record/0-2/54754235140
+51306637366,Centennial Security Intgration,NY,AC,,,1,est_revenue; fte; owner,https://app.hubspot.com/contacts/50955967/record/0-2/51306637366
+50606109717,CHAMPION LOCKSMITH LLC,NY,Lock,,87401864,0,est_revenue; fte; no_contact_at_all,https://app.hubspot.com/contacts/50955967/record/0-2/50606109717
+51789552816,Chimera Integrations LLC,NY,AC,,,1,est_revenue; fte; owner,https://app.hubspot.com/contacts/50955967/record/0-2/51789552816
+51328341310,City Smart Systems NYC - Security Systems & Camera Installation,NY,AC,,,1,est_revenue; fte; owner,https://app.hubspot.com/contacts/50955967/record/0-2/51328341310
+52891885173,Clear Connection Inc.,MD,AC,,,1,est_revenue; fte; owner,https://app.hubspot.com/contacts/50955967/record/0-2/52891885173
+52951507349,Colorado Security Agency,DC,AC,,,1,est_revenue; fte; owner,https://app.hubspot.com/contacts/50955967/record/0-2/52951507349
+52956230160,Communications Electronics,DC,AC,,,1,est_revenue; fte; owner,https://app.hubspot.com/contacts/50955967/record/0-2/52956230160
+52950574478,Communications Electronics Systems,MD,AC,,,1,est_revenue; fte; owner,https://app.hubspot.com/contacts/50955967/record/0-2/52950574478
+52968460146,Concentric Security,MD,AC,,,1,est_revenue; fte; owner,https://app.hubspot.com/contacts/50955967/record/0-2/52968460146
+50927590522,Cosmic Fischer,NY,Lock,,87401864,0,est_revenue; fte; no_contact_at_all,https://app.hubspot.com/contacts/50955967/record/0-2/50927590522
+57248340841,CRETO,NY,AC,,87401864,0,est_revenue; fte; no_contact_at_all,https://app.hubspot.com/contacts/50955967/record/0-2/57248340841
+52871625012,Cypress Door & Glass LLC,PA,Lock,,,1,est_revenue; fte; owner,https://app.hubspot.com/contacts/50955967/record/0-2/52871625012
+50684621456,DIAL LOCKSMITH SECURITY LLC,NY,Lock,,87401864,0,est_revenue; fte; no_contact_at_all,https://app.hubspot.com/contacts/50955967/record/0-2/50684621456
+50620917159,Digital Provisions,NY,AC,,87401864,0,est_revenue; fte; no_contact_at_all,https://app.hubspot.com/contacts/50955967/record/0-2/50620917159
+51293102907,Door Guys NYC,NY,Lock,,,1,est_revenue; fte; owner,https://app.hubspot.com/contacts/50955967/record/0-2/51293102907
+51763764524,Doyle Security Systems,NY,AC,,,2,est_revenue; fte; owner,https://app.hubspot.com/contacts/50955967/record/0-2/51763764524
+55212004002,Dynamic Protection Systems,NJ,Fire,,,1,est_revenue; fte; owner,https://app.hubspot.com/contacts/50955967/record/0-2/55212004002
+51771351950,East Coast Lock and Alarm,NY,Lock,,,1,est_revenue; fte; owner,https://app.hubspot.com/contacts/50955967/record/0-2/51771351950
+50684117433,Eastern Security,NY,AC,,87401864,0,est_revenue; fte; no_contact_at_all,https://app.hubspot.com/contacts/50955967/record/0-2/50684117433
+51301217555,"Empire Fire Alarm Specialist Co,.Inc",NY,Fire,,,1,est_revenue; fte; owner,https://app.hubspot.com/contacts/50955967/record/0-2/51301217555
+52846726786,ENE Systems,MA,AC,,,1,est_revenue; fte; owner,https://app.hubspot.com/contacts/50955967/record/0-2/52846726786
+52838924146,Enesecurity.Com,NH,AC,,,1,est_revenue; fte; owner,https://app.hubspot.com/contacts/50955967/record/0-2/52838924146
+52886133116,ePropertyCare,MA,AC,,,1,est_revenue; fte; owner,https://app.hubspot.com/contacts/50955967/record/0-2/52886133116
+50682421151,"ESTEEM SECURITY SERVICES, Inc.",NY,Ancilary,,87401864,0,est_revenue; fte; no_contact_at_all,https://app.hubspot.com/contacts/50955967/record/0-2/50682421151
+50681489194,Falcon Locksmith,NY,Lock,,87401864,0,est_revenue; fte; no_contact_at_all,https://app.hubspot.com/contacts/50955967/record/0-2/50681489194
+52841265517,"FiberPlus, Inc.",MD,AC,,,1,est_revenue; fte; owner,https://app.hubspot.com/contacts/50955967/record/0-2/52841265517
+51317319260,Flame Proofing NY,NY,Fire,,,1,est_revenue; fte; owner,https://app.hubspot.com/contacts/50955967/record/0-2/51317319260
+52035003822,Flash Security Integrators INC,NJ,AC,,,2,est_revenue; fte; owner,https://app.hubspot.com/contacts/50955967/record/0-2/52035003822
+51778174998,Fleetwood Lock & Alarm Co,NY,Lock,,,1,est_revenue; fte; owner,https://app.hubspot.com/contacts/50955967/record/0-2/51778174998
+50596257354,Greatneck Lock Smith,NY,Lock,,87401864,0,est_revenue; fte; no_contact_at_all,https://app.hubspot.com/contacts/50955967/record/0-2/50596257354
+50672615288,GREENWICH VILLAGE LOCHSMITHS,NY,Lock,,87401864,1,est_revenue; fte; reachable_contact,https://app.hubspot.com/contacts/50955967/record/0-2/50672615288
+52863875185,High-Tech Lock,MD,Lock,,,1,est_revenue; fte; owner,https://app.hubspot.com/contacts/50955967/record/0-2/52863875185
+54754630188,Homeland Surveillance,NY,AC,,,1,est_revenue; fte; owner,https://app.hubspot.com/contacts/50955967/record/0-2/54754630188
+52946078286,IDEMIA National Security Solutions,VA,AC,,,1,est_revenue; fte; owner,https://app.hubspot.com/contacts/50955967/record/0-2/52946078286
+52951199908,Infinity Solutions Inc,DC,AC,,,1,est_revenue; fte; owner,https://app.hubspot.com/contacts/50955967/record/0-2/52951199908
+50618919858,Integrated Systems,NJ,AC,,,0,est_revenue; owner; no_contact_at_all,https://app.hubspot.com/contacts/50955967/record/0-2/50618919858
+54755129175,JCT Solutions,NJ,AC,,,1,est_revenue; fte; owner,https://app.hubspot.com/contacts/50955967/record/0-2/54755129175
+58754366468,King Lock & Security,,AC,,87401864,1,est_revenue; fte; hq,https://app.hubspot.com/contacts/50955967/record/0-2/58754366468
+54633870906,Kisi,NY,AC,,,1,est_revenue; fte; owner,https://app.hubspot.com/contacts/50955967/record/0-2/54633870906
+54770293321,Knight Security Systems,NY,AC,,,1,est_revenue; fte; owner,https://app.hubspot.com/contacts/50955967/record/0-2/54770293321
+54405044865,Kognition AI,PA,AC,,,1,est_revenue; fte; owner,https://app.hubspot.com/contacts/50955967/record/0-2/54405044865
+52818105715,LAN-TEL,MA,AC,,,1,est_revenue; fte; owner,https://app.hubspot.com/contacts/50955967/record/0-2/52818105715
+52968153703,Landmark Systems Inc,DC,AC,,,1,est_revenue; fte; owner,https://app.hubspot.com/contacts/50955967/record/0-2/52968153703
+52189978768,Link Solutions,CT,AC,,,1,est_revenue; fte; owner,https://app.hubspot.com/contacts/50955967/record/0-2/52189978768
+50691385725,"LOCKDOCTOR LOCKSMITHS, INC.",NY,Lock,,87401864,0,est_revenue; fte; no_contact_at_all,https://app.hubspot.com/contacts/50955967/record/0-2/50691385725
+57529552014,LP Security,NY,Lock,,,1,est_revenue; fte; owner,https://app.hubspot.com/contacts/50955967/record/0-2/57529552014
+51790789903,M&S Fire Protection LLC,NY,Fire,,,1,est_revenue; fte; owner,https://app.hubspot.com/contacts/50955967/record/0-2/51790789903
+50927956772,Magic Security,NY,AC,,87401864,0,est_revenue; fte; no_contact_at_all,https://app.hubspot.com/contacts/50955967/record/0-2/50927956772
+51786922821,Mahoney Alarms,NY,AC,,,1,est_revenue; fte; owner,https://app.hubspot.com/contacts/50955967/record/0-2/51786922821
+53723152048,Main Line Security Solutions,PA,AC,,,1,est_revenue; fte; owner,https://app.hubspot.com/contacts/50955967/record/0-2/53723152048
+53735164765,Mainline Security,PA,AC,,,1,est_revenue; fte; owner,https://app.hubspot.com/contacts/50955967/record/0-2/53735164765
+51778019881,Marshall Alarm Systems Inc,NY,AC,,,1,est_revenue; fte; owner,https://app.hubspot.com/contacts/50955967/record/0-2/51778019881
+54547623832,Mason Technologies Inc.,NY,AC,,,1,est_revenue; fte; owner,https://app.hubspot.com/contacts/50955967/record/0-2/54547623832
+54580540265,Matrix Technology Group LLC,NY,AC,,,1,est_revenue; fte; owner,https://app.hubspot.com/contacts/50955967/record/0-2/54580540265
+54670064933,Mcgivney Locksmith,NY,Lock,,,1,est_revenue; fte; owner,https://app.hubspot.com/contacts/50955967/record/0-2/54670064933
+50614640439,METROPOLITAN LOCKSMITH INC.,NY,Lock,,87401864,0,est_revenue; fte; no_contact_at_all,https://app.hubspot.com/contacts/50955967/record/0-2/50614640439
+53634908703,"Millennium Group, Inc.",MA,AC,,,1,est_revenue; fte; owner,https://app.hubspot.com/contacts/50955967/record/0-2/53634908703
+53713681835,Mondo Media Solutions,PA,AC,,,1,est_revenue; fte; owner,https://app.hubspot.com/contacts/50955967/record/0-2/53713681835
+50611234465,"MURRAY HILL LOCKSMITH HARDWARE & BATH, INC.",NY,Lock,,87401864,0,est_revenue; fte; no_contact_at_all,https://app.hubspot.com/contacts/50955967/record/0-2/50611234465
+51288711343,Natures Finest Security,NY,AC,,,1,est_revenue; fte; owner,https://app.hubspot.com/contacts/50955967/record/0-2/51288711343
+52876531614,NEKEY,NJ,Lock,,,1,est_revenue; fte; owner,https://app.hubspot.com/contacts/50955967/record/0-2/52876531614
+50687471744,New York Master Locksmith,NY,Lock,,87401864,0,est_revenue; fte; no_contact_at_all,https://app.hubspot.com/contacts/50955967/record/0-2/50687471744
+52187810975,Northeast Security Solutions,MA,AC,,,1,est_revenue; fte; owner,https://app.hubspot.com/contacts/50955967/record/0-2/52187810975
+54755039051,Novacom Telephone,NJ,AC,,,1,est_revenue; fte; owner,https://app.hubspot.com/contacts/50955967/record/0-2/54755039051
+57051485612,NY 360,NY,AC,,,1,est_revenue; fte; owner,https://app.hubspot.com/contacts/50955967/record/0-2/57051485612
+58429141662,NY Fire Proof Door,NJ,Fire,,87401864,0,est_revenue; fte; no_contact_at_all,https://app.hubspot.com/contacts/50955967/record/0-2/58429141662
+50601279356,"NY LOCKSMITH SOLUTIONS, INC",NY,Lock,,87401864,0,est_revenue; fte; no_contact_at_all,https://app.hubspot.com/contacts/50955967/record/0-2/50601279356
+52744440427,Oliver Fire,PA,Fire,,,1,est_revenue; fte; owner,https://app.hubspot.com/contacts/50955967/record/0-2/52744440427
+53620531570,Omnium Protection Group,MA,AC,,,1,est_revenue; fte; owner,https://app.hubspot.com/contacts/50955967/record/0-2/53620531570
+51807129394,Open Systems Integrators Inc,NY,AC,,,1,est_revenue; fte; owner,https://app.hubspot.com/contacts/50955967/record/0-2/51807129394
+51805273273,Open Systems Metro NY Inc,NY,AC,,,1,est_revenue; fte; owner,https://app.hubspot.com/contacts/50955967/record/0-2/51805273273
+51772382030,Open Systems Northeast Inc,NY,AC,,,1,est_revenue; fte; owner,https://app.hubspot.com/contacts/50955967/record/0-2/51772382030
+50683498120,POPEYE'S LOCKSMITH LLC,NY,Lock,,87401864,0,est_revenue; fte; no_contact_at_all,https://app.hubspot.com/contacts/50955967/record/0-2/50683498120
+54553988195,Pro Locksmith & Security Inc.,NY,Lock,,,1,est_revenue; fte; owner,https://app.hubspot.com/contacts/50955967/record/0-2/54553988195
+54627794962,Pro Tech Locksmith NYC,NY,Lock,,,1,est_revenue; fte; owner,https://app.hubspot.com/contacts/50955967/record/0-2/54627794962
+52949952313,Reliance Fire Protection,MD,Fire,,,1,est_revenue; fte; owner,https://app.hubspot.com/contacts/50955967/record/0-2/52949952313
+51808831268,RGA Security Systems Inc,NY,AC,,,1,est_revenue; fte; owner,https://app.hubspot.com/contacts/50955967/record/0-2/51808831268
+53624573039,RL Associates,MA,AC,,,1,est_revenue; fte; owner,https://app.hubspot.com/contacts/50955967/record/0-2/53624573039
+54589571376,S&S Locksmiths,NY,Lock,,,1,est_revenue; fte; owner,https://app.hubspot.com/contacts/50955967/record/0-2/54589571376
+50686078873,S. O. S. LOCKSMITH CORP.(S.O.S. ADVANCED SECURITY),NY,Lock,,87401864,0,est_revenue; fte; no_contact_at_all,https://app.hubspot.com/contacts/50955967/record/0-2/50686078873
+51976713836,Secured Protection Investigations,,AC,,87401864,1,est_revenue; fte; hq,https://app.hubspot.com/contacts/50955967/record/0-2/51976713836
+54755635592,Security Control Integrators,NJ,AC,,,1,est_revenue; fte; owner,https://app.hubspot.com/contacts/50955967/record/0-2/54755635592
+51974353062,"Security Service Company, Inc.",NY,AC,,,1,est_revenue; fte; owner,https://app.hubspot.com/contacts/50955967/record/0-2/51974353062
+52957308680,"Securityhunter, Inc.",MD,AC,,,1,est_revenue; fte; owner,https://app.hubspot.com/contacts/50955967/record/0-2/52957308680
+52193074722,Shearer Security,PA,AC,,,1,est_revenue; fte; owner,https://app.hubspot.com/contacts/50955967/record/0-2/52193074722
+54755640089,Smarthome and Theater Systems,CT,AC,,,1,est_revenue; fte; owner,https://app.hubspot.com/contacts/50955967/record/0-2/54755640089
+50685459835,Sonitrol,CT,AC,,87401864,0,est_revenue; fte; no_contact_at_all,https://app.hubspot.com/contacts/50955967/record/0-2/50685459835
+50605646446,Statewide Central Station,NY,AC,,,0,est_revenue; owner; no_contact_at_all,https://app.hubspot.com/contacts/50955967/record/0-2/50605646446
+50659160096,STEEL CITY ELECTRICAL CONTRACTING CORP,NY,Ancilary,,87401864,0,est_revenue; fte; no_contact_at_all,https://app.hubspot.com/contacts/50955967/record/0-2/50659160096
+54578369825,Suffolk County Locksmith,NY,Lock,,,1,est_revenue; fte; owner,https://app.hubspot.com/contacts/50955967/record/0-2/54578369825
+50662403187,Sunnyside Hardware & Locksmith,NY,Lock,,87401864,0,est_revenue; fte; no_contact_at_all,https://app.hubspot.com/contacts/50955967/record/0-2/50662403187
+54558062434,Supercell Systems,NY,AC,,,1,est_revenue; fte; owner,https://app.hubspot.com/contacts/50955967/record/0-2/54558062434
+51767016106,Syracuse Time & Alarm Co Inc,NY,AC,,,1,est_revenue; fte; owner,https://app.hubspot.com/contacts/50955967/record/0-2/51767016106
+50681024372,SYSTEM ONE ALARM SERVICES INC,NJ,AC,,87401864,0,est_revenue; fte; no_contact_at_all,https://app.hubspot.com/contacts/50955967/record/0-2/50681024372
+50632383272,Target Security,NY,AC,,,1,est_revenue; fte; owner,https://app.hubspot.com/contacts/50955967/record/0-2/50632383272
+50634392347,"TEAM ELECTRIC, INC",NY,Ancilary,,87401864,0,est_revenue; fte; no_contact_at_all,https://app.hubspot.com/contacts/50955967/record/0-2/50634392347
+50673699609,TECH ZOOM USA TECHNOLOGIES LLC,NY,AC,,87401864,0,est_revenue; fte; no_contact_at_all,https://app.hubspot.com/contacts/50955967/record/0-2/50673699609
+50611853991,The NY Locksmith,NY,Lock,,87401864,0,est_revenue; fte; no_contact_at_all,https://app.hubspot.com/contacts/50955967/record/0-2/50611853991
+57698254691,The Scientific Group,NY,Fire,,,1,est_revenue; fte; owner,https://app.hubspot.com/contacts/50955967/record/0-2/57698254691
+51330817346,Titan Commercial Doors,NY,Lock,,,1,est_revenue; fte; owner,https://app.hubspot.com/contacts/50955967/record/0-2/51330817346
+52184850700,TN Security Pittsburgh,PA,AC,,,1,est_revenue; fte; owner,https://app.hubspot.com/contacts/50955967/record/0-2/52184850700
+50625527573,TRANSFORM ELECTRICAL CONTRACTORS INC,NY,Ancilary,,87401864,0,est_revenue; fte; no_contact_at_all,https://app.hubspot.com/contacts/50955967/record/0-2/50625527573
+54662190089,Tri State Locksmith & Security,NJ,Lock,,,1,est_revenue; fte; owner,https://app.hubspot.com/contacts/50955967/record/0-2/54662190089
+52962343581,Trinity Wiring & Security Solutions,VA,AC,,,1,est_revenue; fte; owner,https://app.hubspot.com/contacts/50955967/record/0-2/52962343581
+54728322567,TRITECH Associates,NJ,AC,,,2,est_revenue; fte; owner,https://app.hubspot.com/contacts/50955967/record/0-2/54728322567
+50685240735,TYFIRE PROTECTION SYSTEM CORP,NY,Fire,,87401864,0,est_revenue; fte; no_contact_at_all,https://app.hubspot.com/contacts/50955967/record/0-2/50685240735
+50629089314,UMBRELLA SECURITY SYSTEMS,NY,AC,,87401864,0,est_revenue; fte; no_contact_at_all,https://app.hubspot.com/contacts/50955967/record/0-2/50629089314
+52198385996,United States Merchants Protective Co,NY,AC,,,1,est_revenue; fte; owner,https://app.hubspot.com/contacts/50955967/record/0-2/52198385996
+52947629323,Urban Alarm,DC,AC,,,1,est_revenue; fte; owner,https://app.hubspot.com/contacts/50955967/record/0-2/52947629323
+50605646447,USIS ELECTRIC INC,NY,Ancilary,,87401864,0,est_revenue; fte; no_contact_at_all,https://app.hubspot.com/contacts/50955967/record/0-2/50605646447
+50608911890,VERISHIELD TECH,NJ,Fire,,87401864,0,est_revenue; fte; no_contact_at_all,https://app.hubspot.com/contacts/50955967/record/0-2/50608911890
+50680513899,WARREN OSTROFF ELECTRIC INC,NY,Ancilary,,87401864,0,est_revenue; fte; no_contact_at_all,https://app.hubspot.com/contacts/50955967/record/0-2/50680513899
+52910827085,We See You Security,NJ,AC,,,1,est_revenue; fte; owner,https://app.hubspot.com/contacts/50955967/record/0-2/52910827085
+50691695397,WHOODENTECH LLC,NY,AC,,87401864,0,est_revenue; fte; no_contact_at_all,https://app.hubspot.com/contacts/50955967/record/0-2/50691695397
+52892354171,Wolfpack Security,MD,AC,,,1,est_revenue; fte; owner,https://app.hubspot.com/contacts/50955967/record/0-2/52892354171
+52967681593,Wycliffe Technologies,MD,AC,,,1,est_revenue; fte; owner,https://app.hubspot.com/contacts/50955967/record/0-2/52967681593
+51224351888,Xiom Security,NY,AC,,,1,est_revenue; fte; owner,https://app.hubspot.com/contacts/50955967/record/0-2/51224351888
+50630830755,"Y&B LOCKSMITH, INC.",NY,Lock,,87401864,0,est_revenue; fte; no_contact_at_all,https://app.hubspot.com/contacts/50955967/record/0-2/50630830755
+50679276610,Yankees Locksmith,NY,Lock,,87401864,0,est_revenue; fte; no_contact_at_all,https://app.hubspot.com/contacts/50955967/record/0-2/50679276610
+52177129572,Your Security Space,PA,AC,,,1,est_revenue; fte; owner,https://app.hubspot.com/contacts/50955967/record/0-2/52177129572
+57056556566,‎Locksmith Girl of NYC,NY,Lock,,87401864,1,est_revenue; fte; reachable_contact,https://app.hubspot.com/contacts/50955967/record/0-2/57056556566
+51298291072,ABJ Fire Protection,NY,AC,,,0,est_revenue; fte; owner; no_contact_at_all,https://app.hubspot.com/contacts/50955967/record/0-2/51298291072
+50935253080,ADA Security Systems: Same Day Intercom Repair,NY,AC,,,0,est_revenue; fte; owner; no_contact_at_all,https://app.hubspot.com/contacts/50955967/record/0-2/50935253080
+51309310072,AISG,NY,AC,,,0,est_revenue; fte; owner; no_contact_at_all,https://app.hubspot.com/contacts/50955967/record/0-2/51309310072
+51315461496,"Alarm-Tech Security Systems, Inc.",NY,AC,,,0,est_revenue; fte; owner; no_contact_at_all,https://app.hubspot.com/contacts/50955967/record/0-2/51315461496
+51316545186,All Action Alarm,NY,AC,,,0,est_revenue; fte; owner; no_contact_at_all,https://app.hubspot.com/contacts/50955967/record/0-2/51316545186
+51301527673,All In Door Repair Team,NY,AC,,,0,est_revenue; fte; owner; no_contact_at_all,https://app.hubspot.com/contacts/50955967/record/0-2/51301527673
+51302611226,APS Security,NY,AC,,,0,est_revenue; fte; owner; no_contact_at_all,https://app.hubspot.com/contacts/50955967/record/0-2/51302611226
+54638945072,Avigilon,,AC,,,1,est_revenue; fte; hq; owner,https://app.hubspot.com/contacts/50955967/record/0-2/54638945072
+51306482496,Best New York Garage Door Repair,NY,AC,,,0,est_revenue; fte; owner; no_contact_at_all,https://app.hubspot.com/contacts/50955967/record/0-2/51306482496
+57329847826,Boston Fire Sprinkler,MA,Fire,,,0,est_revenue; fte; owner; no_contact_at_all,https://app.hubspot.com/contacts/50955967/record/0-2/57329847826
+50947339377,Carlos Security Camera Services,NY,AC,,,0,est_revenue; fte; owner; no_contact_at_all,https://app.hubspot.com/contacts/50955967/record/0-2/50947339377
+51308999965,Century Garage Door Repair Service,NY,AC,,,0,est_revenue; fte; owner; no_contact_at_all,https://app.hubspot.com/contacts/50955967/record/0-2/51308999965
+50920909360,Cititech Solutions LLC,NY,AC,,,0,est_revenue; fte; owner; no_contact_at_all,https://app.hubspot.com/contacts/50955967/record/0-2/50920909360
+51313138432,Commercial Doors Service,NY,Lock,,,0,est_revenue; fte; owner; no_contact_at_all,https://app.hubspot.com/contacts/50955967/record/0-2/51313138432
+51298291073,Commercial Security Systems Experts,NY,AC,,,0,est_revenue; fte; owner; no_contact_at_all,https://app.hubspot.com/contacts/50955967/record/0-2/51298291073
+51317628935,CSI Security Systems,NY,AC,,,0,est_revenue; fte; owner; no_contact_at_all,https://app.hubspot.com/contacts/50955967/record/0-2/51317628935
+50937265998,D&R Security Systems,NY,AC,,,0,est_revenue; fte; owner; no_contact_at_all,https://app.hubspot.com/contacts/50955967/record/0-2/50937265998
+51300133437,EMC Bath & Door Supply,NY,Lock,,,0,est_revenue; fte; owner; no_contact_at_all,https://app.hubspot.com/contacts/50955967/record/0-2/51300133437
+51318093700,EZ Windows Online,NY,Lock,,,0,est_revenue; fte; owner; no_contact_at_all,https://app.hubspot.com/contacts/50955967/record/0-2/51318093700
+51322737425,General Security,NY,AC,,,0,est_revenue; fte; owner; no_contact_at_all,https://app.hubspot.com/contacts/50955967/record/0-2/51322737425
+54641180466,Genetec,,AC,,,1,est_revenue; fte; hq; owner,https://app.hubspot.com/contacts/50955967/record/0-2/54641180466
+51299220300,Greenwich Village Door Master Service,NY,Lock,,,0,est_revenue; fte; owner; no_contact_at_all,https://app.hubspot.com/contacts/50955967/record/0-2/51299220300
+50632539285,Integrated Security,CT,AC,,,0,est_revenue; fte; owner; no_contact_at_all,https://app.hubspot.com/contacts/50955967/record/0-2/50632539285
+51320880500,Intelli-Tec Security,NY,AC,,,0,est_revenue; fte; owner; no_contact_at_all,https://app.hubspot.com/contacts/50955967/record/0-2/51320880500
+51315306269,IntelliCheck,NY,AC,,,0,est_revenue; fte; owner; no_contact_at_all,https://app.hubspot.com/contacts/50955967/record/0-2/51315306269
+51302456585,LM Shower Door,NY,Lock,,,0,est_revenue; fte; owner; no_contact_at_all,https://app.hubspot.com/contacts/50955967/record/0-2/51302456585
+50954323803,LoVolta LLC,NY,AC,,,0,est_revenue; fte; owner; no_contact_at_all,https://app.hubspot.com/contacts/50955967/record/0-2/50954323803
+54754137414,Marcus Communications,CT,AC,,,0,est_revenue; fte; owner; no_contact_at_all,https://app.hubspot.com/contacts/50955967/record/0-2/54754137414
+51312209569,Master Fire Mechanical,NY,Fire,,,0,est_revenue; fte; owner; no_contact_at_all,https://app.hubspot.com/contacts/50955967/record/0-2/51312209569
+51319642255,MY DOOR NYC,NY,Lock,,,0,est_revenue; fte; owner; no_contact_at_all,https://app.hubspot.com/contacts/50955967/record/0-2/51319642255
+50924030209,MY Tech USA Security,,AC,,87401864,0,est_revenue; fte; hq; no_contact_at_all,https://app.hubspot.com/contacts/50955967/record/0-2/50924030209
+50625218948,NCC Systems Inc.,NY,AC,,,0,est_revenue; fte; owner; no_contact_at_all,https://app.hubspot.com/contacts/50955967/record/0-2/50625218948
+50936027247,NY Security Camera Installers,NY,AC,,,0,est_revenue; fte; owner; no_contact_at_all,https://app.hubspot.com/contacts/50955967/record/0-2/50936027247
+51306637367,NYC Data Cabling,NY,AC,,,0,est_revenue; fte; owner; no_contact_at_all,https://app.hubspot.com/contacts/50955967/record/0-2/51306637367
+51318403390,NYC Fire Alarm Systems,NY,Fire,,,0,est_revenue; fte; owner; no_contact_at_all,https://app.hubspot.com/contacts/50955967/record/0-2/51318403390
+50612318089,"Pavion, Formerly Integrated Security & Communications",VA,AC,,,0,est_revenue; fte; owner; no_contact_at_all,https://app.hubspot.com/contacts/50955967/record/0-2/50612318089
+50630211341,Port Security,CT,AC,,,0,est_revenue; fte; owner; no_contact_at_all,https://app.hubspot.com/contacts/50955967/record/0-2/50630211341
+51299375236,Price4EV,NY,AC,,,0,est_revenue; fte; owner; no_contact_at_all,https://app.hubspot.com/contacts/50955967/record/0-2/51299375236
+50932235094,Quality Security Camera Service & Repair,NY,AC,,,0,est_revenue; fte; owner; no_contact_at_all,https://app.hubspot.com/contacts/50955967/record/0-2/50932235094
+51314222250,Raymond Locksmith And Door Repair,NY,Lock,,,0,est_revenue; fte; owner; no_contact_at_all,https://app.hubspot.com/contacts/50955967/record/0-2/51314222250
+50635010471,Reliant Safety,NY,AC,,,0,est_revenue; fte; owner; no_contact_at_all,https://app.hubspot.com/contacts/50955967/record/0-2/50635010471
+51300598128,Rochester Door Company,NY,Lock,,,0,est_revenue; fte; owner; no_contact_at_all,https://app.hubspot.com/contacts/50955967/record/0-2/51300598128
+51330662240,Rochester Door Supplier,NY,Lock,,,0,est_revenue; fte; owner; no_contact_at_all,https://app.hubspot.com/contacts/50955967/record/0-2/51330662240
+51292329052,Rochester Security Training Center,NY,AC,,,0,est_revenue; fte; owner; no_contact_at_all,https://app.hubspot.com/contacts/50955967/record/0-2/51292329052
+50683498119,SAFEHOUSE LOCKSMITH,NY,Lock,,,0,est_revenue; fte; owner; no_contact_at_all,https://app.hubspot.com/contacts/50955967/record/0-2/50683498119
+50612937656,"SANDIDGE, CHARLES H.(LOCKMASTERS LOCKSMITH)",NY,Lock,,,0,est_revenue; fte; owner; no_contact_at_all,https://app.hubspot.com/contacts/50955967/record/0-2/50612937656
+56956094220,Seaside Alarms,MA,AC,,,0,est_revenue; fte; owner; no_contact_at_all,https://app.hubspot.com/contacts/50955967/record/0-2/56956094220
+51315306268,Secure Operations of Long Island,NY,AC,,,0,est_revenue; fte; owner; no_contact_at_all,https://app.hubspot.com/contacts/50955967/record/0-2/51315306268
+50945790871,Securicom,NY,AC,,,1,est_revenue; fte; owner; reachable_contact,https://app.hubspot.com/contacts/50955967/record/0-2/50945790871
+51319486980,Security iCam,NY,AC,,,0,est_revenue; fte; owner; no_contact_at_all,https://app.hubspot.com/contacts/50955967/record/0-2/51319486980
+51297981533,SG Security,NY,AC,,,0,est_revenue; fte; owner; no_contact_at_all,https://app.hubspot.com/contacts/50955967/record/0-2/51297981533
+50618919859,Sielox,NJ,AC,,,0,est_revenue; fte; owner; no_contact_at_all,https://app.hubspot.com/contacts/50955967/record/0-2/50618919859
+51319796762,SkyeTech Security,NY,AC,,,0,est_revenue; fte; owner; no_contact_at_all,https://app.hubspot.com/contacts/50955967/record/0-2/51319796762
+51321190247,Speco Technologies,NY,AC,,,0,est_revenue; fte; owner; no_contact_at_all,https://app.hubspot.com/contacts/50955967/record/0-2/51321190247
+50941764748,"St. Moritz Security Services, Inc.",NY,AC,,,0,est_revenue; fte; owner; no_contact_at_all,https://app.hubspot.com/contacts/50955967/record/0-2/50941764748
+50683343460,SYSTEM DESIGN ASSOCIATES,NJ,Fire,,,0,est_revenue; fte; owner; no_contact_at_all,https://app.hubspot.com/contacts/50955967/record/0-2/50683343460
+50598737691,TEANECK LOCKSMITH,NJ,Lock,,,0,est_revenue; fte; owner; no_contact_at_all,https://app.hubspot.com/contacts/50955967/record/0-2/50598737691
+50687162041,Tec-Tel,NJ,AC,,,0,est_revenue; fte; owner; no_contact_at_all,https://app.hubspot.com/contacts/50955967/record/0-2/50687162041
+51124081257,Top Notch Security Systems,NY,AC,,,0,est_revenue; fte; owner; no_contact_at_all,https://app.hubspot.com/contacts/50955967/record/0-2/51124081257
+51319951519,Top Tier Garage Door Repair,NY,Lock,,,0,est_revenue; fte; owner; no_contact_at_all,https://app.hubspot.com/contacts/50955967/record/0-2/51319951519
+51318403389,Townline Security Systems,NY,AC,,,0,est_revenue; fte; owner; no_contact_at_all,https://app.hubspot.com/contacts/50955967/record/0-2/51318403389
+50599421734,TREMONT LOCKSMITHS & HARDWARE INC.,NY,Lock,,,0,est_revenue; fte; owner; no_contact_at_all,https://app.hubspot.com/contacts/50955967/record/0-2/50599421734
+51325399331,Tri-Co Door Inc.,NY,Lock,,,0,est_revenue; fte; owner; no_contact_at_all,https://app.hubspot.com/contacts/50955967/record/0-2/51325399331
+50686233746,TURNQUIST ERIK W,,Fire,,87401864,0,est_revenue; fte; hq; no_contact_at_all,https://app.hubspot.com/contacts/50955967/record/0-2/50686233746
+50602648949,UNITED BURGLAR ALARM INC,NY,AC,,,0,est_revenue; fte; owner; no_contact_at_all,https://app.hubspot.com/contacts/50955967/record/0-2/50602648949
+50684117432,UNITED FEDERATED SYSTEMS,NJ,Fire,,,0,est_revenue; fte; owner; no_contact_at_all,https://app.hubspot.com/contacts/50955967/record/0-2/50684117432
+50615724911,UNITONE COMMUNICATION SYSTEMS INC,NY,AC,,,0,est_revenue; fte; owner; no_contact_at_all,https://app.hubspot.com/contacts/50955967/record/0-2/50615724911
+51313448049,Vicon Security,NY,AC,,,0,est_revenue; fte; owner; no_contact_at_all,https://app.hubspot.com/contacts/50955967/record/0-2/51313448049
+50614795673,VOLANT AV INC,NY,Ancilary,,,0,est_revenue; fte; owner; no_contact_at_all,https://app.hubspot.com/contacts/50955967/record/0-2/50614795673
+50687007340,WALLACEWILLIAM LLC,NY,Fire,,,0,est_revenue; fte; owner; no_contact_at_all,https://app.hubspot.com/contacts/50955967/record/0-2/50687007340
+51292329053,West Fire Systems Inc,NY,Fire,,,0,est_revenue; fte; owner; no_contact_at_all,https://app.hubspot.com/contacts/50955967/record/0-2/51292329053
+51327102606,Wisdom Protective Services,NY,AC,,,0,est_revenue; fte; owner; no_contact_at_all,https://app.hubspot.com/contacts/50955967/record/0-2/51327102606
+50610616180,NELSON AND TOM MAINTENANCE INC,,Fire,,,0,est_revenue; fte; hq; owner; no_contact_at_all,https://app.hubspot.com/contacts/50955967/record/0-2/50610616180
+50614640438,STEPHEN N FRANKLIN,,Fire,,,0,est_revenue; fte; hq; owner; no_contact_at_all,https://app.hubspot.com/contacts/50955967/record/0-2/50614640438
